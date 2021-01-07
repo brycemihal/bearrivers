@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Current Weather</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div id="air_temp_set_1" style="width:500px;height:300px;"></div>
+    <div id="snow_depth_set_1" style="width:500px;height:300px;"></div>
+    <!-- <div id="snow_density" style="width:500px;height:300px;"></div> -->
+    <div id="net_radiation_set_1" style="width:500px;height:300px;"></div>
+    <div id="cameras">
+        <h3 id="cName0"></h3>
+        <img id="cImage0" width="500px" height="300px">
+        <h3 id="cName1"></h3>
+        <img id="cImage1" width="500px" height="300px">
+        <h3 id="cName2"></h3>
+        <img id="cImage2" width="500px" height="300px">
+        <h3 id="cName3"></h3>
+        <img id="cImage3" width="500px" height="300px">
+    </div>
+    <div id="UAC">
+        <h3>Utah Avalance Center - Logan Region Forecast</h3>
+        <h4>Date Issues:</h4>
+        <div id="date_issued"></div>
+        <h4>Bottom Line</h4>
+        <div id="bottom_line"></div>
+        <h4>Current Conditions</h4>
+        <div id="cc"></div>
+        <img id="danger_rose"></img>
+        <h4>Avalanche Problem 1</h4>
+        <div id="avy_p1"></div>
+        <div id="avy_p1_text"></div>
+        <h4>Avalanche Problem 1</h4>
+        <div id="avy_p2"></div>
+        <div id="avy_p2_text"></div>
+    </div>
+
+    <script src="main.js" lang="text/javascript">
+    </script>
+    <script src="camera.js" lang="text/javascript">
+    </script>
+    <script src="uac.js" lang="text/javascript"></script>
+</body>
+
+</html>

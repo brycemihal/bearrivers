@@ -179,7 +179,7 @@ function plotForecast(d) {
 
     var layout = {
         hovermode: 'closest',
-        // height: 600,
+        height: 600,
         xaxis: {
             title: 'Datetime',
             linecolor: '#121F1F',
@@ -225,13 +225,55 @@ function plotForecast(d) {
             roworder: 'top to bottom'
         },
         margin: {
-            l: 0,
-            r: 0,
-            b: 0,
-            t: 0,
+            l: 100,
+            r: 100,
+            b: 70,
+            t: 50,
             pad: 10,
         },
-        showlegend: false,        
+        showlegend: false,
+        // annotations: [
+        //     {
+        //         x: temp_dt[temp_dt.length - 1],
+        //         // y: Math.max(temp_dv),
+        //         xref: 'x',
+        //         yref: 'y1',
+        //         text: 'Air Temperature',
+        //         font: {
+        //             color: '#2b83ba'
+        //         },
+        //         showarrow: false,
+        //     },
+        //     {
+        //         x: temp_dt[temp_dt.length - 1],
+        //         // y: Math.max(temp_dv),
+        //         xref: 'x',
+        //         yref: 'y1',
+        //         text: 'Dew Point',
+        //         font: {
+        //             color: '#2b83ba'
+        //         },
+        //         showarrow: false,
+        //     },
+        //     {
+        //         x: temp_dt[temp_dt.length - 1],
+        //         // y: Math.max(temp_dv),
+        //         xref: 'x',
+        //         yref: 'y1',
+        //         text: 'Wind Chill',
+        //         font: {
+        //             color: '#2b83ba'
+        //         },
+        //         showarrow: false,
+        //     },
+        //     {
+        //         x: temp_dt[temp_dt.length - 1],
+        //         // y: Math.max(rh_dv),
+        //         xref: 'x',
+        //         yref: 'y2',
+        //         text: 'Relative Humidity',
+        //         showarrow: false,
+        //     }],
         dragmode: 'pan',
     };
 

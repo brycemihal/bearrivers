@@ -18,7 +18,6 @@ function plotWindRose(d) {
     wd = wd.map(x => Math.round(x));
     wd = wd.map(x => x * 15);
 
-
     // bracket by wind speed
     var ws = d.STATION[0].OBSERVATIONS.wind_speed_set_1.map(x => x * 2.23694); // mph
 
@@ -71,9 +70,9 @@ function plotWindRose(d) {
     }]
 
     var layout = {
-        title: "Logan Peak Wind Speed",        
-        font: { size: 14 },
-        legend: { font: { size: 14 } },
+        title: "Logan Peak Wind Speed (Past 48 Hours)",        
+        font: { size: 12 },
+        legend: { font: { size: 12 } },
         polar: {
             bgcolor: '#F5F5F5',
             barmode: "overlay",

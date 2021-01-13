@@ -1,7 +1,7 @@
 async function getSynopticData(meso_sites, startStr, endStr, k) {
     var junk = 'bb989856db719411';
     var meso_vars = ['wind_speed', 'wind_direction', 'wind_cardinal_direction'];
-    const response = await fetch('https://api.synopticdata.com/v2/stations/timeseries?stid=' + meso_sites + '&vars=' + meso_vars + '&start=' + startStr + '&end=' + endStr + '&obtimezone=local&token=' + k+junk);
+    const response = await fetch('https://api.synopticdata.com/v2/stations/timeseries?stid=' + meso_sites + '&vars=' + meso_vars + '&start=' + startStr + '&end=' + endStr + '&obtimezone=local&token=' + k + junk);
     const data = await response.json();
 
     // var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);
@@ -21,56 +21,67 @@ function plotWindRose(d) {
     // bracket by wind speed
     var ws = d.STATION[0].OBSERVATIONS.wind_speed_set_1.map(x => x * 2.23694); // mph
 
-    // < 5
     var ind1 = ws.map(x => x <= 5);
-    console.log(ind1)
-    // 5-10
     var ind2 = ws.map(x => x > 5 && x <= 10);
-    // console.log(ind2)
-    // 10-15
     var ind3 = ws.map(x => x > 10 && x <= 15);
-    // console.log(ind3)
-    // 15-20
     var ind4 = ws.map(x => x > 15 && x <= 20);
-    // console.log(ind4)
-    // > 20
-    var ind5 = ws.map(x => x > 20);
-    // console.log(ind5)
+    var ind5 = ws.map(x => x > 20 && x <= 25);
+    var ind6 = ws.map(x => x > 25 && x <= 30);
+    var ind7 = ws.map(x => x > 30 && x <= 35);
+    var ind8 = ws.map(x => x > 35);
 
     var data = [{
+        r: ws.filter((r, i) => ind8[i]),
+        theta: wd.filter((r, i) => ind8[i]),
+        name: "> 35 mph",
+        marker: { color: "d53e4f" },
+        type: "barpolar"
+    }, {
+        r: ws.filter((r, i) => ind7[i]),
+        theta: wd.filter((r, i) => ind7[i]),
+        name: "30-35 mph",
+        marker: { color: "f46d43" },
+        type: "barpolar"
+    }, {
+        r: ws.filter((r, i) => ind6[i]),
+        theta: wd.filter((r, i) => ind6[i]),
+        name: "25-30 mph",
+        marker: { color: "fdae61" },
+        type: "barpolar"
+    }, {
         r: ws.filter((r, i) => ind5[i]),
         theta: wd.filter((r, i) => ind5[i]),
-        name: "> 20 mph",
-        marker: { color: "d7191c" },
+        name: "20-25 mph",
+        marker: { color: "fee08b" },
         type: "barpolar"
     }, {
         r: ws.filter((r, i) => ind4[i]),
         theta: wd.filter((r, i) => ind4[i]),
         name: "15-20 mph",
-        marker: { color: "#fdae61" },
+        marker: { color: "#e6f598" },
         type: "barpolar"
     }, {
         r: ws.filter((r, i) => ind3[i]),
         theta: wd.filter((r, i) => ind3[i]),
         name: "10-15 mph",
-        marker: { color: "#ffffbf" },
+        marker: { color: "#abdda4" },
         type: "barpolar"
     }, {
         r: ws.filter((r, i) => ind2[i]),
         theta: wd.filter((r, i) => ind2[i]),
         name: "5-10 mph",
-        marker: { color: "#abdda4" },
+        marker: { color: "#66c2a5" },
         type: "barpolar"
     }, {
         r: ws.filter((r, i) => ind1[i]),
         theta: wd.filter((r, i) => ind1[i]),
         name: "<5 mph",
-        marker: { color: "#2b83ba" },
+        marker: { color: "#3288bd" },
         type: "barpolar"
     }]
 
     var layout = {
-        title: "Logan Peak Wind Speed (Past 48 Hours)",        
+        title: "Logan Peak Wind Speed (Past 48 Hours)",
         font: { size: 12 },
         legend: { font: { size: 12 } },
         polar: {

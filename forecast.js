@@ -12,31 +12,31 @@ async function getForecast() {
 
 function plotForecast(d) {
 
-    var temp_dv = d.properties.temperature.values.map(x => x.value * 5 / 9 + 32); // C to F
+    var temp_dv = d.properties.temperature.values.map(x => x.value * 5 / 9 + 32).map(x => Math.round(x*100)/100); // C to F
     var temp_dt = d.properties.temperature.values.map(x => x.validTime);
     temp_dt = temp_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var dewpoint_dv = d.properties.dewpoint.values.map(x => x.value * 5 / 9 + 32); // C to F
+    var dewpoint_dv = d.properties.dewpoint.values.map(x => x.value * 5 / 9 + 32).map(x => Math.round(x*100)/100); // C to F
     var dewpoint_dt = d.properties.dewpoint.values.map(x => x.validTime);
     dewpoint_dt = dewpoint_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var windChill_dv = d.properties.windChill.values.map(x => x.value * 5 / 9 + 32); // C to F
+    var windChill_dv = d.properties.windChill.values.map(x => x.value * 5 / 9 + 32).map(x => Math.round(x*100)/100); // C to F
     var windChill_dt = d.properties.windChill.values.map(x => x.validTime);
     windChill_dt = windChill_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var rh_dv = d.properties.relativeHumidity.values.map(x => x.value);
+    var rh_dv = d.properties.relativeHumidity.values.map(x => x.value).map(x => Math.round(x*100)/100);
     var rh_dt = d.properties.relativeHumidity.values.map(x => x.validTime);
     rh_dt = rh_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var wind_dv = d.properties.windSpeed.values.map(x => x.value * 0.621371); // km/h to mph
+    var wind_dv = d.properties.windSpeed.values.map(x => x.value * 0.621371).map(x => Math.round(x*100)/100); // km/h to mph
     var wind_dt = d.properties.windSpeed.values.map(x => x.validTime);
     wind_dt = wind_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var windDirection_dv = d.properties.windDirection.values.map(x => x.value);
+    var windDirection_dv = d.properties.windDirection.values.map(x => x.value).map(x => Math.round(x*100)/100);
     var windDirection_dt = d.properties.windDirection.values.map(x => x.validTime);
     windDirection_dt = windDirection_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var snow_dv = d.properties.snowfallAmount.values.map(x => x.value * 0.0393701); // mm to in
+    var snow_dv = d.properties.snowfallAmount.values.map(x => x.value * 0.0393701).map(x => Math.round(x*100)/100); // mm to in
     var snow_dt = d.properties.snowfallAmount.values.map(x => x.validTime);
     snow_dt = snow_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
@@ -48,7 +48,7 @@ function plotForecast(d) {
     // var rain_dt = d.properties.snowfallAmount.values.map(x => x.validTime);
     // rain_dt = rain_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var snowLevel_dv = d.properties.snowLevel.values.map(x => x.value * 3.28084); // m to ft
+    var snowLevel_dv = d.properties.snowLevel.values.map(x => x.value * 3.28084).map(x => Math.round(x*100)/100); // m to ft
     var snowLevel_dt = d.properties.snowLevel.values.map(x => x.validTime);
     snowLevel_dt = snowLevel_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
@@ -206,7 +206,11 @@ function plotForecast(d) {
             fontSize: 10,
             overlaying: 'y3',
             side: 'right',
-            linecolor: '121F1F'
+            linecolor: '121F1F',
+            range: [0, 360],
+            tickmode: 'linear',
+            tick0: 0,
+            dtick: 90,
         },
         yaxis5: {
             title: 'Accumulation<br>(in)',

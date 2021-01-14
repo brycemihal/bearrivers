@@ -116,7 +116,7 @@ function plotWindRose(d) {
     // console.log(data)
 
     var layout = {
-        width: 600,
+        // width: 800,
         title: "24 Hour Wind Speed",
         font: { size: 12 },
         legend: { font: { size: 12 } },
@@ -146,7 +146,7 @@ function plotWindRose(d) {
             },
             showarrow: false,
             align: 'center',
-            x: 0.1, //position in x domain
+            x: 0.15, //position in x domain
             y: -.5, //position in y domain
             xref: 'paper',
             yref: 'paper',
@@ -158,7 +158,7 @@ function plotWindRose(d) {
             },
             showarrow: false,
             align: 'center',
-            x: 1, //position in x domain
+            x: .9, //position in x domain
             y: -.5,  // position in y domain
             xref: 'paper',
             yref: 'paper',

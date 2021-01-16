@@ -1,30 +1,19 @@
 
-const cLinks = ['http://udottraffic.utah.gov/1_devices/RWIS%20US89%20@%20Logan%20Summit.jpg',
+var cLinks = ['http://udottraffic.utah.gov/1_devices/RWIS%20US89%20@%20Logan%20Summit.jpg',
     'http://udottraffic.utah.gov/1_devices/US-89-mp470.GIF',
     'http://udottraffic.utah.gov/1_devices/aux14585.jpeg',
     'http://udottraffic.utah.gov/1_devices/SR-101-MP-13.gif']
 
-const linkNames = ['Logan Canyon Summit', 'Logan Canyon - Right Hand Fork', 'Sardine Canyon Summit', 'Blask Smith Fork - Left Hand']
+var linkNames = ['Logan Canyon Summit', 'Logan Canyon - Right Hand Fork', 'Sardine Canyon Summit', 'Blask Smith Fork - Left Hand']
 
-const delayT = [3000, 9000, 3000, 9000]
+document.getElementById('cName0').innerHTML = linkNames[0]
+document.getElementById('cImage0').src = cLinks[0];
 
-var i = 0;
+document.getElementById('cName1').innerHTML = linkNames[1]
+document.getElementById('cImage1').src = cLinks[1];
 
-function loopCameras() {
-    // initial state
-    document.getElementById('cName').innerHTML = linkNames[i]
-    document.getElementById('cImage').src = cLinks[i];
+document.getElementById('cName2').innerHTML = linkNames[2]
+document.getElementById('cImage2').src = cLinks[2]
 
-    // update image after delay
-    setTimeout(function () {
-        document.getElementById('cName').innerHTML = linkNames[i]
-        document.getElementById('cImage').src = cLinks[i];
-        i++;
-        if (i > 3) { // reset i
-            i = 0;
-        }
-        loopCameras();
-    }, delayT[i])
-}
-
-loopCameras();                                  
+document.getElementById('cName3').innerHTML = linkNames[3]
+document.getElementById('cImage3').src = cLinks[3];

@@ -1,6 +1,10 @@
 async function getForecast() {
     var url = 'https://api.weather.gov/gridpoints/SLC/113,226';
+    // const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    // url = (proxyurl + url);
     const response = await fetch(url, {
+        "method": "Get",
+        "User-Agent": "https://brycemihal.github.io/bearrivers/ (bryce.mihalevich@gmail.com)"
     });
 
     const data = await response.json();
@@ -39,6 +43,9 @@ function plotForecast(d) {
     var snow_dv = d.properties.snowfallAmount.values.map(x => x.value * 0.0393701).map(x => Math.round(x*100)/100); // mm to in
     var snow_dt = d.properties.snowfallAmount.values.map(x => x.validTime);
     snow_dt = snow_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
+
+    // const cumulativeSum = (sum => value => sum += value)(0);
+    // snow_dv = snow_dv.map(cumulativeSum);
 
     // var ice_dv = d.properties.iceAccumulation.values.map(x => x.value);
     // var ice_dt = d.properties.iceAccumulation.values.map(x => x.validTime);

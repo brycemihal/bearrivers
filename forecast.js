@@ -44,8 +44,8 @@ function plotForecast(d) {
     var snow_dt = d.properties.snowfallAmount.values.map(x => x.validTime);
     snow_dt = snow_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    // const cumulativeSum = (sum => value => sum += value)(0);
-    // snow_dv = snow_dv.map(cumulativeSum);
+    const cumulativeSum = (sum => value => sum += value)(0);
+    snow_dv = snow_dv.map(cumulativeSum);
 
     // var ice_dv = d.properties.iceAccumulation.values.map(x => x.value);
     // var ice_dt = d.properties.iceAccumulation.values.map(x => x.validTime);

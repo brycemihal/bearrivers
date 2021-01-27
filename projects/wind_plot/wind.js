@@ -26,7 +26,7 @@ function plotWindRose(d) {
         wd = wd.map(x => x * 15);
 
         // bracket by wind speed
-        var ws = d.STATION[0].OBSERVATIONS.wind_speed_set_1.map(x => x * 2.23694); // mph
+        var ws = d.STATION[j].OBSERVATIONS.wind_speed_set_1.map(x => x * 2.23694); // mph
 
         var ind1 = ws.map(x => x <= 5);
         var ind2 = ws.map(x => x > 5 && x <= 10);
@@ -192,7 +192,7 @@ function formatDate(date) {
 }
 
 // get date range
-var numDays = 2; // number of days to plot
+var numDays = 1; // number of days to plot
 var d = new Date();
 var endDate = new Date(d);
 var startDate = new Date(d);
@@ -208,7 +208,7 @@ startStr = formatDate(startDate)
 // var key = 'demotoken';
 var k = 'd365a819ce5d418f';
 var meso_sites = ['LGP', 'TWDFC'];
-
+// var meso_sites = ['TWDFC', 'LGP'];
 getSynopticData(meso_sites, startStr, endStr, k)
     .catch(function () {
         console.error(error); // catch any errors            

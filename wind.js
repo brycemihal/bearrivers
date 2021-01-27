@@ -26,7 +26,7 @@ function plotWindRose(d) {
         wd = wd.map(x => x * 15);
 
         // bracket by wind speed
-        var ws = d.STATION[0].OBSERVATIONS.wind_speed_set_1.map(x => x * 2.23694); // mph
+        var ws = d.STATION[j].OBSERVATIONS.wind_speed_set_1.map(x => x * 2.23694); // mph
 
         var ind1 = ws.map(x => x <= 5);
         var ind2 = ws.map(x => x > 5 && x <= 10);

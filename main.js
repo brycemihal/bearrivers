@@ -107,7 +107,7 @@ function plotSnowDepth(d, sensor_var, param) {
         for (var j = 0; j < n; j++) {
             t.push(d.STATION[i].NAME);
 
-            if (ydata[j] > 60)
+            if (ydata[j] > 100)
                 ydata[j] = NaN;
             else if (ydata[j] == 0)
                 ydata[j] = NaN;

@@ -15,9 +15,11 @@ function plotWindRose(d) {
 
 
     var data = [];
-    var sp = ['polar', 'polar2'];
-    var sl = [true, false];
-    var xa = ['x', 'x2'];
+    var sp = ['polar','polar2','polar3','polar4','polar5','polar6'];
+    var sl = [false,false,false,false,false,false];
+    var xa = ['x', 'x2','x3','x4', 'x5','x6'];
+    var sname = ['Logan Peak','TW Daniels','Logan Summit','Franklin Basin','Tony Grove RS','Green Canyon'];
+
     for (j in d.STATION) {
 
         var wd = d.STATION[j].OBSERVATIONS.wind_direction_set_1;
@@ -37,6 +39,58 @@ function plotWindRose(d) {
         var ind7 = ws.map(x => x > 30 && x <= 35);
         var ind8 = ws.map(x => x > 35);
 
+        console.log(ind1.filter(Boolean).length)
+        console.log(ind2.filter(Boolean).length)
+        console.log(ind3.filter(Boolean).length)
+        console.log(ind4.filter(Boolean).length)
+        console.log(ind5.filter(Boolean).length)
+        console.log(ind6.filter(Boolean).length)
+        console.log(ind7.filter(Boolean).length)
+        console.log(ind8.filter(Boolean).length)
+        
+        var t1 = [];
+        var t2 = [];
+        var t3 = [];
+        var t4 = [];
+        var t5 = [];
+        var t6 = [];
+        var t7 = [];
+        var t8 = [];
+
+        for (var i = 0; i < ind1.filter(Boolean).length; i++) {
+            t1.push(sname[j]);
+        }
+        for (var i = 0; i < ind2.filter(Boolean).length; i++) {
+            t2.push(sname[j]);
+        }
+        for (var i = 0; i < ind3.filter(Boolean).length; i++) {
+            t3.push(sname[j]);
+        }
+        for (var i = 0; i < ind4.filter(Boolean).length; i++) {
+            t4.push(sname[j]);
+        }
+        for (var i = 0; i < ind5.filter(Boolean).length; i++) {
+            t5.push(sname[j]);
+        }
+        for (var i = 0; i < ind6.filter(Boolean).length; i++) {
+            t6.push(sname[j]);
+        }
+        for (var i = 0; i < ind7.filter(Boolean).length; i++) {
+            t7.push(sname[j]);
+        }
+        for (var i = 0; i < ind8.filter(Boolean).length; i++) {
+            t8.push(sname[j]);
+        }
+        
+        console.log(t1)
+        console.log(t2)
+        console.log(t3)
+        console.log(t4)
+        console.log(t5)
+        console.log(t6)
+        console.log(t7)
+        console.log(t8)    
+
         var newData = [{
             r: ws.filter((r, i) => ind8[i]),
             theta: wd.filter((r, i) => ind8[i]),
@@ -46,6 +100,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+                '%{r}<br>' +
+                '%{theta}',
+            text: t8,
         }, {
             r: ws.filter((r, i) => ind7[i]),
             theta: wd.filter((r, i) => ind7[i]),
@@ -55,6 +113,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t7,
         }, {
             r: ws.filter((r, i) => ind6[i]),
             theta: wd.filter((r, i) => ind6[i]),
@@ -64,6 +126,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t6,
         }, {
             r: ws.filter((r, i) => ind5[i]),
             theta: wd.filter((r, i) => ind5[i]),
@@ -73,6 +139,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t5,
         }, {
             r: ws.filter((r, i) => ind4[i]),
             theta: wd.filter((r, i) => ind4[i]),
@@ -82,6 +152,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t4,
         }, {
             r: ws.filter((r, i) => ind3[i]),
             theta: wd.filter((r, i) => ind3[i]),
@@ -91,6 +165,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t3,
         }, {
             r: ws.filter((r, i) => ind2[i]),
             theta: wd.filter((r, i) => ind2[i]),
@@ -100,6 +178,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t2,
         }, {
             r: ws.filter((r, i) => ind1[i]),
             theta: wd.filter((r, i) => ind1[i]),
@@ -109,6 +191,10 @@ function plotWindRose(d) {
             subplot: sp[j],
             showlegend: sl[j],
             xaxis: xa[j],
+            hovertemplate: '%{text}<br>' +
+            '%{r}<br>' +
+            '%{theta}',
+            text: t1,
         }]
 
         data = [...data, ...newData];
@@ -116,21 +202,28 @@ function plotWindRose(d) {
     // console.log(data)
 
     var layout = {
-        // width: 800,
+        width: 800,
+        height: 500,
         title: "24 Hour Wind Speed",
         font: { size: 12 },
         legend: { font: { size: 12 } },
 
         polar: {
-            domain: { x: [0, 0.42] },
+            domain: {
+                x: [0, 0.24],
+                y: [0, .4]
+            },
             bgcolor: '#F5F5F5',
             barmode: "overlay",
             bargap: 0,
             radialaxis: { visible: false, ticksuffix: "", angle: 0, dtick: 5 },
             angularaxis: { direction: "clockwise" }
         },
-        polar2: {            
-            domain: { x: [.50, .92] },
+        polar2: {
+            domain: {
+                x: [0.38, .62],
+                y: [0, .4]
+            },
             bgcolor: '#F5F5F5',
             barmode: "overlay",
             bargap: 0,
@@ -138,32 +231,80 @@ function plotWindRose(d) {
             angularaxis: { direction: "clockwise" },
             showlegend: false,
         },
-        annotations: [{
-            text: "Logan Peak",
-              font: {
-              size: 13,
-            //    color: 'green',
+        polar3: {
+            domain: {
+                x: [.76, 1],
+                y: [0, .4]
             },
-            showarrow: false,
-            align: 'center',
-            x: 0.15, //position in x domain
-            y: -.5, //position in y domain
-            xref: 'paper',
-            yref: 'paper',
-          },
-            {
-              text: "TW Daniels Experimental Forest",
-              font: {
-              size: 13,
+            bgcolor: '#F5F5F5',
+            barmode: "overlay",
+            bargap: 0,
+            radialaxis: { visible: false, ticksuffix: "", angle: 0, dtick: 5 },
+            angularaxis: { direction: "clockwise" },
+            showlegend: false,
+        },
+        polar4: {
+            domain: {
+                x: [0, 0.24],
+                y: [.6, 1]
             },
-            showarrow: false,
-            align: 'center',
-            x: .9, //position in x domain
-            y: -.5,  // position in y domain
-            xref: 'paper',
-            yref: 'paper',
-            }
-          ]        
+            bgcolor: '#F5F5F5',
+            barmode: "overlay",
+            bargap: 0,
+            radialaxis: { visible: false, ticksuffix: "", angle: 0, dtick: 5 },
+            angularaxis: { direction: "clockwise" },
+            showlegend: false,
+        },
+        polar5: {
+            domain: {
+                x: [0.38, .62],
+                y: [.6, 1]
+            },
+            bgcolor: '#F5F5F5',
+            barmode: "overlay",
+            bargap: 0,
+            radialaxis: { visible: false, ticksuffix: "", angle: 0, dtick: 5 },
+            angularaxis: { direction: "clockwise" },
+            showlegend: false,
+        },
+        polar6: {
+            domain: {
+                x: [.76, 1],
+                y: [0.6, 1]
+            },
+            bgcolor: '#F5F5F5',
+            barmode: "overlay",
+            bargap: 0,
+            radialaxis: { visible: false, ticksuffix: "", angle: 0, dtick: 5 },
+            angularaxis: { direction: "clockwise" },
+            showlegend: false,
+        },
+        // annotations: [{
+        //     text: "Logan Peak",
+        //     font: {
+        //         size: 13,
+        //         //    color: 'green',
+        //     },
+        //     showarrow: false,
+        //     align: 'center',
+        //     x: 0.15, //position in x domain
+        //     y: -.5, //position in y domain
+        //     xref: 'paper',
+        //     yref: 'paper',
+        // },
+        // {
+        //     text: "TW Daniels Experimental Forest",
+        //     font: {
+        //         size: 13,
+        //     },
+        //     showarrow: false,
+        //     align: 'center',
+        //     x: .9, //position in x domain
+        //     y: -.5,  // position in y domain
+        //     xref: 'paper',
+        //     yref: 'paper',
+        // }
+        // ]
     }
 
     Plotly.newPlot('wind_rose', data, layout)
@@ -207,7 +348,9 @@ startStr = formatDate(startDate)
 
 // var key = 'demotoken';
 var k = 'd365a819ce5d418f';
-var meso_sites = ['LGP', 'TWDFC'];
+// 'LGS', 'PSINK', 'FRRBC', 'UCLO6', 'TYGRC', 'TS303'
+
+var meso_sites = ['LGP','TWDFC','LGS','FRRBC','TYGRC','TS303'];
 
 getSynopticData(meso_sites, startStr, endStr, k)
     .catch(function () {

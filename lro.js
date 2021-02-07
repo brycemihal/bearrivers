@@ -4,7 +4,7 @@ async function getSynopticData(meso_sites, startStr, endStr, key) {
     const data = await response.json();
 
     var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);
-    console.log(sensor_var)
+    // console.log(sensor_var)
     plotSynopticData(data);
 }
 

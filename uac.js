@@ -29,9 +29,9 @@ async function getDangerRose(odri_url) {
     const resp = await fetch(odri_url, {
         method: 'GET',
     });
-    console.log(resp.url)
+    
     const d2 = await resp.blob();
-    console.log(d2)
+    
     var objectURL = URL.createObjectURL(d2)
     document.getElementById('danger_rose').src = objectURL;
 }

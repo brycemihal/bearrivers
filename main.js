@@ -5,7 +5,7 @@ async function getSynopticData(meso_sites, startStr, endStr, k) {
     const data = await response.json();
 
     var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);
-    console.log(data)
+    // console.log(data)
     //  Plot Air Temperutre Data
     plotAirTemp(data, sensor_var, 1);
     plotSnowDepth(data, sensor_var, 2);
@@ -172,7 +172,7 @@ function plotSnowDensity(d) {
     // var hexColor = ['#003f5c', '#bc5090'];
 
     for (i in d.STATION) {
-        console.log([d.STATION[i].NAME])
+        // console.log([d.STATION[i].NAME])
         if (!('snow_water_equiv_set_1' in d.STATION[i].OBSERVATIONS)) {
             continue;
         }
@@ -246,7 +246,7 @@ function plotSnowDensity(d) {
         showlegend: false,
         dragmode: 'pan',
     };
-    console.log(plotData)
+    // console.log(plotData)
     Plotly.newPlot('snow_density', plotData, layout, { scrollZoom: false });
 }
 

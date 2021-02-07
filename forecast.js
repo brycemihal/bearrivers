@@ -8,7 +8,6 @@ async function getForecast() {
     });
 
     const data = await response.json();
-    console.log(data)
 
     plotForecast(data)
 

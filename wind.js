@@ -49,7 +49,7 @@ function plotWindRose(d) {
         var t8 = [];
 
         for (var i = 0; i < ind1.filter(Boolean).length; i++) {
-            t1.push(sname[j]);
+            t1.push(sname);
         }
         for (var i = 0; i < ind2.filter(Boolean).length; i++) {
             t2.push(sname);

@@ -5,7 +5,6 @@ async function getSynopticData(meso_sites, startStr, endStr, k) {
     const data = await response.json();
 
     // var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);
-    console.log(data)
 
     plotWindRose(data);
 
@@ -18,9 +17,10 @@ function plotWindRose(d) {
     var sp = ['polar','polar2','polar3','polar4','polar5','polar6'];
     var sl = [false,false,false,false,false,false];
     var xa = ['x', 'x2','x3','x4', 'x5','x6'];
-    var sname = ['Logan Peak','TW Daniels','Logan Summit','Franklin Basin','Tony Grove RS','Green Canyon'];
+    // var sname = ['Logan Peak','TW Daniels','Logan Summit','Franklin Basin','Tony Grove RS','Green Canyon'];
 
     for (j in d.STATION) {
+        var sname = d.STATION[j].NAME
 
         var wd = d.STATION[j].OBSERVATIONS.wind_direction_set_1;
         wd = wd.map(x => x / 15);// round wind direction by 15
@@ -38,15 +38,6 @@ function plotWindRose(d) {
         var ind6 = ws.map(x => x > 25 && x <= 30);
         var ind7 = ws.map(x => x > 30 && x <= 35);
         var ind8 = ws.map(x => x > 35);
-
-        console.log(ind1.filter(Boolean).length)
-        console.log(ind2.filter(Boolean).length)
-        console.log(ind3.filter(Boolean).length)
-        console.log(ind4.filter(Boolean).length)
-        console.log(ind5.filter(Boolean).length)
-        console.log(ind6.filter(Boolean).length)
-        console.log(ind7.filter(Boolean).length)
-        console.log(ind8.filter(Boolean).length)
         
         var t1 = [];
         var t2 = [];
@@ -61,35 +52,26 @@ function plotWindRose(d) {
             t1.push(sname[j]);
         }
         for (var i = 0; i < ind2.filter(Boolean).length; i++) {
-            t2.push(sname[j]);
+            t2.push(sname);
         }
         for (var i = 0; i < ind3.filter(Boolean).length; i++) {
-            t3.push(sname[j]);
+            t3.push(sname);
         }
         for (var i = 0; i < ind4.filter(Boolean).length; i++) {
-            t4.push(sname[j]);
+            t4.push(sname);
         }
         for (var i = 0; i < ind5.filter(Boolean).length; i++) {
-            t5.push(sname[j]);
+            t5.push(sname);
         }
         for (var i = 0; i < ind6.filter(Boolean).length; i++) {
-            t6.push(sname[j]);
+            t6.push(sname);
         }
         for (var i = 0; i < ind7.filter(Boolean).length; i++) {
-            t7.push(sname[j]);
+            t7.push(sname);
         }
         for (var i = 0; i < ind8.filter(Boolean).length; i++) {
-            t8.push(sname[j]);
-        }
-        
-        console.log(t1)
-        console.log(t2)
-        console.log(t3)
-        console.log(t4)
-        console.log(t5)
-        console.log(t6)
-        console.log(t7)
-        console.log(t8)    
+            t8.push(sname);
+        }   
 
         var newData = [{
             r: ws.filter((r, i) => ind8[i]),

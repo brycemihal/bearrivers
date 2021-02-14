@@ -17,9 +17,10 @@ function plotWindRose(d) {
     var sp = ['polar','polar2','polar3','polar4','polar5','polar6'];
     var sl = [false,false,false,false,false,false];
     var xa = ['x', 'x2','x3','x4', 'x5','x6'];
-    var sname = ['Logan Peak','TW Daniels','Logan Summit','Franklin Basin','Tony Grove RS','Green Canyon'];
+    // var sname = ['Logan Peak','TW Daniels','Logan Summit','Franklin Basin','Tony Grove RS','Green Canyon'];
 
     for (j in d.STATION) {
+        var sname = d.STATION[j].NAME
 
         var wd = d.STATION[j].OBSERVATIONS.wind_direction_set_1;
         wd = wd.map(x => x / 15);// round wind direction by 15
@@ -51,25 +52,25 @@ function plotWindRose(d) {
             t1.push(sname[j]);
         }
         for (var i = 0; i < ind2.filter(Boolean).length; i++) {
-            t2.push(sname[j]);
+            t2.push(sname);
         }
         for (var i = 0; i < ind3.filter(Boolean).length; i++) {
-            t3.push(sname[j]);
+            t3.push(sname);
         }
         for (var i = 0; i < ind4.filter(Boolean).length; i++) {
-            t4.push(sname[j]);
+            t4.push(sname);
         }
         for (var i = 0; i < ind5.filter(Boolean).length; i++) {
-            t5.push(sname[j]);
+            t5.push(sname);
         }
         for (var i = 0; i < ind6.filter(Boolean).length; i++) {
-            t6.push(sname[j]);
+            t6.push(sname);
         }
         for (var i = 0; i < ind7.filter(Boolean).length; i++) {
-            t7.push(sname[j]);
+            t7.push(sname);
         }
         for (var i = 0; i < ind8.filter(Boolean).length; i++) {
-            t8.push(sname[j]);
+            t8.push(sname);
         }   
 
         var newData = [{

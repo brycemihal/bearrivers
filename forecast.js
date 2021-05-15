@@ -8,22 +8,22 @@ async function getForecast() {
     });
 
     const data = await response.json();
-
+    console.log(data)
     plotForecast(data)
 
 }
 
 function plotForecast(d) {
 
-    var temp_dv = d.properties.temperature.values.map(x => x.value * 5 / 9 + 32).map(x => Math.round(x*100)/100); // C to F
+    var temp_dv = d.properties.temperature.values.map(x => x.value * 9 / 5 + 32).map(x => Math.round(x*100)/100); // C to F
     var temp_dt = d.properties.temperature.values.map(x => x.validTime);
     temp_dt = temp_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var dewpoint_dv = d.properties.dewpoint.values.map(x => x.value * 5 / 9 + 32).map(x => Math.round(x*100)/100); // C to F
+    var dewpoint_dv = d.properties.dewpoint.values.map(x => x.value * 9 / 5 + 32).map(x => Math.round(x*100)/100); // C to F
     var dewpoint_dt = d.properties.dewpoint.values.map(x => x.validTime);
     dewpoint_dt = dewpoint_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    var windChill_dv = d.properties.windChill.values.map(x => x.value * 5 / 9 + 32).map(x => Math.round(x*100)/100); // C to F
+    var windChill_dv = d.properties.windChill.values.map(x => x.value * 9 / 5 + 32).map(x => Math.round(x*100)/100); // C to F
     var windChill_dt = d.properties.windChill.values.map(x => x.validTime);
     windChill_dt = windChill_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
@@ -42,17 +42,16 @@ function plotForecast(d) {
     var snow_dv = d.properties.snowfallAmount.values.map(x => x.value * 0.0393701).map(x => Math.round(x*100)/100); // mm to in
     var snow_dt = d.properties.snowfallAmount.values.map(x => x.validTime);
     snow_dt = snow_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
-
     const cumulativeSum = (sum => value => sum += value)(0);
     snow_dv = snow_dv.map(cumulativeSum);
 
-    // var ice_dv = d.properties.iceAccumulation.values.map(x => x.value);
-    // var ice_dt = d.properties.iceAccumulation.values.map(x => x.validTime);
-    // ice_dt = ice_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
+    var skycover_dv = d.properties.skyCover.values.map(x => x.value);
+    var skycover_dt = d.properties.skyCover.values.map(x => x.validTime);
+    skycover_dt = skycover_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
-    // var rain_dv = d.properties.snowfallAmount.values.map(x => x.value);
-    // var rain_dt = d.properties.snowfallAmount.values.map(x => x.validTime);
-    // rain_dt = rain_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
+    var rain_dv = d.properties.quantitativePrecipitation.values.map(x => x.value * 0.0393701).map(x => Math.round(x*100)/100); // mm to in
+    var rain_dt = d.properties.quantitativePrecipitation.values.map(x => x.validTime);
+    rain_dt = rain_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
     var snowLevel_dv = d.properties.snowLevel.values.map(x => x.value * 3.28084).map(x => Math.round(x*100)/100); // m to ft
     var snowLevel_dt = d.properties.snowLevel.values.map(x => x.validTime);
@@ -150,7 +149,25 @@ function plotForecast(d) {
             width: 1
         }
     }, {
-        name: 'Snow Accumulation',
+        name: 'Rain',
+        showlegend: true,
+        legendgroup: 'g4',
+        xaxis: "x",
+        yaxis: "y5",
+        x: rain_dt,
+        y: rain_dv,
+        type: "scatter",
+        mode: "lines+markers",
+        marker: {
+            size: 3,
+            color: 'rgb(34,139,34)',
+        },
+        line: {
+            width: 1,
+            color: 'rgb(34,139,34)',
+        }
+    },{
+        name: 'Snow',
         showlegend: true,
         legendgroup: 'g4',
         xaxis: "x",
@@ -160,26 +177,33 @@ function plotForecast(d) {
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: 'rgb(148,0,211)',
         },
         line: {
-            width: 1
+            width: 1,
+            color: 'rgb(148,0,211)',
         }
     }, {
-        name: 'Snow Level',
+        // name: 'Snow Level',
+        name: 'Sky Cover',
         showlegend: true,
         legendgroup: 'g4',
         xaxis: "x",
         yaxis: "y6",
-        x: snowLevel_dt,
-        y: snowLevel_dv,
+        // x: snowLevel_dt,
+        // y: snowLevel_dv,
+        x: skycover_dt,
+        y: skycover_dv,
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: 'rgb(169,169,169)',
         },
         line: {
-            width: 1
+            width: 1,
+            color: 'rgb(169,169,169)',
         }
     }];
 
@@ -219,14 +243,16 @@ function plotForecast(d) {
             dtick: 90,
         },
         yaxis5: {
-            title: 'Accumulation<br>(in)',
+            title: 'Precipitation<br>(in)',
             fontSize: 10,
             linecolor: '121F1F',
         },
         yaxis6: {
-            title: 'Snow Level<br>(ft)',
+            // title: 'Snow Level<br>(ft)',
             overlaying: 'y5',
             side: 'right',
+            title: 'Sky Cover<br>(%)',
+            range: [0, 100],
         },
         grid: {
             rows: 4,

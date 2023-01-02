@@ -1,5 +1,7 @@
 async function getForecast() {
-    var url = 'https://api.weather.gov/gridpoints/SLC/113,226';
+    var url = 'https://api.weather.gov/gridpoints/SLC/106,164';
+    // tony grove grid 113,226
+    // snowbird grid 106,164
     // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     // url = (proxyurl + url);
     const response = await fetch(url, {

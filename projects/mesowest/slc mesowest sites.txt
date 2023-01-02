@@ -1,0 +1,17 @@
+slc mesowest sites
+IFF
+CLN
+
+
+snotels
+Snobird
+atwater = ATH20
+thaynes canyon = PCT
+brighton = BRIU1
+mill d north = MLDU1
+parleys summit = PSUU1
+timp divide = BUNUT
+lookout peak = LOPU1
+ben lemond peak = BLPU1
+farmington =FARU1
+canyons daybreak = CDYBK

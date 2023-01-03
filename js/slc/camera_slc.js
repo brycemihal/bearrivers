@@ -16,6 +16,8 @@ var lcc_cam_links = ['https://udottraffic.utah.gov/1_devices/aux16607.jpeg',
     'https://udottraffic.utah.gov/1_devices/aux17228.jpeg',
     'https://udottraffic.utah.gov/1_devices/aux17226.jpeg']
 
+var i80_cam_links = ['http://udottraffic.utah.gov/1_devices/aux166.jpeg']
+
 document.getElementById('bcc_cam0').src = bcc_cam_links[0];
 document.getElementById('bcc_cam1').src = bcc_cam_links[1];
 document.getElementById('bcc_cam2').src = bcc_cam_links[2];
@@ -34,6 +36,7 @@ document.getElementById('lcc_cam6').src = lcc_cam_links[6];
 document.getElementById('lcc_cam7').src = lcc_cam_links[7];
 document.getElementById('lcc_cam8').src = lcc_cam_links[8];
 
+document.getElementById('i80_cam0').src = i80_cam_links[0];
 
 // LCC
 // WASATCH BLVD @ LITTLE COTTONWOOD
@@ -70,3 +73,7 @@ document.getElementById('lcc_cam8').src = lcc_cam_links[8];
 // https://udottraffic.utah.gov/1_devices/aux18040.jpeg
 // Big Cottonwood @ Brighton Circle MP 16
 // http://udottraffic.utah.gov/1_devices/SR-190%20MP%2015%2095%20SL.gif
+
+// Parleys
+// I-80 @ Parleys Summit
+// http://udottraffic.utah.gov/1_devices/aux166.jpeg

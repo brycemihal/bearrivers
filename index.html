@@ -2,244 +2,246 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.104.2">
+  <title>Bruce's Snow Weather Insights</title>
 
-    <title>Logan Weather</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/"> -->
 
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
 
 
+  <!-- Custom styles for this template -->
+  <link href="css/navbar.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <div id="wrapper">
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+<body>
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+  <main>
+    <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark"
+          aria-controls="offcanvasNavbarDark">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Bear River Range Snow Weather</a>
+        <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+          id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+          <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas Test</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div> -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+
+              <!--  -->
+              <hr class="sidebar-divider my-0">
+
+              <!-- Nav Item - Dashboard -->
+              <li class="nav-item active">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Home</span></a>
-            </li>
+                  <i class="fas fa-fw fa-tachometer-alt"></i>
+                  <span>Home</span></a>
+              </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Locations
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Locations List</span>
+              <!-- Nav Item - Pages dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Locations
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Ranges:</h6>
-                        <a class="collapse-item" href="index_slc.html">Wasatch</a>
-                        <a class="collapse-item" href="index.html">Bear Rivers</a>
-                        <!-- <a class="collapse-item" href="cards.html">Tetons</a>
-                        <a class="collapse-item" href="cards.html">La Sals</a> -->
-                    </div>
-                </div>
-            </li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Bear Rivers</a></li>
+                  <li><a class="dropdown-item" href="index_slc.html">Wasatch</a></li>
+                  <li><a class="dropdown-item" href="#">Tetons</a></li>
+                  <li><a class="dropdown-item" href="#">La Sals</a></li>
+                </ul>
+              </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Additional Links
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Avalanch Forecasts:</h6>
-                        <a class="collapse-item" href="https://utahavalanchecenter.com/" target="_blank">Utah Avalanche Center</a>
-                        <a class="collapse-item" href="https://avalanche.state.co.us/" target="_blank">Colorado Avalanche Information Center</a>                    
-
-                        <h6 class="collapse-header">Forecast Websites:</h6>
-                        <a class="collapse-item" href="https://spotwx.com/" target="_blank">Spot WX</a>                    
-                        <a class="collapse-item" href="https://weather.utah.edu/index.php?&t=naefs&d=PL&r=CLN" target="_blank">UofU Plumes</a>                    
-                        <a class="collapse-item" href="https://www.pivotalweather.com/model.php?m=gfs&p=snku_acc&rh=2019092612&fh=78&r=us_nw&dpdt=&mc=" target="_blank">Pivital Weather</a>                    
-                        <!-- <a class="collapse-item" href="https://spotwx.com/" target="_blank">Spot WX</a>                     -->
-                        
-                        <h6 class="collapse-header">Data Websites:</h6>
-                        <a class="collapse-item" href="https://mesowest.utah.edu/" target="_blank">Mesowest</a>                    
-                        
-                        <h6 class="collapse-header">Weather Blogs:</h6>
-                        <a class="collapse-item" href="https://wasatchweatherweenies.blogspot.com/" target="_blank">Wasatch Weather Weenies</a>                    
-                        <a class="collapse-item" href="https://utahskiweather.blogspot.com/" target="_blank">Utah Ski Weather</a>                    
-
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-        </ul>
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <div class="topbar-divider d-none d-sm-block"></div>
-                    </ul>
-
-                </nav>
-
-                <div class="container-fluid">
-                    <div class="row h-50">
-                        <div class="col-xl-6 col-md-6 h-50">
-                            <div class="card shadow mb-4">
-                                <h5 class="card-header">Featured</h5>
-                                <div class="card-body">
-                                    <div class="responsive-plot" id="air_temp_set_1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 h-50">
-                            <div class="card shadow mb-4">
-                                <h5 class="card-header">Featured</h5>
-                                <div class="card-body">
-                                    <div class="responsive-plot" id="snow_depth_set_1">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- forecast -->
-                    <div class="row">
-                        <div class="col-xl-12 mb-4">
-                            <div class="card border-left-info shadow h-100">
-                                <h5 class="card-header">Forecast</h5>
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="responsive-plot" id="forecast_plot_logan">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cameras Content Row -->
-                    <div class="row">
-                        <!-- Camera 1 -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <img class="card-img-top" id="cImage0" alt="Card image cap">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Camera 2 -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <img class="card-img-top" id="cImage1" alt="Card image cap">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Camera 3 -->
-                        <div class="col-xl-4 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <img class="card-img-top" id="cImage2" alt="Card image cap">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+              <!-- Divider -->
+              <hr class="sidebar-divider">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Additional Links</a>
+                <ul class="dropdown-menu">
+                  <h6 class="dropdown-header">Avalanch Forecasts:</h6>
+                  <a class="dropdown-item" href="https://utahavalanchecenter.com/" target="_blank">Utah Avalanche Center</a>
+                  <a class="dropdown-item" href="https://avalanche.state.co.us/" target="_blank">Colorado Avalanche Information Center</a>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <h6 class="dropdown-header">Forecast Websites:</h6>
+                  <a class="dropdown-item" href="https://spotwx.com/" target="_blank">Spot WX</a>
+                  <a class="dropdown-item" href="https://weather.utah.edu/index.php?&t=naefs&d=PL&r=CLN" target="_blank">UofU Plumes</a>
+                  <a class="dropdown-item" href="https://www.pivotalweather.com/model.php?m=gfs&p=snku_acc&rh=2019092612&fh=78&r=us_nw&dpdt=&mc=" target="_blank">Pivital Weather</a>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <h6 class="dropdown-header">Data Websites:</h6>
+                  <a class="dropdown-item" href="https://mesowest.utah.edu/" target="_blank">Mesowest</a>      
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <h6 class="dropdown-header">Weather Blogs:</h6>
+                  <a class="dropdown-item" href="https://wasatchweatherweenies.blogspot.com/" target="_blank">Wasatch Weather Weenies</a>
+                  <a class="dropdown-item" href="https://utahskiweather.blogspot.com/" target="_blank">Utah Ski Weather</a>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
+    </nav>
 
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6 col-md-6">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Air Temperature</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="air_temp_set_1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Snow Depth</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="snow_depth_set_1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+          <!-- forecast -->
+          <div class="row">
+            <div class="col-xl-12 mb-4">
+              <div class="card border-left-info shadow h-100">
+                <h5 class="card-header">Forecast</h5>
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="responsive-plot" id="forecast_plot_logan">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <!-- Cameras Content Row -->
+          <div class="row">
+            <!-- Camera 1 -->
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <img class="card-img-top" id="cImage0" alt="Card image cap">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Camera 2 -->
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <img class="card-img-top" id="cImage1" alt="Card image cap">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Camera 3 -->
+            <div class="col-xl-4 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <img class="card-img-top" id="cImage2" alt="Card image cap">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
 
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- <script src="js/myPlotlyPlot.js" lang="text/javascript"></script> -->
-    <script src="js/logan/mesowest_logan_air.js" lang="text/javascript"></script>
-    <script src="js/logan/mesowest_logan_snow.js" lang="text/javascript"></script>
-    <script src="js/logan/camera_logan.js" lang="text/javascript"></script>
-    <script src="js/logan/forecast_logan.js" lang="text/javascript"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/logan/mesowest_logan_air.js" lang="text/javascript"></script>
+  <script src="js/logan/mesowest_logan_snow.js" lang="text/javascript"></script>
+  <script src="js/logan/camera_logan.js" lang="text/javascript"></script>
+  <script src="js/logan/forecast_logan.js" lang="text/javascript"></script>
 
 </body>
 

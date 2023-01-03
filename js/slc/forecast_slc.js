@@ -317,7 +317,7 @@ function plotForecast(d) {
 
     var config = { responsive: true }
     
-    Plotly.newPlot('forecast_plot_slc', data, layout, config)
+    Plotly.newPlot('forecast_plot', data, layout, config)
 
 }
 

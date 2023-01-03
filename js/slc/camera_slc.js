@@ -1,8 +1,8 @@
 
-var cLinks = ['https://udottraffic.utah.gov/1_devices/aux17227.jpeg',
-    'http://udottraffic.utah.gov/1_devices/US-89-mp470.GIF',
-    'http://udottraffic.utah.gov/1_devices/aux14585.jpeg',
-    'http://udottraffic.utah.gov/1_devices/SR-101-MP-13.gif']
+var cLinks = ['https://udottraffic.utah.gov/1_devices/aux14605.jpeg',
+    'https://udottraffic.utah.gov/1_devices/aux17227.jpeg',
+    'https://udottraffic.utah.gov/1_devices/aux17226.jpeg',
+    'https://udottraffic.utah.gov/1_devices/aux16215.jpeg']
 
 var linkNames = ['Logan Canyon Summit', 'Logan Canyon - Right Hand Fork', 'Sardine Canyon Summit', 'Blask Smith Fork - Left Hand']
 

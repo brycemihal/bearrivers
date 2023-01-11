@@ -7,10 +7,10 @@ async function getSynopticData(meso_sites, startStr, endStr, k) {
     var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);
     // console.log(data)
     //  Plot Air Temperutre Data
-    plotSnowDepth(data, sensor_var, 2);
+    plotAirTemp(data, sensor_var, 1);
 }
 
-function plotSnowDepth(d, sensor_var, param) {
+function plotAirTemp(d, sensor_var, param) {
 
     // Loop for meso sites
     var plotData = [];
@@ -18,36 +18,17 @@ function plotSnowDepth(d, sensor_var, param) {
 
     for (i in d.STATION) {
         var t = [];
-        var loc = [];
         var n = (d.STATION[i].OBSERVATIONS.date_time).length;
-        var ydata = d.STATION[i].OBSERVATIONS[sensor_var[param]].map(function (x) { return x * .0393701 });
-        ydata = ydata.map(function (x) { return Math.round(x) });
-
-        var ydataSTD = getStandardDeviation(ydata)
-        // var ydataSUM = ydata.reduce((a, b) => a + b, 0);
-        // var ydataAVG = (ydataSUM / ydata.length) || 0;
-
-        // console.log(ydata)
-
-        var ydataMIN = Math.min.apply(Math, ydata)
-        // console.log(ydataMIN)
-        // console.log(ydataMIN + (ydataSTD*2));
 
         // create array for site name
         for (var j = 0; j < n; j++) {
             t.push(d.STATION[i].NAME);
-
-            if (ydata[j] > 150) 
-            // if (ydata[j] > (ydataMIN + (ydataSTD * 2))) // filter data by STD
-                ydata[j] = NaN;
-            else if (ydata[j] == 0)
-                ydata[j] = NaN;
         }
 
         // combine site data into array
         plotData[i] = {
             x: d.STATION[i].OBSERVATIONS.date_time,
-            y: ydata, // mm to inches
+            y: d.STATION[i].OBSERVATIONS[sensor_var[param]],
             type: "scatter",
             mode: "lines+markers",
             name: "",
@@ -65,7 +46,6 @@ function plotSnowDepth(d, sensor_var, param) {
             }
         }
     }
-
     var layout = {
         hovermode: 'closest',
         xaxis: {
@@ -74,7 +54,7 @@ function plotSnowDepth(d, sensor_var, param) {
             mirror: false
         },
         yaxis: {
-            title: 'Snow Depth (in)',
+            title: 'Air Temp (C)',
             linecolor: '#121F1F'
         },
         margin: {
@@ -90,7 +70,7 @@ function plotSnowDepth(d, sensor_var, param) {
 
     var config = { responsive: true }
 
-    Plotly.newPlot('snow_depth_set_1', plotData, layout, config);
+    Plotly.newPlot('air_temp_set_1', plotData, layout, config);
 }
 
 // function to convert to yyyy-mm-dd ////////////////////////////////////////
@@ -136,9 +116,9 @@ startStr = formatDate(startDate)
 
 var k = 'd365a819ce5d418f';
 // var meso_sites = ['TGLU1', 'UDDU1', 'FBNI1', 'LGS', 'TPKU1', 'KDNU1'];
-var meso_sites = ['CLN','MLDU1','PSUU1','BRIU1','PCT','CDYBK','LOPU1','FARU1','BUNUT','BLPU1']
-
+var meso_sites = ['CLN', 'MLDU1', 'PSUU1', 'BRIU1', 'PCT', 'CDYBK', 'LOPU1', 'FARU1', 'BUNUT', 'BLPU1']
 getSynopticData(meso_sites, startStr, endStr, k)
     .catch(function () {
         console.error(error); // catch any errors            
     });
+

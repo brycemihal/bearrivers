@@ -27,18 +27,18 @@ function plotSnowDepth(d, sensor_var, param) {
         // var ydataSUM = ydata.reduce((a, b) => a + b, 0);
         // var ydataAVG = (ydataSUM / ydata.length) || 0;
 
-        // console.log(ydata)
+        console.log(ydata)
 
         var ydataMIN = Math.min.apply(Math, ydata)
-        // console.log(ydataMIN)
-        // console.log(ydataMIN + (ydataSTD*2));
+        console.log(ydataMIN)
+        console.log(ydataMIN + (ydataSTD*2));
 
         // create array for site name
         for (var j = 0; j < n; j++) {
             t.push(d.STATION[i].NAME);
 
-            if (ydata[j] > 150) 
-            // if (ydata[j] > (ydataMIN + (ydataSTD * 2))) // filter data by STD
+            // if (ydata[j] > 130)
+            if (ydata[j] > (ydataMIN + (ydataSTD * 2)))
                 ydata[j] = NaN;
             else if (ydata[j] == 0)
                 ydata[j] = NaN;
@@ -136,7 +136,7 @@ startStr = formatDate(startDate)
 
 var k = 'd365a819ce5d418f';
 // var meso_sites = ['TGLU1', 'UDDU1', 'FBNI1', 'LGS', 'TPKU1', 'KDNU1'];
-var meso_sites = ['CLN','MLDU1','PSUU1','BRIU1','PCT','CDYBK','LOPU1','FARU1','BUNUT','BLPU1']
+var meso_sites = ['CLN', 'MLDU1', 'PSUU1', 'BRIU1', 'PCT', 'CDYBK', 'LOPU1', 'FARU1', 'BUNUT', 'BLPU1']
 
 getSynopticData(meso_sites, startStr, endStr, k)
     .catch(function () {

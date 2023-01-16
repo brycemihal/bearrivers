@@ -216,24 +216,24 @@ function plotForecast(d) {
             mirror: false
         },
         yaxis: {
-            title: 'Temperature<br>(F)',
-            fontSize: 10,
+            title: 'Temperature (F)', //'Temperature<br>(F)',
+            fontsize: 6,
             linecolor: '#121F1F'
             // legend:
         },
         yaxis2: {
-            title: 'Relative Humidity<br>(%)',
-            fontSize: 10,
+            title: 'Relative Humidity (%)', // 'Relative Humidity<br>(%)',
+            fontsize: 6,
             linecolor: '121F1F'
         },
         yaxis3: {
-            title: 'Wind Speed<br>(mph)',
-            fontSize: 10,
+            title: 'Wind Speed (mph)', //'Wind Speed<br>(mph)',
+            fontsize: 6,
             linecolor: '121F1F'
         },
         yaxis4: {
-            title: 'Wind Direction<br>(degrees)',
-            fontSize: 10,
+            title: 'Wind Direction (degrees)', //'Wind Direction<br>(degrees)',
+            fontsize: 6,
             overlaying: 'y3',
             side: 'right',
             linecolor: '121F1F',
@@ -243,8 +243,8 @@ function plotForecast(d) {
             dtick: 90,
         },
         yaxis5: {
-            title: 'Precipitation<br>(in)',
-            fontSize: 10,
+            title: 'Precipitation (in)', //'Precipitation<br>(in)',
+            fontsize: 6,
             linecolor: '121F1F',
         },
         yaxis6: {
@@ -261,10 +261,10 @@ function plotForecast(d) {
             roworder: 'top to bottom'
         },
         margin: {
-            l: 100,
-            r: 100,
-            b: 70,
-            t: 50,
+            l: 50,
+            r: 10,
+            b: 50,
+            t: 10,
             pad: 4,
         },
         showlegend: false,

@@ -1,5 +1,5 @@
 async function getForecast() {
-    var url = 'https://api.weather.gov/gridpoints/RIW/36,142';
+    var url = 'https://api.weather.gov/gridpoints/RIW/38,144';
     // const proxyurl = "https://cors-anywhere.herokuapp.com/";
     // url = (proxyurl + url);
     const response = await fetch(url, {

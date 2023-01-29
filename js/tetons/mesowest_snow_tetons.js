@@ -136,7 +136,8 @@ startStr = formatDate(startDate)
 
 var k = 'd365a819ce5d418f';
 // var meso_sites = ['TGLU1', 'UDDU1', 'FBNI1', 'LGS', 'TPKU1', 'KDNU1'];
-var meso_sites = ['CLN', 'MLDU1', 'PSUU1', 'BRIU1', 'PCT', 'CDYBK', 'LOPU1', 'FARU1', 'BUNUT', 'BLPU1']
+// var meso_sites = ['CLN', 'MLDU1', 'PSUU1', 'BRIU1', 'PCT', 'CDYBK', 'LOPU1', 'FARU1', 'BUNUT', 'BLPU1']
+var meso_sites = ['PHBW4','M12WY','JHRV','JHB','SPMBT','GTHW4']
 
 getSynopticData(meso_sites, startStr, endStr, k)
     .catch(function () {

@@ -71,6 +71,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/navbar.css" rel="stylesheet">
+  <!-- <link href="css/cheatsheet.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -182,7 +183,7 @@
       <div id="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-6 col-md-6">
+            <div class="col-xl-4 col-md-5">
               <div class="card shadow mb-4">
                 <h5 class="card-header">Air Temperature</h5>
                 <div class="card-body">
@@ -191,7 +192,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-md-6">
+            <div class="col-xl-4 col-md-5">
               <div class="card shadow mb-4">
                 <h5 class="card-header">Snow Depth</h5>
                 <div class="card-body">
@@ -200,11 +201,20 @@
                 </div>
               </div>
             </div>
+            <div class="col-xl-4 col-md-2">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">24 Hour Wind Speed</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="wind_rose">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- forecast -->
           <div class="row">
-            <div class="col-xl-12 mb-4">
+            <div class="col-xl-8 mb-4">
               <div class="card border-left-info shadow h-100">
                 <h5 class="card-header">Forecast</h5>
                 <div class="card-body">
@@ -214,6 +224,94 @@
                         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
                         <script class="reloadMe" src="js/forecast_slc.js"></script>
                         <button>Reload script</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 mb-4">
+              <div class="card border-left-info shadow h-100">
+                <h5 class="card-header">7 Day Forecast</h5>
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="bd-example">
+                        <!-- <nav id="navbar-example2" class="navbar bg-light px-3">
+                        </nav> -->
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"
+                          class="scrollspy-example position-relative mt-2 overflow-auto" tabindex="0">
+                          <h5 id="name_0"></h5>
+                          <div>
+                            <img id="icon_0" style='float: left;' />
+                            <p id="text_0"></p>
+                          </div>
+                          <h5 id="name_1"></h5>
+                          <div>
+                            <img id="icon_1" style='float: left;' />
+                            <p id="text_1"></p>
+                          </div>
+                          <h5 id="name_2"></h5>
+                          <div>
+                            <img id="icon_2" style='float: left;' />
+                            <p id="text_2"></p>
+                          </div>
+                          <h5 id="name_3"></h5>
+                          <div>
+                            <img id="icon_3" style='float: left;' />
+                            <p id="text_3"></p>
+                          </div>
+                          <h5 id="name_4"></h5>
+                          <div>
+                            <img id="icon_4" style='float: left;' />
+                            <p id="text_4"></p>
+                          </div>
+                          <h5 id="name_5"></h5>
+                          <div>
+                            <img id="icon_5" style='float: left;' />
+                            <p id="text_5"></p>
+                          </div>
+                          <h5 id="name_6"></h5>
+                          <div>
+                            <img id="icon_6" style='float: left;' />
+                            <p id="text_6"></p>
+                          </div>
+                          <h5 id="name_7"></h5>
+                          <div>
+                            <img id="icon_7" style='float: left;' />
+                            <p id="text_7"></p>
+                          </div>
+                          <h5 id="name_8"></h5>
+                          <div>
+                            <img id="icon_8" style='float: left;' />
+                            <p id="text_8"></p>
+                          </div>
+                          <h5 id="name_9"></h5>
+                          <div>
+                            <img id="icon_9" style='float: left;' />
+                            <p id="text_9"></p>
+                          </div>
+                          <h5 id="name_10"></h5>
+                          <div>
+                            <img id="icon_10" style='float: left;' />
+                            <p id="text_10"></p>
+                          </div>
+                          <h5 id="name_11"></h5>
+                          <div>
+                            <img id="icon_11" style='float: left;' />
+                            <p id="text_11"></p>
+                          </div>
+                          <h5 id="name_12"></h5>
+                          <div>
+                            <img id="icon_12" style='float: left;' />
+                            <p id="text_12"></p>
+                          </div>
+                          <h5 id="name_13"></h5>
+                          <div>
+                            <img id="icon_13" style='float: left;' />
+                            <p id="text_13"></p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -429,10 +527,13 @@
   </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/cheatsheet.js"></script> -->
   <script src="js/slc/mesowest_slc_air.js" lang="text/javascript"></script>
   <script src="js/slc/mesowest_slc_snow.js" lang="text/javascript"></script>
   <script src="js/slc/camera_slc.js" lang="text/javascript"></script>
   <script src="js/slc/forecast_slc.js" lang="text/javascript"></script>
+  <script src="js/slc/forecast_7day_slc.js"></script>
+  <script src="js/slc/wind_slc.js"></script>
 
 </body>
 

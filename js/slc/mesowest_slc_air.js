@@ -51,7 +51,7 @@ function plotAirTemp(d, sensor_var, param) {
     var layout = {
         hovermode: 'closest',
         xaxis: {
-            title: 'Datetime',
+            // title: 'Datetime',
             linecolor: '#121F1F',
             mirror: false,
             tickmode: "linear",

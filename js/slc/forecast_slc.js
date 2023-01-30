@@ -216,7 +216,7 @@ function plotForecast(d) {
         hovermode: 'closest',
         height: 600,
         xaxis: {
-            title: 'Datetime',
+            // title: 'Datetime',
             linecolor: '#121F1F',
             mirror: false,
             tickmode: "linear",

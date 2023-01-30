@@ -69,7 +69,9 @@ function plotSnowDepth(d, sensor_var, param) {
         xaxis: {
             title: 'Datetime',
             linecolor: '#121F1F',
-            mirror: false
+            mirror: false,
+            tickmode: "linear",
+            tickformat: '%a %b %d\n %Y',
         },
         yaxis: {
             title: 'Snow Depth (in)',
@@ -119,7 +121,7 @@ function getStandardDeviation(array) {
 }
 
 // get date range
-var numDays = 5; // number of days to plot
+var numDays = 2; // number of days to plot
 var d = new Date();
 var endDate = new Date(d);
 var startDate = new Date(d);

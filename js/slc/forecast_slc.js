@@ -57,6 +57,11 @@ function plotForecast(d) {
     var snowLevel_dt = d.properties.snowLevel.values.map(x => x.validTime);
     snowLevel_dt = snowLevel_dt.map(x => x.split("/")).map(x => x[0]).map(x => new Date(x))
 
+    var d = new Date();
+    var xlim2 = new Date(d);
+    xlim2.setDate(xlim2.getDate() + 5)
+    // console.log(startDate)
+
     var data = [{
         name: 'Air Temperature',
         xaxis: "x",
@@ -213,7 +218,10 @@ function plotForecast(d) {
         xaxis: {
             title: 'Datetime',
             linecolor: '#121F1F',
-            mirror: false
+            mirror: false,
+            tickmode: "linear",
+            tickformat: '%a %b %d\n %Y',
+            range: [temp_dt[0], xlim2]
         },
         yaxis: {
             title: 'Temperature (F)', //'Temperature<br>(F)',
@@ -269,50 +277,6 @@ function plotForecast(d) {
         },
         showlegend: false,
         dragmode: 'pan',
-
-        // annotations: [
-        //     {
-        //         x: temp_dt[temp_dt.length - 1],
-        //         // y: Math.max(temp_dv),
-        //         xref: 'x',
-        //         yref: 'y1',
-        //         text: 'Air Temperature',
-        //         font: {
-        //             color: '#2b83ba'
-        //         },
-        //         showarrow: false,
-        //     },
-        //     {
-        //         x: temp_dt[temp_dt.length - 1],
-        //         // y: Math.max(temp_dv),
-        //         xref: 'x',
-        //         yref: 'y1',
-        //         text: 'Dew Point',
-        //         font: {
-        //             color: '#2b83ba'
-        //         },
-        //         showarrow: false,
-        //     },
-        //     {
-        //         x: temp_dt[temp_dt.length - 1],
-        //         // y: Math.max(temp_dv),
-        //         xref: 'x',
-        //         yref: 'y1',
-        //         text: 'Wind Chill',
-        //         font: {
-        //             color: '#2b83ba'
-        //         },
-        //         showarrow: false,
-        //     },
-        //     {
-        //         x: temp_dt[temp_dt.length - 1],
-        //         // y: Math.max(rh_dv),
-        //         xref: 'x',
-        //         yref: 'y2',
-        //         text: 'Relative Humidity',
-        //         showarrow: false,
-        //     }],
-
     };
 
     var config = { responsive: true }

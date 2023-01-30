@@ -19,6 +19,8 @@ function plotAirTemp(d, sensor_var, param) {
     for (i in d.STATION) {
         var t = [];
         var n = (d.STATION[i].OBSERVATIONS.date_time).length;
+        var ydata = d.STATION[i].OBSERVATIONS[sensor_var[param]].map(function (x) { return (x * 9 / 5) + 32 });
+        // ydata = ydata.map(function (x) { return Math.round(x) });
 
         // create array for site name
         for (var j = 0; j < n; j++) {
@@ -28,7 +30,7 @@ function plotAirTemp(d, sensor_var, param) {
         // combine site data into array
         plotData[i] = {
             x: d.STATION[i].OBSERVATIONS.date_time,
-            y: d.STATION[i].OBSERVATIONS[sensor_var[param]],
+            y: ydata, //d.STATION[i].OBSERVATIONS[sensor_var[param]],
             type: "scatter",
             mode: "lines+markers",
             name: "",
@@ -51,10 +53,13 @@ function plotAirTemp(d, sensor_var, param) {
         xaxis: {
             title: 'Datetime',
             linecolor: '#121F1F',
-            mirror: false
+            mirror: false,
+            tickmode: "linear",
+            tickformat: '%a %b %d\n %Y',
+            // dtick: 1, // milliseconds
         },
         yaxis: {
-            title: 'Air Temp (C)',
+            title: 'Air Temp (F)',
             linecolor: '#121F1F'
         },
         margin: {
@@ -95,7 +100,7 @@ function formatDate(date) {
 }
 
 // get date range
-var numDays = 5; // number of days to plot
+var numDays = 2; // number of days to plot
 var d = new Date();
 var endDate = new Date(d);
 var startDate = new Date(d);

@@ -189,7 +189,7 @@
               <div class="card shadow mb-4">
                 <h5 class="card-header">Air Temperature</h5>
                 <div class="card-body">
-                  <div class="responsive-plot" id="air_temp_set_1">
+                  <div class="responsive-plot" id="graphAir" data-siteID="CLN,MLDU1,BRIU1,PCT,CDYBK,LOPU1,BUNUT,BLPU1">
                   </div>
                 </div>
               </div>
@@ -198,7 +198,7 @@
               <div class="card shadow mb-4">
                 <h5 class="card-header">Snow Depth</h5>
                 <div class="card-body">
-                  <div class="responsive-plot" id="snow_depth_set_1">
+                  <div class="responsive-plot" id="graphSnow" data-siteID="CLN,MLDU1,BRIU1,PCT,CDYBK,LOPU1,BUNUT,BLPU1">
                   </div>
                 </div>
               </div>
@@ -207,7 +207,7 @@
               <div class="card shadow mb-4">
                 <h5 class="card-header">24 Hour Wind Speed</h5>
                 <div class="card-body">
-                  <div class="responsive-plot" id="wind_rose">
+                  <div class="responsive-plot" id="graphWindRose" data-siteID="AMB,REY,C99,SOLHP">
                   </div>
                 </div>
               </div>
@@ -539,12 +539,15 @@
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- <script src="js/cheatsheet.js"></script> -->
-  <script src="js/slc/mesowest_slc_air.js" lang="text/javascript"></script>
-  <script src="js/slc/mesowest_slc_snow.js" lang="text/javascript"></script>
+  <!-- <script src="js/slc/mesowest_slc_air.js" lang="text/javascript"></script> -->
+  <!-- <script src="js/slc/mesowest_slc_snow.js" lang="text/javascript"></script> -->
   <script src="js/slc/camera_slc.js" lang="text/javascript"></script>
   <script src="js/slc/forecast_slc.js" lang="text/javascript"></script>
   <script src="js/slc/forecast_7day_slc.js"></script>
-  <script src="js/slc/wind_slc.js"></script>
+  <!-- <script src="js/slc/wind_slc.js"></script> -->
+  <script src="js/slc/plot_air.js"></script>
+  <script src="js/slc/plot_snow.js"></script>
+  <script src="js/slc/plot_wind_rose.js"></script>
 
 </body>
 

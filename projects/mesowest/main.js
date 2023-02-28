@@ -1,14 +1,12 @@
 async function getSynopticData(meso_sites, startStr, endStr, key) {
-    var meso_vars = ['air_temp', 'snow_depth', 'snow_water_equiv'];
+    var meso_vars = ['stream_flow'];
     const response = await fetch('https://api.synopticdata.com/v2/stations/timeseries?stid=' + meso_sites + '&vars=' + meso_vars + '&start=' + startStr + '&end=' + endStr + '&obtimezone=local&token=' + key);
     const data = await response.json();
 
     var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);
     console.log(data)
     //  Plot Air Temperutre Data
-    plotAirTemp(data, sensor_var, 1);
-    plotSnowDepth(data, sensor_var, 2);
-    plotSnowDensity(data);
+    plotFlow(data, sensor_var, 1);
 }
 
 

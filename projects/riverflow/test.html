@@ -1,0 +1,48 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <!-- <input type='button' value='add to list' id='add'> -->
+
+    <!-- <ul id='list'> -->
+    <!-- <li> <b>Topics</b></li> -->
+    <!-- </ul> -->
+    <input type='text' id='user_input'>
+    <input type="button" id="add" value="Add New">
+    <input type="button" is="reset" value="Reset List">
+
+    <ol id="list_item"></ol>
+
+    <!-- <script type="text/javascript">
+        document.getElementById("add").onClick = function () {
+            var text = document.getElementById("idea").value;
+            var li = "<li>" + text + </li>;
+            document.getElementById("list").appendChild(li);
+        }
+    </script> -->
+
+    <script type="text/javascript">
+        document.getElementById("add").onclick = function () {
+            var node = document.createElement("Li");
+            var text = document.getElementById("user_input").value;
+            var textnode = document.createTextNode(text);
+            node.appendChild(textnode);
+            document.getElementById("list_item").appendChild(node);
+        }
+    </script>
+
+    <script type="text/javascript">
+        document.getElementById("reset").onclick = function () {
+            var node = document.createElement("Li");
+            var text = document.getElementById("user_input").value;
+            var textnode = document.createTextNode(text);
+            node.appendChild(textnode);
+            document.getElementById("list_item").appendChild(node);
+        }
+    </script>
+</body>
+
+</html>

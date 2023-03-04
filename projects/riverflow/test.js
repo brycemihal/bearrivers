@@ -22,7 +22,7 @@ function plotFlow(d, sensor_var, param) {
         var n = (d.STATION[i].OBSERVATIONS.date_time).length;
         var ydata = d.STATION[i].OBSERVATIONS[sensor_var[param]];
         // ydata = ydata.map(function (x) { return Math.round(x) });
-
+       
         // create array for site name
         for (var j = 0; j < n; j++) {
             t.push(d.STATION[i].NAME);
@@ -52,6 +52,7 @@ function plotFlow(d, sensor_var, param) {
         xaxis: {
             linecolor: '#121F1F',
             mirror: false,
+            rangeslider: {},
             // tickmode: "linear",
             // tickformat: '%a %b %d\n %Y',
         },

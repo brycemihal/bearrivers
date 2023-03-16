@@ -72,173 +72,42 @@
 
 <head>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
 </head>
 
 <body>
-
-    <div>Site Name: <input type="text" id="qSites" value="USGSHY40">
-        <div>(add multiple sites separated by comma)
+    <p></p>
+    <!--Make sure the form has the autocomplete function switched off:-->
+    <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete" style="width:100%;">
+            <input id="myInput" type="text" name="myCountry" placeholder="Search for a site...">
         </div>
-    </div>
+    </form>
+
+    <button onclick="addToList()">Append</button>
+
+    <ul id="myList">
+    </ul>
+
+    <button onclick="removeFromList()">Remove all</button>
+
+    <p></p>
+
     <div>Number of days: <input type="text" id="qDays" value="7" size="1"></div>
     <button onclick="myFunction()">Create Plot</button>
     <p></p>
     <div id="graph"></div>
     <p></p>
-    <p> Find site names on <a
-            href="https://explore.synopticdata.com/metadata/map/3802,-11102,6?vars=stream_flow&varsoperator=OR&bbox=-113.43,35.03,-108.6,40.89&status=ACTIVE">synopticdata.com</a>
-    </p>
-
-    <!-- <p></p>
-    <form autocomplete="off" action="/action_page.php">
-        <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="myCountry" placeholder="Country">
-        </div>
-        <input type="submit">
-    </form>
-    <p></p> -->
-    
-    <h2>Colorado River</h2>
-    <table Colorado River>
-        <tr>
-            <th>Name</th>
-            <th>Site ID</th>
-        </tr>
-        <tr>
-            <td>Colorado River @ Cisco</td>
-            <td>USGSHY40</td>
-        </tr>
-        <tr>
-            <td>Colorado River @ Potash Road</td>
-            <td>USGSHY24</td>
-        </tr>
-        <tr>
-            <td>Colorado River @ Lees Ferry</td>
-            <td>USGSHY3383</td>
-        </tr>
-        <!-- <tr>
-            <td>Colorado River @ River Mile 30</td>
-            <td>USGSHY3383</td>
-        </tr> -->
-        <!-- <tr>
-            <td>Colorado River @ River Mile 61</td>
-            <td>USGSHY3383</td>
-        </tr> -->
-        <tr>
-            <td>Colorado River @ River Mile 88</td>
-            <td>USGSHY3181</td>
-        </tr>
-        <!-- <tr>
-            <td>Colorado River @ River Mile 167</td>
-            <td>USGSHY3383</td>
-        </tr> -->
-        <tr>
-            <td>Colorado River @ River Mile 226</td>
-            <td>USGSHY3303</td>
-        </tr>
-    </table>
-    <p>Grand Canyon: USGSHY3383,USGSHY3181,USGSHY3303</p>
-    <p></p>
-    <h2>Green River</h2>
-    <table Green River>
-        <tr>
-            <th>Name</th>
-            <th>Site ID</th>
-        </tr>
-        <tr>
-            <td>Green River near Greendale UT</td>
-            <td>USGSHY127</td>
-        </tr>
-        <tr>
-            <td>Green River near Jensen UT</td>
-            <td>USGSHY52</td>
-        </tr>
-        <tr>
-            <td>Green River @ Ouray UT</td>
-            <td>USGSHY86</td>
-        </tr>
-        <tr>
-            <td>Green River @ Green River UT</td>
-            <td>USGSHY91</td>
-        </tr>
-        <tr>
-            <td>Green River @ Mineral Bottoms UT</td>
-            <td>USGSHY68</td>
-        </tr>
-    </table>
-    <p>Green River: USGSHY127,USGSHY52,USGSHY86,USGSHY91,USGSHY68</p>
-    <p></p>
-    <h2>Upper Basin Tributaries</h2>
-    <table Upper Basin Tributaries>
-        <tr>
-            <th>Name</th>
-            <th>Site ID</th>
-        </tr>
-        <tr>
-            <td>Yampa River @ Deerlodge Park CO</td>
-            <td>USGSHY4067</td>
-        </tr>
-        <tr>
-            <td>San Juan River @ Bluff UT</td>
-            <td>USGSHY48</td>
-        </tr>
-        <tr>
-            <td>San Rafael River near Green River UT</td>
-            <td>USGSHY90</td>
-        </tr>
-        <tr>
-            <td>Dirty Devil River near Hanksville UT</td>
-            <td>USGSHY35</td>
-        </tr>
-        <tr>
-            <td>Muddy Creek @ Emery UT</td>
-            <td>USGSHY39</td>
-        </tr>
-        <tr>
-            <td>Escalante River near Escalante UT</td>
-            <td>USGSHY122</td>
-        </tr>
-    </table>
-    <p></p>
-    <h2>Grand Canyon Tributaries</h2>
-    <table Grand Canyon Tributaries>
-        <tr>
-            <th>Name</th>
-            <th>Site ID</th>
-        </tr>
-        <tr>
-            <td>Paria River</td>
-            <td>USGSHY3267</td>
-        </tr>
-        <tr>
-            <td>Little Colorado</td>
-            <td>USGSHY3299</td>
-        </tr>
-        <tr>
-            <td>Bright Angel Creek</td>
-            <td>USGSHY90</td>
-        </tr>
-        <tr>
-            <td>Kanab Creek</td>
-            <td>USGSHY3308</td>
-        </tr>
-        <tr>
-            <td>Havasu Creek</td>
-            <td>USGSHY3300</td>
-        </tr>
-    </table>
-
-    <script src="test.js" lang="text/javascript"></script>
-
 
     <script>
         function autocomplete(inp, arr) {
             /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
             var currentFocus;
+
             /*execute a function when someone writes in the text field:*/
             inp.addEventListener("input", function (e) {
-                var a, b, i, val = this.value;
+                var a, b, i, val = this.value.toUpperCase();
                 /*close any already open lists of autocompleted values*/
                 closeAllLists();
                 if (!val) { return false; }
@@ -249,17 +118,57 @@
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
                 this.parentNode.appendChild(a);
-                /*for each item in the array...*/
+
+                val = val.split(" "); // split search input by each space
+                val = val.filter(elm => elm); // remove empty object created by spaces
+
+                // loop for each search value in array
                 for (i = 0; i < arr.length; i++) {
                     /*check if the item starts with the same letters as the text field value:*/
-                    if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+
+                    // loop for each word in search input
+                    var indOfVal = [];
+                    for (j = 0; j < val.length; j++) {
+                        indOfVal[j] = arr[i].toUpperCase().indexOf(val[j]);
+                    }
+
+                    var isNegative = indOfVal.some(x => x < 0); // true or false indicating that if all of val is in arr[i] (false = no negatives)
+
+                    if (isNegative === false) {
+
                         /*create a DIV element for each matching element:*/
                         b = document.createElement("DIV");
-                        /*make the matching letters bold:*/
-                        b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                        b.innerHTML += arr[i].substr(val.length);
+                        
+                        // const originalArray = [3, 1, 4, 2];
+                        const sortedArray = indOfVal.slice().sort((a, b) => a - b); // Sort ascending
+                        const sortOrder = sortedArray.map((num) => indOfVal.indexOf(num));
+
+                        b.innerHTML = arr[i].substr(0, indOfVal[sortOrder[0]]); // leading non-bold text
+
+                        // loop for each word in search input 
+                        for (j = 0; j < val.length; j++) {
+                            // console.log(val[sortOrder[j]])
+
+                            var dispTxt = arr[i].substr(indOfVal[sortOrder[j]], val[sortOrder[j]].length) // bold text
+                            b.innerHTML += "<strong>" + dispTxt + "</strong";
+
+                            if (j < val.length - 1) { // add following non-bold text
+                                // following non bold text
+                                var startInd = indOfVal[sortOrder[j]] + val[sortOrder[j]].length;
+                                var endInd = indOfVal[sortOrder[j + 1]] - startInd;
+                                dispTxt = arr[i].substr(startInd, endInd);
+                                b.innerHTML += dispTxt;
+                            };
+                        }
+
+                        // // ending non bold text
+                        var n = val.length-1; // number of objects in val                        
+                        var dispTxt = arr[i].substr(indOfVal[sortOrder[n]] + val[sortOrder[n]].length); // last index number
+                        b.innerHTML += dispTxt;
+
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+
                         /*execute a function when someone clicks on the item value (DIV element):*/
                         b.addEventListener("click", function (e) {
                             /*insert the value for the autocomplete text field:*/
@@ -272,6 +181,7 @@
                     }
                 }
             });
+
             /*execute a function presses a key on the keyboard:*/
             inp.addEventListener("keydown", function (e) {
                 var x = document.getElementById(this.id + "autocomplete-list");
@@ -297,6 +207,7 @@
                     }
                 }
             });
+
             function addActive(x) {
                 /*a function to classify an item as "active":*/
                 if (!x) return false;
@@ -307,12 +218,14 @@
                 /*add class "autocomplete-active":*/
                 x[currentFocus].classList.add("autocomplete-active");
             }
+
             function removeActive(x) {
                 /*a function to remove the "active" class from all autocomplete items:*/
                 for (var i = 0; i < x.length; i++) {
                     x[i].classList.remove("autocomplete-active");
                 }
             }
+
             function closeAllLists(elmnt) {
                 /*close all autocomplete lists in the document,
                 except the one passed as an argument:*/
@@ -323,18 +236,44 @@
                     }
                 }
             }
+
             /*execute a function when someone clicks in the document:*/
             document.addEventListener("click", function (e) {
                 closeAllLists(e.target);
             });
         }
 
-        /*An array containing all the country names in the world:*/
-        var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua & Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia & Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central Arfrican Republic", "Chad", "Chile", "China", "Colombia", "Congo", "Cook Islands", "Costa Rica", "Cote D Ivoire", "Croatia", "Cuba", "Curacao", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France", "French Polynesia", "French West Indies", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauro", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russia", "Rwanda", "Saint Pierre & Miquelon", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "St Kitts & Nevis", "St Lucia", "St Vincent", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor L'Este", "Togo", "Tonga", "Trinidad & Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks & Caicos", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States of America", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Virgin Islands (US)", "Yemen", "Zambia", "Zimbabwe"];
+        // get search names from data.js
+        var searchName = [];
+        for (i in data) {
+            searchName.push(data[i].SEARCHNAME);
+        }
 
-        /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-        autocomplete(document.getElementById("myInput"), countries);
+        //initiate the autocomplete function on the "myInput" element, and pass along the search array as possible autocomplete values
+        autocomplete(document.getElementById("myInput"), searchName);
     </script>
+
+    <script>
+        function addToList() {
+            const node = document.createElement("li");
+            var inputText = document.getElementById("myInput").value;
+            const textnode = document.createTextNode(inputText);
+            node.appendChild(textnode);
+            document.getElementById("myList").appendChild(node);
+            document.getElementById("myInput").value = "";
+        }
+    </script>
+
+    <script>
+        function removeFromList() {
+            const list = document.getElementById("myList");
+            while (list.hasChildNodes()) {
+                list.removeChild(list.firstChild);
+            }
+        }
+    </script>
+
+    <script src="script.js" lang="text/javascript"></script>
 
 </body>
 

@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
 <style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+    .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+    }
+
+    .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+    }
+
+    .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
     table,
     th,
     td {
-        border: 1px solid black;
+        border: 1px solid rgb(0, 0, 0);
     }
 
     * {
@@ -68,36 +119,189 @@
         background-color: DodgerBlue !important;
         color: #ffffff;
     }
+
+    #myList {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #myList li {
+        border: 1px solid #80c1f7;
+        margin-top: -1px;
+        /* Prevent double borders */
+        background-color: #f8f8f8;
+        padding: 4px;
+        text-decoration: none;
+        /* font-size: 18px; */
+        color: black;
+        display: block
+    }
+
+
+    .mybtn {
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        padding: 4px;
+        /* font-size: 12px; */
+        cursor: pointer;
+        margin-top: 1px;
+        margin-bottom: 2px;
+        border-radius: 4px;
+    }
+
+    .submit {
+        border-color: #d4d4d4;
+        color: black;
+    }
+
+    .submit:hover {
+        background: #2196F3;
+        color: white;
+    }
 </style>
 
 <head>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <p></p>
-    <!--Make sure the form has the autocomplete function switched off:-->
-    <form autocomplete="off" action="/action_page.php">
-        <div class="autocomplete" style="width:100%;">
-            <input id="myInput" type="text" name="myCountry" placeholder="Search for a site...">
+    <main>
+        <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">USGS Gage Plotter</a>
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="true"
+                    tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+                    <div class="offcanvas-header">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas Test</h5> -->
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+
+                            <!--  -->
+                            <hr class="sidebar-divider my-0">
+
+                            <!-- Nav Item - Dashboard -->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../../index_slc.html">
+                                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                                    <span>Home</span></a>
+                            </li>
+
+                            <!-- Nav Item - Pages dropdown Menu -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Locations
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../../index_slc.html">Wasatch</a></li>
+                                    <li><a class="dropdown-item" href="../../index.html">Bear Rivers</a></li>
+                                    <li><a class="dropdown-item" href="../../index_tetons.html">Tetons</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">La Sals</a></li> -->
+                                </ul>
+                            </li>
+
+                            <!-- Divider -->
+                            <hr class="sidebar-divider">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Additional Links</a>
+                                <ul class="dropdown-menu">
+                                    <h6 class="dropdown-header">Avalanche Forecasts:</h6>
+                                    <a class="dropdown-item" href="https://utahavalanchecenter.com/"
+                                        target="_blank">Utah Avalanche
+                                        Center</a>
+                                    <a class="dropdown-item" href="https://bridgertetonavalanchecenter.org/"
+                                        target="_blank">Bridger Teton
+                                        Avalance Center</a>
+                                    <a class="dropdown-item" href="https://avalanche.state.co.us/"
+                                        target="_blank">Colorado Avalanche
+                                        Information Center</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <h6 class="dropdown-header">Forecast Websites:</h6>
+                                    <a class="dropdown-item" href="https://spotwx.com/" target="_blank">Spot WX</a>
+                                    <a class="dropdown-item"
+                                        href="https://weather.utah.edu/index.php?&t=naefs&d=PL&r=CLN"
+                                        target="_blank">UofU Plumes</a>
+                                    <a class="dropdown-item"
+                                        href="https://www.pivotalweather.com/model.php?m=gfs&p=snku_acc&rh=2019092612&fh=78&r=us_nw&dpdt=&mc="
+                                        target="_blank">Pivotal Weather</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <h6 class="dropdown-header">Data Websites:</h6>
+                                    <a class="dropdown-item" href="https://mesowest.utah.edu/"
+                                        target="_blank">Mesowest</a>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <h6 class="dropdown-header">Weather Blogs:</h6>
+                                    <a class="dropdown-item" href="https://wasatchweatherweenies.blogspot.com/"
+                                        target="_blank">Wasatch
+                                        Weather Weenies</a>
+                                    <a class="dropdown-item" href="https://utahskiweather.blogspot.com/"
+                                        target="_blank">Utah Ski
+                                        Weather</a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </main>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card shadow mb-4">
+                            <!-- <h5 class="card-header"></h5> -->
+
+                            <div class="card-body">
+                                <form autocomplete="off" action="/action_page.php">
+                                    <div class="autocomplete" style="width:100%;">
+                                        <input id="myInput" type="text" name="myCountry"
+                                            placeholder="Search for a site...">
+                                    </div>
+                                </form>
+
+                                <div class="card-body col-xl-2">
+                                    <button class="mybtn submit" onclick="addToList()">Append</button>
+                                    <button class="mybtn submit" onclick="removeFromList()">Remove all</button>
+                                </div>
+
+                                <ul id="myList">
+                                </ul>
+
+                                <!-- <p></p> -->
+
+                                <div>Number of days: <input type="text" id="qDays" value="7" size="1"></div>
+                                <button class="mybtn submit" onclick="myFunction()">Create Plot</button>
+                                <!-- <p></p> -->
+                                <div id="graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
-
-    <button onclick="addToList()">Append</button>
-
-    <ul id="myList">
-    </ul>
-
-    <button onclick="removeFromList()">Remove all</button>
-
-    <p></p>
-
-    <div>Number of days: <input type="text" id="qDays" value="7" size="1"></div>
-    <button onclick="myFunction()">Create Plot</button>
-    <p></p>
-    <div id="graph"></div>
-    <p></p>
+    </div>
 
     <script>
         function autocomplete(inp, arr) {
@@ -138,7 +342,7 @@
 
                         /*create a DIV element for each matching element:*/
                         b = document.createElement("DIV");
-                        
+
                         // const originalArray = [3, 1, 4, 2];
                         const sortedArray = indOfVal.slice().sort((a, b) => a - b); // Sort ascending
                         const sortOrder = sortedArray.map((num) => indOfVal.indexOf(num));
@@ -162,7 +366,7 @@
                         }
 
                         // // ending non bold text
-                        var n = val.length-1; // number of objects in val                        
+                        var n = val.length - 1; // number of objects in val                        
                         var dispTxt = arr[i].substr(indOfVal[sortOrder[n]] + val[sortOrder[n]].length); // last index number
                         b.innerHTML += dispTxt;
 
@@ -273,7 +477,8 @@
         }
     </script>
 
-    <script src="script.js" lang="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" lang="text/javascript"></script>
 
 </body>
 

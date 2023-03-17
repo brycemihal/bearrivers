@@ -269,7 +269,7 @@
         <div id="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-12">
+                    <div class="col-xl-12 col-md-12">
                         <div class="card shadow mb-4">
                             <!-- <h5 class="card-header"></h5> -->
 
@@ -289,12 +289,29 @@
                                 <ul id="myList">
                                 </ul>
 
-                                <!-- <p></p> -->
+                                <div class="container-fluid">Enter Dates (defualt is past 7 days):
+                                    <div class="row">
+                                        <div class="col-xl-2 col-md-4 col-sm-6">
+                                            <div class="card-body">
+                                                <h6>Start Date:</h6>
+                                                <input type="date" id="dateStart" size="1" data-days="7">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-md-4 col-sm-6">
+                                            <div class="card-body">
+                                                <h6>End Date:</h6>
+                                                <input type="date" id="dateEnd" size="1" data-days="-1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <div>Number of days: <input type="text" id="qDays" value="7" size="1"></div>
                                 <button class="mybtn submit" onclick="myFunction()">Create Plot</button>
-                                <!-- <p></p> -->
-                                <div id="graph"></div>
+
+                                <div class="col mr-2">
+                                    <div class="responsive-plot" id="graph">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -475,6 +492,46 @@
                 list.removeChild(list.firstChild);
             }
         }
+    </script>
+
+    <script>
+        function formatDate(date) {
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear(),
+                minute = '' + d.getMinutes(),
+                hour = '' + d.getHours();
+
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;
+            if (minute.length < 2)
+                minute = '0' + minute;
+            if (hour.length < 2)
+                hour = '0' + hour;
+            return [year, "-", month, "-", day].join('');
+        }
+
+        // get date range
+        var d = new Date();
+        var endDate = new Date(d);
+        var startDate = new Date(d);
+
+        const endDays = document.querySelector("#dateEnd");
+        const startDays = document.querySelector("#dateStart");
+
+        endDate.setDate(endDate.getDate() - endDays.dataset.days)
+        startDate.setDate(startDate.getDate() - startDays.dataset.days)
+
+        var endStr = [];
+        var startStr = [];
+        endStr = formatDate(endDate)
+        startStr = formatDate(startDate)
+
+        document.getElementById("dateEnd").defaultValue = endStr;
+        document.getElementById("dateStart").defaultValue = startStr;
     </script>
 
     <script src="js/bootstrap.bundle.min.js"></script>

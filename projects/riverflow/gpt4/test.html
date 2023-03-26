@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Input and List Example</title>
+    <style>
+      .remove-button {
+        background-color: #ff0000;
+        color: #ffffff;
+        font-weight: bold;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        line-height: 1;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="item-input">Add Item:</label>
+      <input type="text" id="item-input" name="item-input" placeholder="Enter item name">
+      <button type="button" id="add-button">Add</button>
+    </form>
+    <ul id="item-list">
+    </ul>
+    <script>
+      const addButton = document.getElementById("add-button");
+      const input = document.getElementById("item-input");
+      const list = document.getElementById("item-list");
+      
+      addButton.addEventListener("click", function() {
+        const text = input.value.trim();
+        if (text !== "") {
+          const li = document.createElement("li");
+          const removeButton = document.createElement("button");
+          removeButton.innerHTML = "x";
+          removeButton.className = "remove-button";
+          removeButton.addEventListener("click", function() {
+            list.removeChild(li);
+          });
+          const itemText = document.createTextNode(text);
+          li.appendChild(removeButton);
+          li.appendChild(itemText);
+          list.appendChild(li);
+          input.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>
+

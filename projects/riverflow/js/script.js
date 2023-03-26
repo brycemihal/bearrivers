@@ -117,19 +117,21 @@ function myFunction() {
     const endDate = document.querySelector("#dateEnd").value;
     const startDate = document.querySelector("#dateStart").value;
 
-    ul = document.getElementById("myList"); // get the site names entered by user
-    li = ul.getElementsByTagName("li");
-    var args = [];
-    for (i = 0; i < li.length; i++) {
-        args[i] = li[i].innerText;
+    // Read the list items
+    const items = [];
+    const listItems = document.querySelectorAll("#item-list li");
+    for (let i = 0; i < listItems.length; i++) {
+        const listItem = listItems[i];        
+        const itemText = listItem.getAttribute("data-item-text"); // get the text from the data attribute
+        items.push(itemText);
     }
 
     // match search string to site names
     // get meso site id based on search string
     var index = [];
     var qSites = [];
-    for (i = 0; i < args.length; i++) {
-        index[i] = searchName.indexOf(args[i]);
+    for (i = 0; i < items.length; i++) {
+        index[i] = searchName.indexOf(items[i]);
         qSites[i] = stid[index[i]];
     }
 

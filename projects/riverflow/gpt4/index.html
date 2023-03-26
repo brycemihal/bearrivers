@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <label for="sites">Select a site:</label>
+        <select id="sites">
+            <option value="01574500">Potomac River at Chain Bridge near Washington, DC</option>
+            <option value="06807000">Missouri River at St Charles, MO</option>
+            <option value="06719505">Mississippi River at Thebes, IL</option>
+        </select>
+        <button onclick="getGageData()">Get Data</button>
+    </div>
+    <div id="gage-plot"></div>
+    <script>
+        const gagePlot = document.getElementById("gage-plot");
+
+        function getGageData() {
+            // Get selected site from dropdown menu
+            const site = document.getElementById("sites").value;
+
+            // Use USGS Water Services REST API to retrieve gage data for selected site
+            const url = `https://waterservices.usgs.gov/nwis/iv/?format=json&sites=${site}&startDT=2022-01-01&parameterCd=00060`;
+            fetch(url)
+                .then((response) => response.json())
+                .then((data) => {
+                    // Extract time series data from API response
+                    const series = data.value.timeSeries[0];
+                    const name = series.sourceInfo.siteName;
+                    const time = series.values[0].value.map((value) => new Date(value.dateTime));
+                    const discharge = series.values[0].value.map((value) => parseFloat(value.value));
+
+                    // Create line plot of discharge values
+                    const plotData = [{
+                        x: time,
+                        y: discharge,
+                        mode: "lines",
+                        name: name,
+                    }];
+                    const plotLayout = {
+                        title: `${name} Discharge`,
+                        xaxis: {
+                            title: "Date",
+                        },
+                        yaxis: {
+                            title: "Discharge (cubic feet per second)",
+                        },
+                    };
+
+                    // Display plot in the 'gage-plot' div
+                    Plotly.newPlot(gagePlot, plotData, plotLayout);
+                })
+                .catch((error) => console.log(error));
+        }
+    </script>
+</body>
+
+</html>

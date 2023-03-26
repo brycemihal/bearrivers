@@ -120,13 +120,13 @@
         color: #ffffff;
     }
 
-    #myList {
+    #item-list {
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
 
-    #myList li {
+    #item-list li {
         border: 1px solid #80c1f7;
         margin-top: -1px;
         /* Prevent double borders */
@@ -157,6 +157,25 @@
     }
 
     .submit:hover {
+        background: #2196F3;
+        color: white;
+    }
+
+    .remove-button {
+        border: 1px solid black;
+        border-color: #d4d4d4;
+        background-color: white;
+        color: black;
+        padding: 4px;
+        /* font-size: 12px; */
+        cursor: pointer;
+        margin-top: 1px;
+        margin-bottom: 2px;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .remove-button:hover {
         background: #2196F3;
         color: white;
     }
@@ -282,11 +301,13 @@
                                 </form>
 
                                 <div class="card-body col-xl-2">
-                                    <button class="mybtn submit" onclick="addToList()">Append</button>
-                                    <button class="mybtn submit" onclick="removeFromList()">Remove all</button>
+                                    <button type="button" class="mybtn submit" id="add-button">Add</button>
+                                    <!-- <button type="button" class="mybtn submit" onclick="addToList()">Append</button> -->
+                                    <button type="button" class="mybtn submit" onclick="removeFromList()">Remove
+                                        all</button>
                                 </div>
 
-                                <ul id="myList">
+                                <ul id="item-list">
                                 </ul>
 
                                 <div class="container-fluid">Enter Dates (defualt is past 7 days):
@@ -474,24 +495,55 @@
         autocomplete(document.getElementById("myInput"), searchName);
     </script>
 
-    <script>
+    <!-- <script>
         function addToList() {
             const node = document.createElement("li");
             var inputText = document.getElementById("myInput").value;
             const textnode = document.createTextNode(inputText);
             node.appendChild(textnode);
-            document.getElementById("myList").appendChild(node);
+            document.getElementById("item-list").appendChild(node);
             document.getElementById("myInput").value = "";
+
+            // const spannode = document.createElement("span");
+            // spannode.innerHTML = 'x';
+            // node.appendChild(spannode);
+            // document.getElementById("item-list").appendChild(spannode);
         }
-    </script>
+    </script> -->
 
     <script>
         function removeFromList() {
-            const list = document.getElementById("myList");
+            const list = document.getElementById("item-list");
             while (list.hasChildNodes()) {
                 list.removeChild(list.firstChild);
             }
         }
+    </script>
+
+    <script>
+        const addButton = document.getElementById("add-button");
+        const input = document.getElementById("myInput");
+        const list = document.getElementById("item-list");
+
+        addButton.addEventListener("click", function () {
+            const text = input.value.trim();
+            if (text !== "") {
+                const li = document.createElement("li");
+                li.setAttribute("data-item-text",text)
+                const removeButton = document.createElement("button");
+                removeButton.innerHTML = "X";
+                removeButton.className = "remove-button";
+                removeButton.addEventListener("click", function () {
+                    list.removeChild(li);
+                });
+                // const itemText = document.createTextNode(text);
+                li.appendChild(removeButton);
+                // li.appendChild(itemText);
+                li.appendChild(document.createTextNode(text));
+                list.appendChild(li);
+                input.value = "";
+            }
+        });
     </script>
 
     <script>

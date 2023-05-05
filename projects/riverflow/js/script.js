@@ -19,9 +19,18 @@ function plotFlow(d, sensor_var, param) {
 
     for (i in d.STATION) {
         var t = [];
-        var n = (d.STATION[i].OBSERVATIONS.date_time).length;
+        var n = d.STATION[i].OBSERVATIONS.date_time.length;
+        var xdata = d.STATION[i].OBSERVATIONS.date_time;
         var ydata = d.STATION[i].OBSERVATIONS[sensor_var[param]];
         // ydata = ydata.map(function (x) { return Math.round(x) });
+
+        var diffDays = dateDiffInDays(xdata[0], xdata[n - 1])
+        if (diffDays > 30) { // if true average to daily values
+            const [dailyDates, dailyAverages] = hourlyToDailyAverages(xdata, ydata);
+            xdata = dailyDates;
+            ydata = dailyAverages;
+            n = xdata.length;
+        }
 
         // create array for site name
         for (var j = 0; j < n; j++) {
@@ -30,14 +39,15 @@ function plotFlow(d, sensor_var, param) {
 
         // combine site data into array
         plotData[i] = {
-            x: d.STATION[i].OBSERVATIONS.date_time,
+            x: xdata,
             y: ydata,
             type: "scatter",
             mode: "lines+markers",
-            name: d.STATION[i].NAME, // "",
+            name: d.STATION[i].NAME,
             hovertemplate: '%{text}<br>' +
                 '%{x}<br>' +
-                '%{y}',
+                '%{y}' +
+                '<extra></extra>',
             text: t,
             marker: {
                 size: 3
@@ -81,6 +91,56 @@ function plotFlow(d, sensor_var, param) {
     Plotly.newPlot('graph', plotData, layout, config);
 }
 
+// function to average data 
+function hourlyToDailyAverages(times, data) {
+    const dailyAverages = [];
+    const dailyDates = [];
+    let dailySum = 0;
+    let dailyCount = 0;
+    let currentDate = null;
+  
+    times.forEach((time, index) => {
+      // Get the current date from the timestamp
+      const date = new Date(time).toLocaleDateString();
+  
+      // If we've moved on to a new day, add the daily average and date to the arrays
+      if (date !== currentDate) {
+        if (currentDate !== null) {
+          const dailyAverage = dailySum / dailyCount;
+          dailyAverages.push(dailyAverage);
+          dailyDates.push(new Date(currentDate));
+        }
+        dailySum = 0;
+        dailyCount = 0;
+        currentDate = date;
+      }
+  
+      dailySum += data[index];
+      dailyCount++;
+    });
+  
+    // Add the final daily average and date to the arrays
+    const finalDailyAverage = dailySum / dailyCount;
+    dailyAverages.push(finalDailyAverage);
+    dailyDates.push(new Date(currentDate));
+  
+    return [dailyDates, dailyAverages];
+  }
+
+// function to difference dates https://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
+// a and b are javascript Date objects
+function dateDiffInDays(a, b) {
+    const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+    var aa = new Date(a);
+    var bb = new Date(b);
+
+    // Discard the time and time-zone information.
+    const utc1 = Date.UTC(aa.getFullYear(), aa.getMonth(), aa.getDate());
+    const utc2 = Date.UTC(bb.getFullYear(), bb.getMonth(), bb.getDate());
+
+    return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+}
+
 // function to convert to yyyy-mm-dd ////////////////////////////////////////
 function formatDate(date) {
     var d = new Date(date),
@@ -121,7 +181,7 @@ function myFunction() {
     const items = [];
     const listItems = document.querySelectorAll("#item-list li");
     for (let i = 0; i < listItems.length; i++) {
-        const listItem = listItems[i];        
+        const listItem = listItems[i];
         const itemText = listItem.getAttribute("data-item-text"); // get the text from the data attribute
         items.push(itemText);
     }

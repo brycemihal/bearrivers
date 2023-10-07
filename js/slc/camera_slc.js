@@ -18,6 +18,15 @@ var lcc_cam_links = ['https://udottraffic.utah.gov/1_devices/aux16607.jpeg',
     'https://udottraffic.utah.gov/1_devices/aux17226.jpeg',
     'http://www.udottraffic.utah.gov/AnimatedGifs/100032.gif']
 
+var alta_cam_links = ['https://app.prismcam.com/public/helpers/realtime_preview.php?c=65&s=720',
+'https://app.prismcam.com/public/helpers/realtime_preview.php?c=88&s=720',
+'https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/Collins_Snow_Stake.jpg',
+'https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/Superior.jpg',
+'https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/Highrustler.jpg',
+'https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/sugar_peak.jpg',
+'https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/Greeley.jpg',
+'https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/collins_dtc.jpg']
+
 var i80_cam_links = ['http://udottraffic.utah.gov/1_devices/aux166.jpeg']
 
 document.getElementById('bcc_cam0').src = bcc_cam_links[0];
@@ -39,6 +48,15 @@ document.getElementById('lcc_cam6').src = lcc_cam_links[6];
 document.getElementById('lcc_cam7').src = lcc_cam_links[7];
 document.getElementById('lcc_cam8').src = lcc_cam_links[8];
 document.getElementById('lcc_cam9').src = lcc_cam_links[9];
+
+document.getElementById('alta_cam0').src = alta_cam_links[0];
+document.getElementById('alta_cam1').src = alta_cam_links[1];
+document.getElementById('alta_cam2').src = alta_cam_links[2];
+document.getElementById('alta_cam3').src = alta_cam_links[3];
+document.getElementById('alta_cam4').src = alta_cam_links[4];
+document.getElementById('alta_cam5').src = alta_cam_links[5];
+document.getElementById('alta_cam6').src = alta_cam_links[6];
+document.getElementById('alta_cam7').src = alta_cam_links[7];
 
 document.getElementById('i80_cam0').src = i80_cam_links[0];
 

@@ -1,7 +1,8 @@
 async function getSynopticData(meso_sites, startStr, endStr, k) {
     var junk = 'bb989856db719411';
+    var demotoken = 'demotoken';
     var meso_vars = ['wind_speed', 'wind_direction', 'wind_cardinal_direction'];
-    const response = await fetch('https://api.synopticdata.com/v2/stations/timeseries?stid=' + meso_sites + '&vars=' + meso_vars + '&start=' + startStr + '&end=' + endStr + '&obtimezone=local&token=' + k + junk);
+    const response = await fetch('https://api.synopticdata.com/v2/stations/timeseries?stid=' + meso_sites + '&vars=' + meso_vars + '&start=' + startStr + '&end=' + endStr + '&obtimezone=local&token=' + demotoken);
     const data = await response.json();
 
     // var sensor_var = Object.keys(data.STATION[0].OBSERVATIONS);

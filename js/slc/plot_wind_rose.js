@@ -317,7 +317,7 @@ endStr = formatDate(endDate)
 startStr = formatDate(startDate)
 
 var k = 'd365a819ce5d418f';
-console.log(qSites)
+// console.log(qSites)
 getSynopticData(qSites, startStr, endStr, k)
     .catch(function () {
         console.error(error); // catch any errors            

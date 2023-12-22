@@ -9,10 +9,10 @@ async function getForecast() {
 
     const data = await response.json();
     // console.log(data)
-    console.log(data.properties.periods)
+    // console.log(data.properties.periods)
     var d = data.properties.periods
 
-    console.log(d[0].name)
+    // console.log(d[0].name)
     document.getElementById('name_0').innerHTML = d[0].name;
     document.getElementById('icon_0').src = d[0].icon;
     document.getElementById('text_0').innerHTML = d[0].detailedForecast;

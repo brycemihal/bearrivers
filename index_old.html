@@ -153,27 +153,8 @@
                     Weather Weenies</a>
                   <a class="dropdown-item" href="https://utahskiweather.blogspot.com/" target="_blank">Utah Ski
                     Weather</a>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <h6 class="dropdown-header">Water Supply Data:</h6>
-                    <a class="dropdown-item" href="" target="_blank">NRCS Snotel</a>
-                    <a class="dropdown-item" href="" target="_blank">Basin SWE</a>
-                  </ul>
-                </li>
-  
-                <hr class="sidebar-divider">
-  
-                <li class="nav-item active">
-                  <a class="twitter-timeline"
-                    href="https://twitter.com/Dface_killah/lists/1613209019195482115?ref_src=twsrc%5Etfw">A Twitter List
-                    by Dface_killah</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                  <!-- <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/i/lists/1613209019195482115">A
-                    Twitter List</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-                </li>
-  
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -182,10 +163,38 @@
 
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
-        <div class="container-fluid">          
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-4 col-md-5">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Air Temperature</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="air_temp_set_1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-5">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Snow Depth</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="snow_depth_set_1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-2">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">24 Hour Wind Speed</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="wind_rose">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- forecast -->
-          <h2>Forecast</h2>
           <div class="row">
             <div class="col-xl-8 mb-4">
               <div class="card border-left-info shadow h-100">
@@ -193,7 +202,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="responsive-plot" id="graphForecast" data-siteID="SLC/114,227">
+                      <div class="responsive-plot" id="forecast_plot_logan">
                       </div>
                     </div>
                   </div>
@@ -331,42 +340,8 @@
               </div>
             </div>
           </div>
-          <!--  -->
-
-          <!-- measured data -->
-          <h2>Observations</h2>
-          <div class="row">
-            <div class="col-xl-4 col-md-5">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">Air Temperature</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="graphAir" data-siteID="TGLU1,UDDU1,FBNI1,LGS,TPKU1,KDNU1">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-5">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">Snow Depth</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="graphSnow" data-siteID="TGLU1,UDDU1,FBNI1,LGS,TPKU1,KDNU1">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-2">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">24 Hour Wind Speed</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="graphWindRose" data-siteID="LGP,C8914,PSINK,UCC11">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!-- Cameras Content Row -->
-          <h2>Traffic Cameras</h2>
           <div class="row">
             <!-- Camera 1 -->
             <div class="col-xl-4 col-md-6 mb-4">
@@ -411,13 +386,12 @@
   </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/cheatsheet.js"></script> -->
+  <script src="js/logan/mesowest_logan_air.js" lang="text/javascript"></script>
+  <script src="js/logan/mesowest_logan_snow.js" lang="text/javascript"></script>
   <script src="js/logan/camera_logan.js" lang="text/javascript"></script>
+  <script src="js/logan/forecast_logan.js" lang="text/javascript"></script>
   <script src="js/logan/forecast_7day_logan.js" lang="text/javascript"></script>
-  <script src="js/slc/plot_air.js"></script>
-  <script src="js/slc/plot_snow.js"></script>
-  <script src="js/slc/plot_wind_rose.js"></script>
-  <script src="js/slc/plot_forecast.js"></script>
+  <script src="js/logan/wind_logan.js" lang="text/javascript"></script>
 
 </body>
 

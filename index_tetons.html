@@ -71,7 +71,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/navbar.css" rel="stylesheet">
-  <!-- <link href="css/cheatsheet.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -180,37 +179,9 @@
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-4 col-md-5">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">Air Temperature</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="air_temp_set_1">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-5">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">Snow Depth</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="snow_depth_set_1">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-2">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">24 Hour Wind Speed</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="wind_rose">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!-- forecast -->
+          <h2>Forecast</h2>
           <div class="row">
             <div class="col-xl-8 mb-4">
               <div class="card border-left-info shadow h-100">
@@ -218,10 +189,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="responsive-plot" id="forecast_plot">
-                        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                        <script class="reloadMe" src="js/forecast_slc.js"></script>
-                        <button>Reload script</button> -->
+                      <div class="responsive-plot" id="graphForecast" data-siteID="RIW/38,144">
                       </div>
                     </div>
                   </div>
@@ -351,7 +319,6 @@
                               <p id="text_13"></p>
                             </div>
                           </div>
-
                         </div>
                       </div>
                     </div>
@@ -361,6 +328,41 @@
             </div>
           </div>
           <!--  -->
+
+          <!-- measured data -->
+          <h2>Observations</h2>
+          <div class="row">
+            <div class="col-xl-4 col-md-5">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Air Temperature</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="graphAir" data-siteID="PHBW4,M12WY,JHRV,JHB,SPMBT,GTHW4">
+                  <!-- <div class="responsive-plot" id="air_temp_set_1"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-5">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Snow Depth</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="graphSnow" data-siteID="PHBW4,M12WY,JHRV,JHB,SPMBT,GTHW4">
+                  <!-- <div class="responsive-plot" id="snow_depth_set_1"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-2">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">24 Hour Wind Speed</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="graphWindRose" data-siteID="GTHW4,MGSWY,JHS,SPPBT">
+                  <!-- <div class="responsive-plot" id="wind_rose"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <h2>Traffic Cameras</h2>
           <div class="accordion" id="accordionExample">
@@ -512,13 +514,13 @@
   </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="js/cheatsheet.js"></script> -->
-  <script src="js/tetons/mesowest_air_tetons.js" lang="text/javascript"></script>
-  <script src="js/tetons/mesowest_snow_tetons.js" lang="text/javascript"></script>
   <script src="js/tetons/camera_tetons.js" lang="text/javascript"></script>
   <script src="js/tetons/forecast_tetons.js" lang="text/javascript"></script>
   <script src="js/tetons/forecast_7day_tetons.js"></script>
-  <script src="js/tetons/wind_tetons.js"></script>
+  <script src="js/slc/plot_air.js"></script>
+  <script src="js/slc/plot_snow.js"></script>
+  <script src="js/slc/plot_wind_rose.js"></script>
+  <script src="js/slc/plot_forecast.js"></script>
 
 </body>
 

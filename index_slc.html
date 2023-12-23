@@ -71,7 +71,6 @@
 
   <!-- Custom styles for this template -->
   <link href="css/navbar.css" rel="stylesheet">
-  <!-- <link href="css/cheatsheet.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -163,17 +162,13 @@
                 </ul>
               </li>
 
-              <hr class="sidebar-divider">
-
+              <!-- <hr class="sidebar-divider">
               <li class="nav-item active">
                 <a class="twitter-timeline"
                   href="https://twitter.com/Dface_killah/lists/1613209019195482115?ref_src=twsrc%5Etfw">A Twitter List
                   by Dface_killah</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <!-- <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/i/lists/1613209019195482115">A
-                  Twitter List</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-              </li>
+              </li> -->
 
             </ul>
           </div>
@@ -184,37 +179,9 @@
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-4 col-md-5">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">Air Temperature</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="air_temp_set_1">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-5">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">Snow Depth</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="snow_depth_set_1">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-2">
-              <div class="card shadow mb-4">
-                <h5 class="card-header">24 Hour Wind Speed</h5>
-                <div class="card-body">
-                  <div class="responsive-plot" id="wind_rose">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!-- forecast -->
+          <h2>Forecast</h2>
           <div class="row">
             <div class="col-xl-8 mb-4">
               <div class="card border-left-info shadow h-100">
@@ -222,10 +189,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="responsive-plot" id="forecast_plot">
-                        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                        <script class="reloadMe" src="js/forecast_slc.js"></script>
-                        <button>Reload script</button> -->
+                      <div class="responsive-plot" id="graphForecast" data-siteID="SLC/107,165">
                       </div>
                     </div>
                   </div>
@@ -236,6 +200,8 @@
               <div class="card border-left-info shadow h-100">
                 <h5 class="card-header">Alta UT 7-Day Forecast</h5>
                 <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
                       <div class="bd-example">
                         <!-- <nav id="navbar-example2" class="navbar bg-light px-3">
                         </nav> -->
@@ -243,94 +209,157 @@
                           class="scrollspy-example position-relative mt-2 overflow-auto" tabindex="0">
 
                           <div class="row pb-3">
-                              <h6 id="name_0"></h6>
-                              <div class="col-md-3 col-sm-2"><img id="icon_0"/></div>
-                              <div class="col-md-9 col-sm-10"><p id="text_0"></p></div>
+                            <h6 id="name_0"></h6>
+                            <div class="col-md-3 col-sm-2"><img id="icon_0" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_0"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_1"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_1"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_1"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_1" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_1"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_2"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_2"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_2"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_2" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_2"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_3"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_3"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_3"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_3" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_3"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_4"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_4"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_4"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_4" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_4"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_5"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_5"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_5"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_5" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_5"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_6"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_6"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_6"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_6" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_6"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_7"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_7"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_7"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_7" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_7"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_8"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_8"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_8"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_8" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_8"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_9"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_9"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_9"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_9" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_9"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_10"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_10"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_10"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_10" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_10"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_11"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_11"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_11"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_11" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_11"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_12"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_12"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_12"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_12" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_12"></p>
+                            </div>
                           </div>
 
                           <div class="row pb-3">
                             <h6 id="name_13"></h6>
-                            <div class="col-md-3 col-sm-2"><img id="icon_13"/></div>
-                            <div class="col-md-9 col-sm-10"><p id="text_13"></p></div>
+                            <div class="col-md-3 col-sm-2"><img id="icon_13" /></div>
+                            <div class="col-md-9 col-sm-10">
+                              <p id="text_13"></p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
           <!--  -->
+
+          <!-- measured data -->
+          <h2>Observations</h2>
+          <div class="row">
+            <div class="col-xl-4 col-md-5">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Air Temperature</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="graphAir" data-siteID="CLN,MLDU1,BRIU1,PCT,CDYBK,LOPU1,BUNUT,BLPU1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-5">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">Snow Depth</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="graphSnow" data-siteID="CLN,MLDU1,BRIU1,PCT,CDYBK,LOPU1,BUNUT,BLPU1">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-2">
+              <div class="card shadow mb-4">
+                <h5 class="card-header">24 Hour Wind Speed</h5>
+                <div class="card-body">
+                  <div class="responsive-plot" id="graphWindRose" data-siteID="AMB,REY,C99,SOLHP">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <h2>Traffic Cameras</h2>
           <div class="accordion" id="accordionExample">
@@ -617,12 +646,13 @@
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- <script src="js/cheatsheet.js"></script> -->
-  <script src="js/slc/mesowest_slc_air.js" lang="text/javascript"></script>
-  <script src="js/slc/mesowest_slc_snow.js" lang="text/javascript"></script>
   <script src="js/slc/camera_slc.js" lang="text/javascript"></script>
-  <script src="js/slc/forecast_slc.js" lang="text/javascript"></script>
+  <!-- <script src="js/slc/forecast_slc.js" lang="text/javascript"></script> -->
   <script src="js/slc/forecast_7day_slc.js"></script>
-  <script src="js/slc/wind_slc.js"></script>
+  <script src="js/slc/plot_air.js"></script>
+  <script src="js/slc/plot_snow.js"></script>
+  <script src="js/slc/plot_wind_rose.js"></script>
+  <script src="js/slc/plot_forecast.js"></script>
 
 </body>
 

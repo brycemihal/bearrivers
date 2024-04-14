@@ -7827,4 +7827,100 @@ RM0_obs_T = [
 		Datetime: '2024-04-14 10:00:00',
 		Temperature: 9.9,
 	},
+	{
+		Datetime: '2024-04-14 10:15:00',
+		Temperature: 9.9,
+	},
+	{
+		Datetime: '2024-04-14 10:30:00',
+		Temperature: 9.9,
+	},
+	{
+		Datetime: '2024-04-14 10:45:00',
+		Temperature: 9.9,
+	},
+	{
+		Datetime: '2024-04-14 11:00:00',
+		Temperature: 9.9,
+	},
+	{
+		Datetime: '2024-04-14 11:15:00',
+		Temperature: 9.9,
+	},
+	{
+		Datetime: '2024-04-14 11:30:00',
+		Temperature: 10,
+	},
+	{
+		Datetime: '2024-04-14 11:45:00',
+		Temperature: 10,
+	},
+	{
+		Datetime: '2024-04-14 12:00:00',
+		Temperature: 10,
+	},
+	{
+		Datetime: '2024-04-14 12:15:00',
+		Temperature: 10,
+	},
+	{
+		Datetime: '2024-04-14 12:30:00',
+		Temperature: 10,
+	},
+	{
+		Datetime: '2024-04-14 12:45:00',
+		Temperature: 10,
+	},
+	{
+		Datetime: '2024-04-14 13:00:00',
+		Temperature: 10.1,
+	},
+	{
+		Datetime: '2024-04-14 13:15:00',
+		Temperature: 10.1,
+	},
+	{
+		Datetime: '2024-04-14 13:30:00',
+		Temperature: 10.1,
+	},
+	{
+		Datetime: '2024-04-14 13:45:00',
+		Temperature: 10.2,
+	},
+	{
+		Datetime: '2024-04-14 14:00:00',
+		Temperature: 10.2,
+	},
+	{
+		Datetime: '2024-04-14 14:15:00',
+		Temperature: 10.2,
+	},
+	{
+		Datetime: '2024-04-14 14:30:00',
+		Temperature: 10.2,
+	},
+	{
+		Datetime: '2024-04-14 14:45:00',
+		Temperature: 10.3,
+	},
+	{
+		Datetime: '2024-04-14 15:00:00',
+		Temperature: 10.3,
+	},
+	{
+		Datetime: '2024-04-14 15:15:00',
+		Temperature: 10.4,
+	},
+	{
+		Datetime: '2024-04-14 15:30:00',
+		Temperature: 10.4,
+	},
+	{
+		Datetime: '2024-04-14 15:45:00',
+		Temperature: 10.4,
+	},
+	{
+		Datetime: '2024-04-14 16:00:00',
+		Temperature: 10.5,
+	},
 ]

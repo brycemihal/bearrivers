@@ -7827,4 +7827,100 @@ RM0_obs_C = [
 		Datetime: '2024-04-14 10:00:00',
 		SpConductance: 768,
 	},
+	{
+		Datetime: '2024-04-14 10:15:00',
+		SpConductance: 769,
+	},
+	{
+		Datetime: '2024-04-14 10:30:00',
+		SpConductance: 769,
+	},
+	{
+		Datetime: '2024-04-14 10:45:00',
+		SpConductance: 769,
+	},
+	{
+		Datetime: '2024-04-14 11:00:00',
+		SpConductance: 769,
+	},
+	{
+		Datetime: '2024-04-14 11:15:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 11:30:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 11:45:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 12:00:00',
+		SpConductance: 771,
+	},
+	{
+		Datetime: '2024-04-14 12:15:00',
+		SpConductance: 771,
+	},
+	{
+		Datetime: '2024-04-14 12:30:00',
+		SpConductance: 771,
+	},
+	{
+		Datetime: '2024-04-14 12:45:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 13:00:00',
+		SpConductance: 771,
+	},
+	{
+		Datetime: '2024-04-14 13:15:00',
+		SpConductance: 771,
+	},
+	{
+		Datetime: '2024-04-14 13:30:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 13:45:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 14:00:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 14:15:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 14:30:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 14:45:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 15:00:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 15:15:00',
+		SpConductance: 770,
+	},
+	{
+		Datetime: '2024-04-14 15:30:00',
+		SpConductance: 769,
+	},
+	{
+		Datetime: '2024-04-14 15:45:00',
+		SpConductance: 769,
+	},
+	{
+		Datetime: '2024-04-14 16:00:00',
+		SpConductance: 768,
+	},
 ]

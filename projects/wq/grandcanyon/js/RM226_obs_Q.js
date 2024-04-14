@@ -7835,4 +7835,84 @@ RM226_obs_Q = [
 		Datetime: '2024-04-14 10:30:00',
 		Discharge: 317.1487,
 	},
+	{
+		Datetime: '2024-04-14 10:45:00',
+		Discharge: 317.1487,
+	},
+	{
+		Datetime: '2024-04-14 11:00:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 11:15:00',
+		Discharge: 317.1487,
+	},
+	{
+		Datetime: '2024-04-14 11:30:00',
+		Discharge: 317.1487,
+	},
+	{
+		Datetime: '2024-04-14 11:45:00',
+		Discharge: 317.1487,
+	},
+	{
+		Datetime: '2024-04-14 12:00:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 12:15:00',
+		Discharge: 317.1487,
+	},
+	{
+		Datetime: '2024-04-14 12:30:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 12:45:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 13:00:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 13:15:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 13:30:00',
+		Discharge: 317.1487,
+	},
+	{
+		Datetime: '2024-04-14 13:45:00',
+		Discharge: 319.9804,
+	},
+	{
+		Datetime: '2024-04-14 14:00:00',
+		Discharge: 322.8121,
+	},
+	{
+		Datetime: '2024-04-14 14:15:00',
+		Discharge: 322.8121,
+	},
+	{
+		Datetime: '2024-04-14 14:30:00',
+		Discharge: 322.8121,
+	},
+	{
+		Datetime: '2024-04-14 14:45:00',
+		Discharge: 322.8121,
+	},
+	{
+		Datetime: '2024-04-14 15:00:00',
+		Discharge: 325.6437,
+	},
+	{
+		Datetime: '2024-04-14 15:15:00',
+		Discharge: 325.6437,
+	},
+	{
+		Datetime: '2024-04-14 15:30:00',
+		Discharge: 325.6437,
+	},
 ]

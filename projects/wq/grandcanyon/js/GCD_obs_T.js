@@ -1,93 +1,5 @@
 GCD_obs_T = [
 	{
-		Datetime: '2024-03-30 11:01:24',
-		Temperature: 9.32,
-	},
-	{
-		Datetime: '2024-03-30 11:16:25',
-		Temperature: 9.3,
-	},
-	{
-		Datetime: '2024-03-30 11:31:24',
-		Temperature: 9.29,
-	},
-	{
-		Datetime: '2024-03-30 11:46:23',
-		Temperature: 9.28,
-	},
-	{
-		Datetime: '2024-03-30 12:01:23',
-		Temperature: 9.28,
-	},
-	{
-		Datetime: '2024-03-30 12:16:24',
-		Temperature: 9.26,
-	},
-	{
-		Datetime: '2024-03-30 12:31:24',
-		Temperature: 9.24,
-	},
-	{
-		Datetime: '2024-03-30 12:46:23',
-		Temperature: 9.25,
-	},
-	{
-		Datetime: '2024-03-30 13:01:24',
-		Temperature: 9.23,
-	},
-	{
-		Datetime: '2024-03-30 13:16:24',
-		Temperature: 9.22,
-	},
-	{
-		Datetime: '2024-03-30 13:31:24',
-		Temperature: 9.2,
-	},
-	{
-		Datetime: '2024-03-30 13:46:24',
-		Temperature: 9.17,
-	},
-	{
-		Datetime: '2024-03-30 14:01:24',
-		Temperature: 9.17,
-	},
-	{
-		Datetime: '2024-03-30 14:16:24',
-		Temperature: 9.15,
-	},
-	{
-		Datetime: '2024-03-30 14:31:24',
-		Temperature: 9.1,
-	},
-	{
-		Datetime: '2024-03-30 14:46:24',
-		Temperature: 9.05,
-	},
-	{
-		Datetime: '2024-03-30 15:01:24',
-		Temperature: 9.02,
-	},
-	{
-		Datetime: '2024-03-30 15:16:24',
-		Temperature: 9.02,
-	},
-	{
-		Datetime: '2024-03-30 15:31:24',
-		Temperature: 9.02,
-	},
-	{
-		Datetime: '2024-03-30 15:46:24',
-		Temperature: 8.99,
-	},
-	{
-		Datetime: '2024-03-30 16:01:24',
-		Temperature: 8.98,
-	},
-	{
-		Datetime: '2024-03-30 16:16:24',
-		Temperature: 8.98,
-	},
-	{
 		Datetime: '2024-03-30 16:31:25',
 		Temperature: 8.96,
 	},
@@ -5234,5 +5146,353 @@ GCD_obs_T = [
 	{
 		Datetime: '2024-04-13 17:01:23',
 		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-13 17:16:24',
+		Temperature: 9.8,
+	},
+	{
+		Datetime: '2024-04-13 17:31:25',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-13 17:46:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-13 18:01:24',
+		Temperature: 9.74,
+	},
+	{
+		Datetime: '2024-04-13 18:16:23',
+		Temperature: 9.73,
+	},
+	{
+		Datetime: '2024-04-13 18:31:23',
+		Temperature: 9.72,
+	},
+	{
+		Datetime: '2024-04-13 18:46:24',
+		Temperature: 9.72,
+	},
+	{
+		Datetime: '2024-04-13 19:01:24',
+		Temperature: 9.7,
+	},
+	{
+		Datetime: '2024-04-13 19:16:24',
+		Temperature: 9.69,
+	},
+	{
+		Datetime: '2024-04-13 19:31:24',
+		Temperature: 9.69,
+	},
+	{
+		Datetime: '2024-04-13 19:46:24',
+		Temperature: 9.72,
+	},
+	{
+		Datetime: '2024-04-13 20:01:25',
+		Temperature: 9.69,
+	},
+	{
+		Datetime: '2024-04-13 20:16:24',
+		Temperature: 9.69,
+	},
+	{
+		Datetime: '2024-04-13 20:31:24',
+		Temperature: 9.69,
+	},
+	{
+		Datetime: '2024-04-13 20:46:24',
+		Temperature: 9.7,
+	},
+	{
+		Datetime: '2024-04-13 21:01:24',
+		Temperature: 9.76,
+	},
+	{
+		Datetime: '2024-04-13 21:16:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-13 21:31:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-13 21:46:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-13 22:01:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-13 22:16:24',
+		Temperature: 9.76,
+	},
+	{
+		Datetime: '2024-04-13 22:31:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-13 22:46:23',
+		Temperature: 9.77,
+	},
+	{
+		Datetime: '2024-04-13 23:01:25',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-13 23:16:25',
+		Temperature: 9.83,
+	},
+	{
+		Datetime: '2024-04-13 23:31:24',
+		Temperature: 9.8,
+	},
+	{
+		Datetime: '2024-04-14 00:01:25',
+		Temperature: 9.8,
+	},
+	{
+		Datetime: '2024-04-14 00:16:24',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 00:31:24',
+		Temperature: 9.76,
+	},
+	{
+		Datetime: '2024-04-14 00:46:24',
+		Temperature: 9.74,
+	},
+	{
+		Datetime: '2024-04-14 01:01:24',
+		Temperature: 9.76,
+	},
+	{
+		Datetime: '2024-04-14 01:16:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-14 01:31:24',
+		Temperature: 9.73,
+	},
+	{
+		Datetime: '2024-04-14 01:46:24',
+		Temperature: 9.72,
+	},
+	{
+		Datetime: '2024-04-14 02:01:25',
+		Temperature: 9.72,
+	},
+	{
+		Datetime: '2024-04-14 02:16:25',
+		Temperature: 9.73,
+	},
+	{
+		Datetime: '2024-04-14 02:31:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-14 02:46:24',
+		Temperature: 9.74,
+	},
+	{
+		Datetime: '2024-04-14 03:01:23',
+		Temperature: 9.73,
+	},
+	{
+		Datetime: '2024-04-14 03:16:23',
+		Temperature: 9.72,
+	},
+	{
+		Datetime: '2024-04-14 03:31:24',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 03:46:24',
+		Temperature: 9.67,
+	},
+	{
+		Datetime: '2024-04-14 04:01:24',
+		Temperature: 9.66,
+	},
+	{
+		Datetime: '2024-04-14 04:16:24',
+		Temperature: 9.65,
+	},
+	{
+		Datetime: '2024-04-14 04:31:24',
+		Temperature: 9.66,
+	},
+	{
+		Datetime: '2024-04-14 04:46:24',
+		Temperature: 9.66,
+	},
+	{
+		Datetime: '2024-04-14 05:01:24',
+		Temperature: 9.67,
+	},
+	{
+		Datetime: '2024-04-14 05:16:24',
+		Temperature: 9.67,
+	},
+	{
+		Datetime: '2024-04-14 05:31:24',
+		Temperature: 9.68,
+	},
+	{
+		Datetime: '2024-04-14 05:46:24',
+		Temperature: 9.7,
+	},
+	{
+		Datetime: '2024-04-14 06:01:24',
+		Temperature: 9.73,
+	},
+	{
+		Datetime: '2024-04-14 06:16:24',
+		Temperature: 9.7,
+	},
+	{
+		Datetime: '2024-04-14 06:31:24',
+		Temperature: 9.68,
+	},
+	{
+		Datetime: '2024-04-14 06:46:23',
+		Temperature: 9.7,
+	},
+	{
+		Datetime: '2024-04-14 07:01:24',
+		Temperature: 9.74,
+	},
+	{
+		Datetime: '2024-04-14 07:16:25',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-14 07:31:24',
+		Temperature: 9.76,
+	},
+	{
+		Datetime: '2024-04-14 07:46:24',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-14 08:01:25',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 08:16:25',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-14 08:31:24',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 08:46:24',
+		Temperature: 9.81,
+	},
+	{
+		Datetime: '2024-04-14 09:01:25',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 09:16:24',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-14 09:31:24',
+		Temperature: 9.81,
+	},
+	{
+		Datetime: '2024-04-14 09:46:24',
+		Temperature: 9.84,
+	},
+	{
+		Datetime: '2024-04-14 10:01:24',
+		Temperature: 9.84,
+	},
+	{
+		Datetime: '2024-04-14 10:16:24',
+		Temperature: 9.84,
+	},
+	{
+		Datetime: '2024-04-14 10:31:25',
+		Temperature: 9.84,
+	},
+	{
+		Datetime: '2024-04-14 10:46:23',
+		Temperature: 9.82,
+	},
+	{
+		Datetime: '2024-04-14 11:01:24',
+		Temperature: 9.81,
+	},
+	{
+		Datetime: '2024-04-14 11:16:23',
+		Temperature: 9.8,
+	},
+	{
+		Datetime: '2024-04-14 11:31:24',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 11:46:25',
+		Temperature: 9.81,
+	},
+	{
+		Datetime: '2024-04-14 12:01:25',
+		Temperature: 9.78,
+	},
+	{
+		Datetime: '2024-04-14 12:16:24',
+		Temperature: 9.75,
+	},
+	{
+		Datetime: '2024-04-14 12:31:23',
+		Temperature: 9.76,
+	},
+	{
+		Datetime: '2024-04-14 12:46:24',
+		Temperature: 9.74,
+	},
+	{
+		Datetime: '2024-04-14 13:01:24',
+		Temperature: 9.77,
+	},
+	{
+		Datetime: '2024-04-14 13:16:24',
+		Temperature: 9.77,
+	},
+	{
+		Datetime: '2024-04-14 13:31:23',
+		Temperature: 9.77,
+	},
+	{
+		Datetime: '2024-04-14 13:46:24',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-14 14:01:24',
+		Temperature: 9.79,
+	},
+	{
+		Datetime: '2024-04-14 14:16:24',
+		Temperature: 9.81,
+	},
+	{
+		Datetime: '2024-04-14 14:31:24',
+		Temperature: 9.83,
+	},
+	{
+		Datetime: '2024-04-14 14:46:24',
+		Temperature: 9.83,
+	},
+	{
+		Datetime: '2024-04-14 15:01:24',
+		Temperature: 9.84,
 	},
 ]

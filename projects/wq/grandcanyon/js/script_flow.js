@@ -43,7 +43,7 @@ function createPlot(containerId, key) {
             linecolor: '#121F1F',
             mirror: false,
             tickmode: "linear",
-            tickformat: '%a %b %d\n %Y',
+            // tickformat: '%a %b %d\n %Y',
             // dtick: 1, // milliseconds
         },
         yaxis: {

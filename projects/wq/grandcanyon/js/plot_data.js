@@ -1,26 +1,32 @@
 
-var dt = rm88.map(x => x.Datetime);
-var ObsQ = rm88.map(x => x.Observed_Q_RM88);
-var ObsT = rm88.map(x => x.Observed_T_RM88);
-var ModQ = rm88.map(x => x.Model_Q_RM88);
-var ModT = rm88.map(x => x.Model_T_RM88);
+console.log(obs)
+var ObsDT = obs.RM0.map(x => x.Datetime);
+var ObsDV = obs.RM0.map(x => x.Temperature);
+
+var ModDT = mod.RM0.map(x => x.Datetime);
+var ModDV = mod.RM0.map(x => x.Temperature);
 
 var trace1 = {
-    x: dt,
-    y: ObsQ,
+    x: ObsDT,
+    y: ObsDV,
     type: 'scatter'
 };
 
 var trace2 = {
-    x: dt,
-    y: ModQ,
+    x: ModDT,
+    y: ModDV,
     type: 'scatter'
 };
 
+var f = {
+    x: ['2024-04-14 10:00:00', '2024-04-20 00:00:00'],
+    y: [20, 20],
+    fill: 'tonexty', 
+    fillcolor:'rgba(26,150,65,0.15)',
+    type: 'scatter',
+    mode: 'none',
+  };
 
-var data2 = [trace1, trace2];
+var data2 = [f, trace1, trace2];
 
 Plotly.newPlot('myDiv', data2);
-
-console.log(ObsQ)
-console.log(dt)

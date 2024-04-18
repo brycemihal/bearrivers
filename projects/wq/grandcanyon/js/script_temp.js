@@ -9,35 +9,16 @@ function createPlot(containerId) {
     // catch (ex) {
     // }
 
+
+    var ObsDT = obs.RM0.map(x => x.Datetime)
     var ModDT = mod.GCD.map(x => x.Datetime)
-
-    var d = new Date();
-    // console.log(d)
+    console.log(ObsDT[ObsDT.length - 1])
     console.log(ModDT[ModDT.length - 1])
-
-    var d = new Date(); // today!
-    var x = 5; // go back 5 days!
-    d.setDate(d.getDate() - x);
-    // console.log(Date(ModDT[ModDT.length -1]))
-
-
-    // var startDate = new Date(d);
-    // startDate.setDate(startDate.getDate() - qDays)
-
-
-    // var ModStart = new Date(ModDT[0]) - 7
-
-    // console.log(ModStart)
-
-    // var endDate = new Date(d);
-    // var startDate = new Date(d);
-    // endDate.setDate(endDate.getDate() + 1)
-    // startDate.setDate(startDate.getDate() - qDays)
 
     // ###############################################################
     var data = [{
         // ############################################################### - GCD
-        x: [d, ModDT[ModDT.length - 1]],
+        x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [28, 28],
         xaxis: "x",
         yaxis: "y",
@@ -49,38 +30,40 @@ function createPlot(containerId) {
         name: 'Observed',
         xaxis: "x",
         yaxis: "y",
-        color: 'rgb(169,169,169)',
         x: obs.GCD.map(x => x.Datetime),
         y: obs.GCD.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: '#2b83ba',
         },
         line: {
-            width: 1
+            width: 1,
+            color: '#2b83ba',
         }
     }, {
         name: 'Modeled',
         xaxis: "x",
         yaxis: "y",
-        color: '#2b83ba',
         x: mod.GCD.map(x => x.Datetime),
         y: mod.GCD.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: '#2bba62',
         },
         line: {
-            width: 1
+            width: 1,
+            color: '#2bba62',
+            // dash: 'dot',
         }
-        // }, {
 
-
-        // ############################################################### - Lees Ferry 
-    }, {
-        x: [d, ModDT[ModDT.length - 1]],
+    },
+    // ############################################################### - Lees Ferry 
+    {
+        x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [28, 28],
         xaxis: "x",
         yaxis: "y2",
@@ -89,67 +72,124 @@ function createPlot(containerId) {
         type: 'scatter',
         mode: 'none',
     }, {
-        name: 'RM0 (Lees Ferry)',
+        name: 'Observed',
         xaxis: "x",
         yaxis: "y2",
+        color: 'rgb(169,169,169)',
+        x: obs.RM0.map(x => x.Datetime),
+        y: obs.RM0.map(x => x.Temperature),
+        type: "scatter",
+        mode: "lines+markers",
+        marker: {
+            size: 3,
+            color: '#2b83ba',
+        },
+        line: {
+            width: 1,
+            color: '#2b83ba',
+        }
+    }, {
+        name: 'Modeled',
+        xaxis: "x",
+        yaxis: "y2",
+        color: '#2b83ba',
         x: mod.RM0.map(x => x.Datetime),
         y: mod.RM0.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: '#2bba62'
         },
         line: {
-            width: 1
+            width: 1,
+            color: '#2bba62'
         }
-    }, {
-        // ############################################################### - Above RM61
-        name: 'RM61 (Above LCR)',
+    },
+    // ############################################################### - Above RM61
+    {
+        x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
+        y: [28, 28],
         xaxis: "x",
         yaxis: "y3",
+        fill: 'tonexty',
+        fillcolor: 'rgba(26,150,65,0.15)',
+        type: 'scatter',
+        mode: 'none',
+    }, {
+        name: 'Modeled',
+        xaxis: "x",
+        yaxis: "y3",
+        color: '#2b83ba',
         x: mod.RM61.map(x => x.Datetime),
         y: mod.RM61.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: '#2bba62'
         },
         line: {
-            width: 1
+            width: 1,
+            color: '#2bba62'
         }
     }, {
         // ############################################################### - Grand Canyon
-        name: 'RM87 (Grand Canyon)',
+        x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
+        y: [28, 28],
+        xaxis: "x",
+        yaxis: "y4",
+        fill: 'tonexty',
+        fillcolor: 'rgba(26,150,65,0.15)',
+        type: 'scatter',
+        mode: 'none',
+    }, {
+        name: 'Modeled',
         showlegend: true,
         legendgroup: 'g2',
         xaxis: "x",
         yaxis: "y4",
+        linecolor: '#2b83ba',
         x: mod.RM88.map(x => x.Datetime),
         y: mod.RM88.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: '#2bba62'
         },
         line: {
-            width: 1
+            width: 1,
+            color: '#2bba62'
         }
         // ############################################################### - Diamond Creek 
     }, {
-        name: 'RM226',
+        x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
+        y: [28, 28],
+        xaxis: "x",
+        yaxis: "y6",
+        fill: 'tonexty',
+        fillcolor: 'rgba(26,150,65,0.15)',
+        type: 'scatter',
+        mode: 'none',
+    }, {
+        name: 'Modeled',
         showlegend: true,
         legendgroup: 'g3',
         xaxis: "x",
         yaxis: "y6",
+        linecolor: '#2b83ba',
         x: mod.RM226.map(x => x.Datetime),
         y: mod.RM226.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
-            size: 3
+            size: 3,
+            color: '#2bba62'
         },
         line: {
-            width: 1
+            width: 1,
+            color: '#2bba62'
         }
     }];
 
@@ -160,13 +200,10 @@ function createPlot(containerId) {
             title: 'Datetime',
             linecolor: '#121F1F',
             mirror: false,
-<<<<<<< HEAD
-            range: [ModDT[0], ModDT[ModDT.length - 1]]
-=======
             tickmode: "linear",
+            range: [ModDT[0], ModDT[ModDT.length - 1]],
             // tickformat: '%a %b %d\n %Y',
             // dtick: 1, // milliseconds
->>>>>>> 8670849afb2972da09640362d8b47f4532c2c737
         },
         yaxis1: {
             title: 'RM-15.7<br>(GCD)',

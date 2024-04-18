@@ -160,7 +160,13 @@ function createPlot(containerId) {
             title: 'Datetime',
             linecolor: '#121F1F',
             mirror: false,
+<<<<<<< HEAD
             range: [ModDT[0], ModDT[ModDT.length - 1]]
+=======
+            tickmode: "linear",
+            // tickformat: '%a %b %d\n %Y',
+            // dtick: 1, // milliseconds
+>>>>>>> 8670849afb2972da09640362d8b47f4532c2c737
         },
         yaxis1: {
             title: 'RM-15.7<br>(GCD)',

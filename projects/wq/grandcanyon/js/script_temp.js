@@ -12,8 +12,8 @@ function createPlot(containerId) {
 
     var ObsDT = obs.RM0.map(x => x.Datetime)
     var ModDT = mod.GCD.map(x => x.Datetime)
-    console.log(ObsDT[ObsDT.length - 1])
-    console.log(ModDT[ModDT.length - 1])
+    // console.log(ObsDT[ObsDT.length - 1])
+    // console.log(ModDT[ModDT.length - 1])
 
     // ###############################################################
     var data = [{
@@ -52,11 +52,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2bba62',
+            color: '#ba622b',
         },
         line: {
             width: 1,
-            color: '#2bba62',
+            color: '#ba622b',
             // dash: 'dot',
         }
 
@@ -99,11 +99,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2bba62'
+            color: '#ba622b'
         },
         line: {
             width: 1,
-            color: '#2bba62'
+            color: '#ba622b'
         }
     },
     // ############################################################### - Above RM61
@@ -127,11 +127,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2bba62'
+            color: '#ba622b'
         },
         line: {
             width: 1,
-            color: '#2bba62'
+            color: '#ba622b'
         }
     }, {
         // ############################################################### - Grand Canyon
@@ -156,11 +156,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2bba62'
+            color: '#ba622b'
         },
         line: {
             width: 1,
-            color: '#2bba62'
+            color: '#ba622b'
         }
         // ############################################################### - Diamond Creek 
     }, {
@@ -185,11 +185,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2bba62'
+            color: '#ba622b'
         },
         line: {
             width: 1,
-            color: '#2bba62'
+            color: '#ba622b'
         }
     }];
 
@@ -209,36 +209,36 @@ function createPlot(containerId) {
             title: 'RM-15.7<br>(GCD)',
             fontSize: 10,
             linecolor: '#121F1F',
-            range: [8, 28],
-            fixedrange: true,
+            // range: [8, 28],
+            // fixedrange: true,
         },
         yaxis2: {
             title: 'RM0<br>(Lees Ferry)',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [8, 28],
-            fixedrange: true,
+            // range: [8, 28],
+            // fixedrange: true,
         },
         yaxis3: {
             title: 'RM61<br>(above LCR)',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [8, 28],
-            fixedrange: true,
+            // range: [8, 28],
+            // fixedrange: true,
         },
         yaxis4: {
             title: 'RM87<br>(above LCR)',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [8, 28],
-            fixedrange: true,
+            // range: [8, 28],
+            // fixedrange: true,
         },
         yaxis6: {
             title: 'RM226<br>(above LCR)',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [8, 28],
-            fixedrange: true,
+            // range: [8, 28],
+            // fixedrange: true,
         },
         grid: {
             rows: 5,
@@ -304,38 +304,6 @@ function createPlot(containerId) {
 
     Plotly.newPlot(containerId, data, layout, config);
 }
-
-
-// function to convert to yyyy-mm-dd ////////////////////////////////////////
-function formatDate(date) {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear(),
-        minute = '' + d.getMinutes(),
-        hour = '' + d.getHours();
-
-    if (month.length < 2)
-        month = '0' + month;
-    if (day.length < 2)
-        day = '0' + day;
-    if (minute.length < 2)
-        minute = '0' + minute;
-    if (hour.length < 2)
-        hour = '0' + hour;
-
-    return [year, month, day, hour, minute].join('');
-}
-
-// var qDays = 7; // number of days to plot
-// var d = new Date();
-// var startDate = new Date(d);
-// startDate.setDate(startDate.getDate() - qDays)
-// console.log(startDate)
-// // convert to yyyy-mm-dd
-// var startStr = [];
-// startStr = formatDate(startDate)
-// console.log(startStr)
 
 // Get all plot containers
 var plotContainers = document.querySelectorAll('[id^="temp"]');

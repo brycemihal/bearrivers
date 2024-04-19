@@ -11,10 +11,16 @@ function createPlot(containerId) {
 
 
     var ObsDT = obs.RM0.map(x => x.Datetime)
+    var ObsDV = obs.GCD.map(x => x.Discharge)
     var ModDT = mod.GCD.map(x => x.Datetime)
 
-    var obsDv = obs.RM0.map(x => x.Discharge)
-    var ModDv = mod.GCD.map(x => x.Discharge)
+    // var maxDV = Math.max.apply(Math, myArr.map(o => o.x));
+    var maxDV = Math.max.apply(Math, ObsDV) * 1.1;
+    var minDV = Math.min.apply(Math, ObsDV) * 0.9;
+    // console.log(Math.max(maxDV))
+
+    // var obsDv = obs.RM0.map(x => x.Discharge)
+    // var ModDv = mod.GCD.map(x => x.Discharge)
     // console.log(ObsDT[ObsDT.length - 1])
     // console.log(ModDT[ModDT.length - 1])
 
@@ -22,7 +28,7 @@ function createPlot(containerId) {
     var data = [{
         // ############################################################### - GCD
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [400, 400],
+        y: [maxDV,maxDV],
         xaxis: "x",
         yaxis: "y",
         fill: 'tonexty',
@@ -67,7 +73,7 @@ function createPlot(containerId) {
     // ############################################################### - Lees Ferry 
     {
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [400, 400],
+        y: [maxDV,maxDV],
         xaxis: "x",
         yaxis: "y2",
         fill: 'tonexty',
@@ -112,7 +118,7 @@ function createPlot(containerId) {
         // ############################################################### - Above RM61
         // {
         //     x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        //     y: [400, 400],
+        //     y: [maxDV,maxDV],
         //     xaxis: "x",
         //     yaxis: "y3",
         //     fill: 'tonexty',
@@ -139,7 +145,7 @@ function createPlot(containerId) {
     }, {
         // ############################################################### - Grand Canyon
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [400, 400],
+        y: [maxDV,maxDV],
         xaxis: "x",
         yaxis: "y4",
         fill: 'tonexty',
@@ -185,7 +191,7 @@ function createPlot(containerId) {
         // ############################################################### - Diamond Creek 
     }, {
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [400, 400],
+        y: [maxDV,maxDV],
         xaxis: "x",
         yaxis: "y6",
         fill: 'tonexty',
@@ -246,36 +252,36 @@ function createPlot(containerId) {
             title: 'RM-15.7<br>(GCD)',
             fontSize: 10,
             linecolor: '#121F1F',
-            // range: [8, 28],
-            // fixedrange: true,
+            range: [minDV,maxDV],
+            fixedrange: true,
         },
         yaxis2: {
             title: 'RM0<br>(Lees Ferry)',
             fontSize: 10,
             linecolor: '121F1F',
-            // range: [8, 28],
-            // fixedrange: true,
+            range: [minDV,maxDV],
+            fixedrange: true,
         },
         yaxis3: {
             title: 'RM61<br>(above LCR)',
             fontSize: 10,
             linecolor: '121F1F',
-            // range: [8, 28],
-            // fixedrange: true,
+            range: [minDV,maxDV],
+            fixedrange: true,
         },
         yaxis4: {
             title: 'RM87<br>(above LCR)',
             fontSize: 10,
             linecolor: '121F1F',
-            // range: [8, 28],
-            // fixedrange: true,
+            range: [minDV,maxDV],
+            fixedrange: true,
         },
         yaxis6: {
             title: 'RM226<br>(above LCR)',
             fontSize: 10,
             linecolor: '121F1F',
-            // range: [8, 28],
-            // fixedrange: true,
+            range: [minDV,maxDV],
+            fixedrange: true,
         },
         grid: {
             rows: 5,

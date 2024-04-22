@@ -13,16 +13,14 @@ function createPlot(containerId) {
     var ObsDT = obs.RM0.map(x => x.Datetime)
     var ObsDV = obs.GCD.map(x => x.Discharge)
     var ModDT = mod.GCD.map(x => x.Datetime)
+    var ModDV = mod.GCD.map(x => x.Discharge)
 
+    
     // var maxDV = Math.max.apply(Math, myArr.map(o => o.x));
-    var maxDV = Math.max.apply(Math, ObsDV) * 1.1;
-    var minDV = Math.min.apply(Math, ObsDV) * 0.9;
-    // console.log(Math.max(maxDV))
-
-    // var obsDv = obs.RM0.map(x => x.Discharge)
-    // var ModDv = mod.GCD.map(x => x.Discharge)
-    // console.log(ObsDT[ObsDT.length - 1])
-    // console.log(ModDT[ModDT.length - 1])
+    var maxDV = Math.max.apply(Math, ModDV) * 1.1;
+    var minDV = Math.min.apply(Math, ModDV) * 0.9;
+    console.log(minDV)
+    console.log(maxDV)
 
     // ###############################################################
     var data = [{

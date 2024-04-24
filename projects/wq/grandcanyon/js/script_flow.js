@@ -15,7 +15,7 @@ function createPlot(containerId) {
     var ModDT = mod.GCD.map(x => x.Datetime)
     var ModDV = mod.GCD.map(x => x.Discharge)
 
-    
+
     // var maxDV = Math.max.apply(Math, myArr.map(o => o.x));
     var maxDV = Math.max.apply(Math, ModDV) * 1.1;
     var minDV = Math.min.apply(Math, ModDV) * 0.9;
@@ -25,12 +25,14 @@ function createPlot(containerId) {
     // ###############################################################
     var data = [{
         // ############################################################### - GCD
+        name: 'Forecast',
+        hoverinfo: 'name',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [maxDV,maxDV],
+        y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
     }, {
@@ -43,11 +45,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2b83ba',
+            color: '#007fff',
         },
         line: {
             width: 1,
-            color: '#2b83ba',
+            color: '#007fff',
         }
     }, {
         name: 'Modeled',
@@ -59,113 +61,86 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b',
+            color: '#ff8800',
         },
         line: {
             width: 1,
-            color: '#ba622b',
+            color: '#ff8800',
             // dash: 'dot',
         }
 
     },
     // ############################################################### - Lees Ferry 
     {
+        name: 'Forecast',
+        hoverinfo: 'name',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [maxDV,maxDV],
+        y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y2",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
     }, {
         name: 'Observed',
         xaxis: "x",
         yaxis: "y2",
-        color: 'rgb(169,169,169)',
         x: obs.RM0.map(x => x.Datetime),
         y: obs.RM0.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2b83ba',
+            color: '#007fff',
         },
         line: {
             width: 1,
-            color: '#2b83ba',
+            color: '#007fff',
         }
     }, {
         name: 'Modeled',
         xaxis: "x",
         yaxis: "y2",
-        color: '#2b83ba',
         x: mod.RM0.map(x => x.Datetime),
         y: mod.RM0.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
         }
-        // },
-        // ############################################################### - Above RM61
-        // {
-        //     x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        //     y: [maxDV,maxDV],
-        //     xaxis: "x",
-        //     yaxis: "y3",
-        //     fill: 'tonexty',
-        //     fillcolor: 'rgba(26,150,65,0.15)',
-        //     type: 'scatter',
-        //     mode: 'none',
-        // }, {
-        //     name: 'Modeled',
-        //     xaxis: "x",
-        //     yaxis: "y3",
-        //     color: '#2b83ba',
-        //     x: mod.RM61.map(x => x.Datetime),
-        //     y: mod.RM61.map(x => x.Discharge),
-        //     type: "scatter",
-        //     mode: "lines+markers",
-        //     marker: {
-        //         size: 3,
-        //         color: '#ba622b'
-        //     },
-        //     line: {
-        //         width: 1,
-        //         color: '#ba622b'
-        //     }
     }, {
         // ############################################################### - Grand Canyon
+        name: 'Forecast',
+        hoverinfo: 'name',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [maxDV,maxDV],
+        y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y4",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
     }, {
         name: 'Observed',
         xaxis: "x",
         yaxis: "y4",
-        color: 'rgb(169,169,169)',
         x: obs.RM88.map(x => x.Datetime),
         y: obs.RM88.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2b83ba',
+            color: '#007fff',
         },
         line: {
             width: 1,
-            color: '#2b83ba',
+            color: '#007fff',
         }
     }, {
         name: 'Modeled',
@@ -173,45 +148,45 @@ function createPlot(containerId) {
         legendgroup: 'g2',
         xaxis: "x",
         yaxis: "y4",
-        linecolor: '#2b83ba',
         x: mod.RM88.map(x => x.Datetime),
         y: mod.RM88.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
         }
         // ############################################################### - Diamond Creek 
     }, {
+        name: 'Forecast',
+        hoverinfo: 'name',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
-        y: [maxDV,maxDV],
+        y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y6",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
     }, {
         name: 'Observed',
         xaxis: "x",
         yaxis: "y6",
-        color: 'rgb(169,169,169)',
         x: obs.RM226.map(x => x.Datetime),
         y: obs.RM226.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2b83ba',
+            color: '#007fff',
         },
         line: {
             width: 1,
-            color: '#2b83ba',
+            color: '#007fff',
         }
     }, {
         name: 'Modeled',
@@ -219,18 +194,17 @@ function createPlot(containerId) {
         legendgroup: 'g3',
         xaxis: "x",
         yaxis: "y6",
-        linecolor: '#2b83ba',
         x: mod.RM226.map(x => x.Datetime),
         y: mod.RM226.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
         }
     }];
 
@@ -247,38 +221,38 @@ function createPlot(containerId) {
             // dtick: 1, // milliseconds
         },
         yaxis1: {
-            title: 'RM-15.7<br>(GCD)',
+            title: 'RM-15.7<br>(GCD)<br>Discharge<br>[m<sup>3</sup>/s]',
             fontSize: 10,
             linecolor: '#121F1F',
-            range: [minDV,maxDV],
+            range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis2: {
-            title: 'RM0<br>(Lees Ferry)',
+            title: 'RM0<br>Discharge<br>[m<sup>3</sup>/s]',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [minDV,maxDV],
+            range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis3: {
-            title: 'RM61<br>(above LCR)',
+            title: 'RM61<br>Discharge<br>[m<sup>3</sup>/s]',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [minDV,maxDV],
+            range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis4: {
-            title: 'RM87<br>(above LCR)',
+            title: 'RM87<br>Discharge<br>[m<sup>3</sup>/s]',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [minDV,maxDV],
+            range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis6: {
-            title: 'RM226<br>(above LCR)',
+            title: 'RM226<br>Discharge<br>[m<sup>3</sup>/s]',
             fontSize: 10,
             linecolor: '121F1F',
-            range: [minDV,maxDV],
+            range: [minDV, maxDV],
             fixedrange: true,
         },
         grid: {
@@ -305,7 +279,7 @@ function createPlot(containerId) {
         //         yref: 'y1',
         //         text: 'Air Discharge',
         //         font: {
-        //             color: '#2b83ba'
+        //             color: '#007fff'
         //         },
         //         showarrow: false,
         //     },
@@ -316,7 +290,7 @@ function createPlot(containerId) {
         //         yref: 'y1',
         //         text: 'Dew Point',
         //         font: {
-        //             color: '#2b83ba'
+        //             color: '#007fff'
         //         },
         //         showarrow: false,
         //     },
@@ -327,7 +301,7 @@ function createPlot(containerId) {
         //         yref: 'y1',
         //         text: 'Wind Chill',
         //         font: {
-        //             color: '#2b83ba'
+        //             color: '#007fff'
         //         },
         //         showarrow: false,
         //     },

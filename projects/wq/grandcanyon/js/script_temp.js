@@ -23,14 +23,16 @@ function createPlot(containerId) {
     // ###############################################################
     var data = [{
         // ############################################################### - GCD
+        name: 'Forecast',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        hoverinfo: 'name',
     }, {
         name: 'Observed',
         xaxis: "x",
@@ -41,11 +43,11 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2b83ba',
+            color: '#007fff',
         },
         line: {
             width: 1,
-            color: '#2b83ba',
+            color: '#007fff',
         }
     }, {
         name: 'Modeled',
@@ -57,144 +59,186 @@ function createPlot(containerId) {
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b',
+            color: '#ff8800',
         },
         line: {
             width: 1,
-            color: '#ba622b',
+            color: '#ff8800',
             // dash: 'dot',
         }
 
     },
     // ############################################################### - Lees Ferry 
     {
+        name: 'Forecast',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y2",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        hoverinfo: 'name',
     }, {
         name: 'Observed',
         xaxis: "x",
         yaxis: "y2",
-        color: 'rgb(169,169,169)',
         x: obs.RM0.map(x => x.Datetime),
         y: obs.RM0.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#2b83ba',
+            color: '#007fff',
         },
         line: {
             width: 1,
-            color: '#2b83ba',
+            color: '#007fff',
         }
     }, {
         name: 'Modeled',
         xaxis: "x",
         yaxis: "y2",
-        color: '#2b83ba',
         x: mod.RM0.map(x => x.Datetime),
         y: mod.RM0.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
         }
     },
     // ############################################################### - Above RM61
     {
+        name: 'Forecast',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y3",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        hoverinfo: 'name',
     }, {
         name: 'Modeled',
         xaxis: "x",
         yaxis: "y3",
-        color: '#2b83ba',
         x: mod.RM61.map(x => x.Datetime),
         y: mod.RM61.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
+        }
+    }, {
+        name: 'Threshold',
+        xaxis: "x",
+        yaxis: "y3",
+        x: [ObsDT[0], ModDT[ModDT.length - 1]],
+        y: [15.5, 15.5],
+        type: "line",
+        hoverinfo: 'y',
+        line: {
+            color: '#00DCDC',
+            width: 1,
+            dash: 'dashdot'
         }
     }, {
         // ############################################################### - Grand Canyon
+        name: 'Forecast',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y4",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        hoverinfo: 'name',
     }, {
         name: 'Modeled',
         showlegend: true,
         legendgroup: 'g2',
         xaxis: "x",
         yaxis: "y4",
-        linecolor: '#2b83ba',
         x: mod.RM88.map(x => x.Datetime),
         y: mod.RM88.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
+        }
+    }, {
+        name: 'Threshold',
+        xaxis: "x",
+        yaxis: "y4",
+        x: [ObsDT[0], ModDT[ModDT.length - 1]],
+        y: [15.5, 15.5],
+        type: "line",
+        hoverinfo: 'y',
+        line: {
+            color: '#00DCDC',
+            width: 1,
+            dash: 'dashdot'
         }
         // ############################################################### - Diamond Creek 
     }, {
+        name: 'Forecast',
         x: [ObsDT[ObsDT.length - 1], ModDT[ModDT.length - 1]],
         y: [maxDV, maxDV],
         xaxis: "x",
         yaxis: "y6",
         fill: 'tonexty',
-        fillcolor: 'rgba(26,150,65,0.15)',
+        fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        hoverinfo: 'name',
     }, {
         name: 'Modeled',
         showlegend: true,
         legendgroup: 'g3',
         xaxis: "x",
         yaxis: "y6",
-        linecolor: '#2b83ba',
         x: mod.RM226.map(x => x.Datetime),
         y: mod.RM226.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
         marker: {
             size: 3,
-            color: '#ba622b'
+            color: '#ff8800'
         },
         line: {
             width: 1,
-            color: '#ba622b'
+            color: '#ff8800'
+        }
+    }, {
+        name: 'Threshold',
+        xaxis: "x",
+        yaxis: "y6",
+        x: [ObsDT[0], ModDT[ModDT.length - 1]],
+        y: [15.5, 15.5],
+        type: "line",
+        hoverinfo: 'y',
+        line: {
+            color: '#00DCDC',
+            width: 1,
+            dash: 'dashdot'
         }
     }];
 
@@ -211,35 +255,35 @@ function createPlot(containerId) {
             // dtick: 1, // milliseconds
         },
         yaxis1: {
-            title: 'RM-15.7<br>(GCD)',
+            title: 'RM-15.7<br>(GCD)<br>Temperature<br>[\u00B0C]',
             fontSize: 10,
             linecolor: '#121F1F',
             range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis2: {
-            title: 'RM0<br>(Lees Ferry)',
+            title: 'RM0<br>Temperature<br>[\u00B0C]',
             fontSize: 10,
             linecolor: '121F1F',
             range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis3: {
-            title: 'RM61<br>(above LCR)',
+            title: 'RM61<br>Temperature<br>[\u00B0C]',
             fontSize: 10,
             linecolor: '121F1F',
             range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis4: {
-            title: 'RM87<br>(above LCR)',
+            title: 'RM87<br>Temperature<br>[\u00B0C]',
             fontSize: 10,
             linecolor: '121F1F',
             range: [minDV, maxDV],
             fixedrange: true,
         },
         yaxis6: {
-            title: 'RM226<br>(above LCR)',
+            title: 'RM226<br>Temperature<br>[\u00B0C]',
             fontSize: 10,
             linecolor: '121F1F',
             range: [minDV, maxDV],
@@ -269,7 +313,7 @@ function createPlot(containerId) {
         //         yref: 'y1',
         //         text: 'Air Temperature',
         //         font: {
-        //             color: '#2b83ba'
+        //             color: '#007fff'
         //         },
         //         showarrow: false,
         //     },
@@ -280,7 +324,7 @@ function createPlot(containerId) {
         //         yref: 'y1',
         //         text: 'Dew Point',
         //         font: {
-        //             color: '#2b83ba'
+        //             color: '#007fff'
         //         },
         //         showarrow: false,
         //     },
@@ -291,7 +335,7 @@ function createPlot(containerId) {
         //         yref: 'y1',
         //         text: 'Wind Chill',
         //         font: {
-        //             color: '#2b83ba'
+        //             color: '#007fff'
         //         },
         //         showarrow: false,
         //     },

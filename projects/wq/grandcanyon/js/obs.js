@@ -16972,6 +16972,26 @@ obs = {
 			Temperature: 10,
 			Discharge: 278.9209,
 		},
+		{
+			Datetime: '2024-04-24 08:15:00',
+			Temperature: 10,
+			Discharge: 286.0002,
+		},
+		{
+			Datetime: '2024-04-24 08:30:00',
+			Temperature: 10,
+			Discharge: 288.8318,
+		},
+		{
+			Datetime: '2024-04-24 08:45:00',
+			Temperature: 10,
+			Discharge: 294.4952,
+		},
+		{
+			Datetime: '2024-04-24 09:00:00',
+			Temperature: 10,
+			Discharge: 300.1586,
+		},
 	],
 	RM88: [
 		{
@@ -24788,6 +24808,22 @@ obs = {
 		},
 		{
 			Datetime: '2024-04-24 08:15:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-24 08:30:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-24 08:45:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-24 09:00:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-24 09:15:00',
 			Discharge: 308.6536,
 		},
 	],

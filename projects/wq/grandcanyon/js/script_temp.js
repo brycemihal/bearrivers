@@ -33,6 +33,7 @@ function createPlot(containerId) {
         type: 'scatter',
         mode: 'none',
         hoverinfo: 'name',
+        showlegend: true,
     }, {
         name: 'Observed',
         xaxis: "x",
@@ -41,6 +42,7 @@ function createPlot(containerId) {
         y: obs.GCD.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: true,
         marker: {
             size: 3,
             color: '#007fff',
@@ -57,6 +59,7 @@ function createPlot(containerId) {
         y: mod.GCD.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: true,
         marker: {
             size: 3,
             color: '#ff8800',
@@ -80,6 +83,7 @@ function createPlot(containerId) {
         type: 'scatter',
         mode: 'none',
         hoverinfo: 'name',
+        showlegend: false,
     }, {
         name: 'Observed',
         xaxis: "x",
@@ -88,6 +92,7 @@ function createPlot(containerId) {
         y: obs.RM0.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#007fff',
@@ -104,6 +109,7 @@ function createPlot(containerId) {
         y: mod.RM0.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -125,6 +131,7 @@ function createPlot(containerId) {
         type: 'scatter',
         mode: 'none',
         hoverinfo: 'name',
+        showlegend: false,
     }, {
         name: 'Modeled',
         xaxis: "x",
@@ -133,6 +140,7 @@ function createPlot(containerId) {
         y: mod.RM61.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -149,6 +157,7 @@ function createPlot(containerId) {
         y: [15.5, 15.5],
         type: "line",
         hoverinfo: 'y',
+        showlegend: false,
         line: {
             color: '#00DCDC',
             width: 1,
@@ -166,16 +175,16 @@ function createPlot(containerId) {
         type: 'scatter',
         mode: 'none',
         hoverinfo: 'name',
+        showlegend: false,
     }, {
         name: 'Modeled',
-        showlegend: true,
-        legendgroup: 'g2',
         xaxis: "x",
         yaxis: "y4",
         x: mod.RM88.map(x => x.Datetime),
         y: mod.RM88.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -192,6 +201,7 @@ function createPlot(containerId) {
         y: [15.5, 15.5],
         type: "line",
         hoverinfo: 'y',
+        showlegend: false,
         line: {
             color: '#00DCDC',
             width: 1,
@@ -209,9 +219,9 @@ function createPlot(containerId) {
         type: 'scatter',
         mode: 'none',
         hoverinfo: 'name',
+        showlegend: false,
     }, {
         name: 'Modeled',
-        showlegend: true,
         legendgroup: 'g3',
         xaxis: "x",
         yaxis: "y6",
@@ -219,6 +229,7 @@ function createPlot(containerId) {
         y: mod.RM226.map(x => x.Temperature),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -235,6 +246,7 @@ function createPlot(containerId) {
         y: [15.5, 15.5],
         type: "line",
         hoverinfo: 'y',
+        showlegend: false,
         line: {
             color: '#00DCDC',
             width: 1,
@@ -244,7 +256,7 @@ function createPlot(containerId) {
 
     var layout = {
         hovermode: 'closest',
-        height: 600,
+        height: 500,
         xaxis: {
             title: 'Datetime',
             linecolor: '#121F1F',
@@ -297,12 +309,13 @@ function createPlot(containerId) {
         },
         margin: {
             l: 100,
-            r: 100,
-            b: 70,
-            t: 50,
+            r: 50,
+            b: 0,
+            t: 0,
             pad: 4,
         },
-        showlegend: false,
+        showlegend: true,
+        legend: { "orientation": "h" },
         dragmode: 'pan',
 
         // annotations: [

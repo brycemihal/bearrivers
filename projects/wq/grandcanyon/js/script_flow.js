@@ -82,6 +82,7 @@ function createPlot(containerId) {
         fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        showlegend: false,
     }, {
         name: 'Observed',
         xaxis: "x",
@@ -90,6 +91,7 @@ function createPlot(containerId) {
         y: obs.RM0.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#007fff',
@@ -106,6 +108,7 @@ function createPlot(containerId) {
         y: mod.RM0.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -126,6 +129,7 @@ function createPlot(containerId) {
         fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        showlegend: false,
     }, {
         name: 'Observed',
         xaxis: "x",
@@ -134,6 +138,7 @@ function createPlot(containerId) {
         y: obs.RM88.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#007fff',
@@ -144,14 +149,13 @@ function createPlot(containerId) {
         }
     }, {
         name: 'Modeled',
-        showlegend: true,
-        legendgroup: 'g2',
         xaxis: "x",
         yaxis: "y4",
         x: mod.RM88.map(x => x.Datetime),
         y: mod.RM88.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -172,6 +176,7 @@ function createPlot(containerId) {
         fillcolor: 'rgba(45,45,45,0.1)',
         type: 'scatter',
         mode: 'none',
+        showlegend: false,
     }, {
         name: 'Observed',
         xaxis: "x",
@@ -180,6 +185,7 @@ function createPlot(containerId) {
         y: obs.RM226.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#007fff',
@@ -190,14 +196,13 @@ function createPlot(containerId) {
         }
     }, {
         name: 'Modeled',
-        showlegend: true,
-        legendgroup: 'g3',
         xaxis: "x",
         yaxis: "y6",
         x: mod.RM226.map(x => x.Datetime),
         y: mod.RM226.map(x => x.Discharge),
         type: "scatter",
         mode: "lines+markers",
+        showlegend: false,
         marker: {
             size: 3,
             color: '#ff8800'
@@ -210,7 +215,7 @@ function createPlot(containerId) {
 
     var layout = {
         hovermode: 'closest',
-        height: 600,
+        height: 500,
         xaxis: {
             title: 'Datetime',
             linecolor: '#121F1F',
@@ -256,19 +261,20 @@ function createPlot(containerId) {
             fixedrange: true,
         },
         grid: {
-            rows: 5,
+            rows: 4,
             columns: 1,
             subplots: [['xy'], ['xy2'], ['xy4'], ['xy6']],
             roworder: 'top to bottom'
         },
         margin: {
             l: 100,
-            r: 100,
-            b: 70,
-            t: 50,
+            r: 50,
+            b: 0,
+            t: 0,
             pad: 4,
         },
-        showlegend: false,
+        showlegend: true,
+        legend: { "orientation": "h" },
         dragmode: 'pan',
 
         // annotations: [

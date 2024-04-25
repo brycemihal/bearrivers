@@ -16472,6 +16472,66 @@ obs = {
 			Temperature: 9.9,
 			Discharge: 263.913,
 		},
+		{
+			Datetime: '2024-04-25 07:15:00',
+			Temperature: 9.9,
+			Discharge: 268.1605,
+		},
+		{
+			Datetime: '2024-04-25 07:30:00',
+			Temperature: 9.9,
+			Discharge: 272.4081,
+		},
+		{
+			Datetime: '2024-04-25 07:45:00',
+			Temperature: 9.9,
+			Discharge: 277.7883,
+		},
+		{
+			Datetime: '2024-04-25 08:00:00',
+			Temperature: 9.9,
+			Discharge: 283.1685,
+		},
+		{
+			Datetime: '2024-04-25 08:15:00',
+			Temperature: 9.9,
+			Discharge: 288.8318,
+		},
+		{
+			Datetime: '2024-04-25 08:30:00',
+			Temperature: 9.9,
+			Discharge: 294.4952,
+		},
+		{
+			Datetime: '2024-04-25 08:45:00',
+			Temperature: 9.9,
+			Discharge: 297.3269,
+		},
+		{
+			Datetime: '2024-04-25 09:00:00',
+			Temperature: 9.9,
+			Discharge: 300.1586,
+		},
+		{
+			Datetime: '2024-04-25 09:15:00',
+			Temperature: 9.9,
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 09:30:00',
+			Temperature: 10,
+			Discharge: 305.8219,
+		},
+		{
+			Datetime: '2024-04-25 09:45:00',
+			Temperature: 10,
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 10:00:00',
+			Temperature: 9.9,
+			Discharge: 311.4853,
+		},
 	],
 	RM88: [
 		{
@@ -24257,6 +24317,70 @@ obs = {
 		{
 			Datetime: '2024-04-25 06:15:00',
 			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-25 06:30:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-25 06:45:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 07:00:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-25 07:15:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-25 07:30:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-25 07:45:00',
+			Discharge: 308.6536,
+		},
+		{
+			Datetime: '2024-04-25 08:00:00',
+			Discharge: 305.8219,
+		},
+		{
+			Datetime: '2024-04-25 08:15:00',
+			Discharge: 305.8219,
+		},
+		{
+			Datetime: '2024-04-25 08:30:00',
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 08:45:00',
+			Discharge: 305.8219,
+		},
+		{
+			Datetime: '2024-04-25 09:00:00',
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 09:15:00',
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 09:30:00',
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 09:45:00',
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 10:00:00',
+			Discharge: 302.9903,
+		},
+		{
+			Datetime: '2024-04-25 10:15:00',
+			Discharge: 302.9903,
 		},
 	],
 	RM226: [
@@ -32047,6 +32171,70 @@ obs = {
 		{
 			Datetime: '2024-04-25 06:30:00',
 			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 06:45:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 07:00:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 07:15:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 07:30:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 07:45:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 08:00:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 08:15:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 08:30:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 08:45:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 09:00:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 09:15:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 09:30:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 09:45:00',
+			Discharge: 314.317,
+		},
+		{
+			Datetime: '2024-04-25 10:00:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 10:15:00',
+			Discharge: 311.4853,
+		},
+		{
+			Datetime: '2024-04-25 10:30:00',
+			Discharge: 317.1487,
 		},
 	],
 }

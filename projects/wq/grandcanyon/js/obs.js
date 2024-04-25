@@ -16452,6 +16452,26 @@ obs = {
 			Temperature: 9.9,
 			Discharge: 254.5685,
 		},
+		{
+			Datetime: '2024-04-25 06:15:00',
+			Temperature: 9.9,
+			Discharge: 255.418,
+		},
+		{
+			Datetime: '2024-04-25 06:30:00',
+			Temperature: 9.9,
+			Discharge: 256.5506,
+		},
+		{
+			Datetime: '2024-04-25 06:45:00',
+			Temperature: 9.9,
+			Discharge: 259.6655,
+		},
+		{
+			Datetime: '2024-04-25 07:00:00',
+			Temperature: 9.9,
+			Discharge: 263.913,
+		},
 	],
 	RM88: [
 		{

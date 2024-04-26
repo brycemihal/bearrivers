@@ -160,7 +160,7 @@ function createPlot(containerId) {
         showlegend: false,
         line: {
             color: '#00DCDC',
-            width: 1,
+            width: 2,
             dash: 'dashdot'
         }
     }, {
@@ -204,7 +204,7 @@ function createPlot(containerId) {
         showlegend: false,
         line: {
             color: '#00DCDC',
-            width: 1,
+            width: 2,
             dash: 'dashdot'
         }
         // ############################################################### - Diamond Creek 
@@ -249,7 +249,7 @@ function createPlot(containerId) {
         showlegend: false,
         line: {
             color: '#00DCDC',
-            width: 1,
+            width: 2,
             dash: 'dashdot'
         }
     }];

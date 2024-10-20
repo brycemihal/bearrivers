@@ -1,486 +1,6 @@
 obs = {
 	GCD: [
 		{
-			Datetime: '2024-09-29 04:00:00',
-			Temperature: 15.2237,
-			Discharge: 77.5329,
-		},
-		{
-			Datetime: '2024-09-29 04:15:00',
-			Temperature: 15.4923,
-			Discharge: 77.5736,
-		},
-		{
-			Datetime: '2024-09-29 04:30:00',
-			Temperature: 15.4837,
-			Discharge: 77.6144,
-		},
-		{
-			Datetime: '2024-09-29 04:45:00',
-			Temperature: 15.8794,
-			Discharge: 77.6551,
-		},
-		{
-			Datetime: '2024-09-29 05:00:00',
-			Temperature: 15.9654,
-			Discharge: 77.6958,
-		},
-		{
-			Datetime: '2024-09-29 05:15:00',
-			Temperature: 15.7524,
-			Discharge: 78.3637,
-		},
-		{
-			Datetime: '2024-09-29 05:30:00',
-			Temperature: 15.7935,
-			Discharge: 79.0316,
-		},
-		{
-			Datetime: '2024-09-29 05:45:00',
-			Temperature: 15.6729,
-			Discharge: 79.6995,
-		},
-		{
-			Datetime: '2024-09-29 06:00:00',
-			Temperature: 15.6963,
-			Discharge: 80.3675,
-		},
-		{
-			Datetime: '2024-09-29 06:15:00',
-			Temperature: 16.045,
-			Discharge: 82.409,
-		},
-		{
-			Datetime: '2024-09-29 06:30:00',
-			Temperature: 15.8712,
-			Discharge: 84.4506,
-		},
-		{
-			Datetime: '2024-09-29 06:45:00',
-			Temperature: 15.8046,
-			Discharge: 86.4922,
-		},
-		{
-			Datetime: '2024-09-29 07:00:00',
-			Temperature: 15.9271,
-			Discharge: 88.5338,
-		},
-		{
-			Datetime: '2024-09-29 07:15:00',
-			Temperature: 16.3031,
-			Discharge: 90.8685,
-		},
-		{
-			Datetime: '2024-09-29 07:30:00',
-			Temperature: 16.3945,
-			Discharge: 93.2032,
-		},
-		{
-			Datetime: '2024-09-29 07:45:00',
-			Temperature: 16.3183,
-			Discharge: 95.5379,
-		},
-		{
-			Datetime: '2024-09-29 08:00:00',
-			Temperature: 16.3282,
-			Discharge: 97.8726,
-		},
-		{
-			Datetime: '2024-09-29 08:15:00',
-			Temperature: 16.2029,
-			Discharge: 99.5009,
-		},
-		{
-			Datetime: '2024-09-29 08:30:00',
-			Temperature: 16.1175,
-			Discharge: 101.1291,
-		},
-		{
-			Datetime: '2024-09-29 08:45:00',
-			Temperature: 16.0647,
-			Discharge: 102.7573,
-		},
-		{
-			Datetime: '2024-09-29 09:00:00',
-			Temperature: 16.2323,
-			Discharge: 104.3855,
-		},
-		{
-			Datetime: '2024-09-29 09:15:00',
-			Temperature: 16.1228,
-			Discharge: 111.5543,
-		},
-		{
-			Datetime: '2024-09-29 09:30:00',
-			Temperature: 15.9647,
-			Discharge: 118.7231,
-		},
-		{
-			Datetime: '2024-09-29 09:45:00',
-			Temperature: 16.0771,
-			Discharge: 125.8918,
-		},
-		{
-			Datetime: '2024-09-29 10:00:00',
-			Temperature: 16.2806,
-			Discharge: 133.0606,
-		},
-		{
-			Datetime: '2024-09-29 10:15:00',
-			Temperature: 16.3091,
-			Discharge: 134.4993,
-		},
-		{
-			Datetime: '2024-09-29 10:30:00',
-			Temperature: 15.838,
-			Discharge: 135.938,
-		},
-		{
-			Datetime: '2024-09-29 10:45:00',
-			Temperature: 15.6992,
-			Discharge: 137.3767,
-		},
-		{
-			Datetime: '2024-09-29 11:00:00',
-			Temperature: 15.5993,
-			Discharge: 138.8154,
-		},
-		{
-			Datetime: '2024-09-29 11:15:00',
-			Temperature: 15.6625,
-			Discharge: 139.208,
-		},
-		{
-			Datetime: '2024-09-29 11:30:00',
-			Temperature: 15.9968,
-			Discharge: 139.6006,
-		},
-		{
-			Datetime: '2024-09-29 11:45:00',
-			Temperature: 16.03,
-			Discharge: 139.9933,
-		},
-		{
-			Datetime: '2024-09-29 12:00:00',
-			Temperature: 15.9029,
-			Discharge: 140.3859,
-		},
-		{
-			Datetime: '2024-09-29 12:15:00',
-			Temperature: 15.7357,
-			Discharge: 139.6495,
-		},
-		{
-			Datetime: '2024-09-29 12:30:00',
-			Temperature: 16.0014,
-			Discharge: 138.9131,
-		},
-		{
-			Datetime: '2024-09-29 12:45:00',
-			Temperature: 16.03,
-			Discharge: 138.1767,
-		},
-		{
-			Datetime: '2024-09-29 13:00:00',
-			Temperature: 16.148,
-			Discharge: 137.4403,
-		},
-		{
-			Datetime: '2024-09-29 13:15:00',
-			Temperature: 15.8423,
-			Discharge: 140.1097,
-		},
-		{
-			Datetime: '2024-09-29 13:30:00',
-			Temperature: 16.1096,
-			Discharge: 142.7791,
-		},
-		{
-			Datetime: '2024-09-29 13:45:00',
-			Temperature: 16.1037,
-			Discharge: 145.4484,
-		},
-		{
-			Datetime: '2024-09-29 14:00:00',
-			Temperature: 16.0728,
-			Discharge: 148.1178,
-		},
-		{
-			Datetime: '2024-09-29 14:15:00',
-			Temperature: 15.7614,
-			Discharge: 173.5344,
-		},
-		{
-			Datetime: '2024-09-29 14:30:00',
-			Temperature: 16.0296,
-			Discharge: 198.951,
-		},
-		{
-			Datetime: '2024-09-29 14:45:00',
-			Temperature: 16.2597,
-			Discharge: 224.3677,
-		},
-		{
-			Datetime: '2024-09-29 15:00:00',
-			Temperature: 16.5796,
-			Discharge: 249.7843,
-		},
-		{
-			Datetime: '2024-09-29 15:15:00',
-			Temperature: 16.8188,
-			Discharge: 249.7537,
-		},
-		{
-			Datetime: '2024-09-29 15:30:00',
-			Temperature: 16.958,
-			Discharge: 249.7232,
-		},
-		{
-			Datetime: '2024-09-29 15:45:00',
-			Temperature: 17.0699,
-			Discharge: 249.6926,
-		},
-		{
-			Datetime: '2024-09-29 16:00:00',
-			Temperature: 17.0528,
-			Discharge: 249.662,
-		},
-		{
-			Datetime: '2024-09-29 16:15:00',
-			Temperature: 16.9683,
-			Discharge: 247.5413,
-		},
-		{
-			Datetime: '2024-09-29 16:30:00',
-			Temperature: 16.9328,
-			Discharge: 245.4207,
-		},
-		{
-			Datetime: '2024-09-29 16:45:00',
-			Temperature: 16.9482,
-			Discharge: 243.3,
-		},
-		{
-			Datetime: '2024-09-29 17:00:00',
-			Temperature: 16.9954,
-			Discharge: 241.1794,
-		},
-		{
-			Datetime: '2024-09-29 17:15:00',
-			Temperature: 16.9274,
-			Discharge: 225.9982,
-		},
-		{
-			Datetime: '2024-09-29 17:30:00',
-			Temperature: 16.7838,
-			Discharge: 210.8169,
-		},
-		{
-			Datetime: '2024-09-29 17:45:00',
-			Temperature: 16.7155,
-			Discharge: 195.6357,
-		},
-		{
-			Datetime: '2024-09-29 18:00:00',
-			Temperature: 16.7645,
-			Discharge: 180.4545,
-		},
-		{
-			Datetime: '2024-09-29 18:15:00',
-			Temperature: 17.0968,
-			Discharge: 179.248,
-		},
-		{
-			Datetime: '2024-09-29 18:30:00',
-			Temperature: 17.1935,
-			Discharge: 178.0415,
-		},
-		{
-			Datetime: '2024-09-29 18:45:00',
-			Temperature: 17.2091,
-			Discharge: 176.835,
-		},
-		{
-			Datetime: '2024-09-29 19:00:00',
-			Temperature: 17.2009,
-			Discharge: 175.6284,
-		},
-		{
-			Datetime: '2024-09-29 19:15:00',
-			Temperature: 17.2,
-			Discharge: 175.608,
-		},
-		{
-			Datetime: '2024-09-29 19:30:00',
-			Temperature: 17.2454,
-			Discharge: 175.5875,
-		},
-		{
-			Datetime: '2024-09-29 19:45:00',
-			Temperature: 17.25,
-			Discharge: 175.5671,
-		},
-		{
-			Datetime: '2024-09-29 20:00:00',
-			Temperature: 17.25,
-			Discharge: 175.5466,
-		},
-		{
-			Datetime: '2024-09-29 20:15:00',
-			Temperature: 17.25,
-			Discharge: 174.8121,
-		},
-		{
-			Datetime: '2024-09-29 20:30:00',
-			Temperature: 17.2409,
-			Discharge: 174.0775,
-		},
-		{
-			Datetime: '2024-09-29 20:45:00',
-			Temperature: 17.2309,
-			Discharge: 173.343,
-		},
-		{
-			Datetime: '2024-09-29 21:00:00',
-			Temperature: 17.2663,
-			Discharge: 172.6085,
-		},
-		{
-			Datetime: '2024-09-29 21:15:00',
-			Temperature: 17.3063,
-			Discharge: 150.6681,
-		},
-		{
-			Datetime: '2024-09-29 21:30:00',
-			Temperature: 17.2736,
-			Discharge: 128.7278,
-		},
-		{
-			Datetime: '2024-09-29 21:45:00',
-			Temperature: 17.2246,
-			Discharge: 106.7875,
-		},
-		{
-			Datetime: '2024-09-29 22:00:00',
-			Temperature: 17.2745,
-			Discharge: 84.8472,
-		},
-		{
-			Datetime: '2024-09-29 22:15:00',
-			Temperature: 17.3527,
-			Discharge: 82.5813,
-		},
-		{
-			Datetime: '2024-09-29 22:30:00',
-			Temperature: 16.8056,
-			Discharge: 80.3155,
-		},
-		{
-			Datetime: '2024-09-29 22:45:00',
-			Temperature: 16.4595,
-			Discharge: 78.0497,
-		},
-		{
-			Datetime: '2024-09-29 23:00:00',
-			Temperature: 16.2482,
-			Discharge: 75.7838,
-		},
-		{
-			Datetime: '2024-09-29 23:15:00',
-			Temperature: 16.003,
-			Discharge: 74.7283,
-		},
-		{
-			Datetime: '2024-09-29 23:30:00',
-			Temperature: 15.8891,
-			Discharge: 73.6728,
-		},
-		{
-			Datetime: '2024-09-29 23:45:00',
-			Temperature: 15.8437,
-			Discharge: 72.6173,
-		},
-		{
-			Datetime: '2024-09-30 00:00:00',
-			Temperature: 15.7401,
-			Discharge: 71.5618,
-		},
-		{
-			Datetime: '2024-09-30 00:15:00',
-			Temperature: 15.3397,
-			Discharge: 71.4774,
-		},
-		{
-			Datetime: '2024-09-30 00:30:00',
-			Temperature: 15.3272,
-			Discharge: 71.393,
-		},
-		{
-			Datetime: '2024-09-30 00:45:00',
-			Temperature: 15.2937,
-			Discharge: 71.3086,
-		},
-		{
-			Datetime: '2024-09-30 01:00:00',
-			Temperature: 15.3172,
-			Discharge: 71.2242,
-		},
-		{
-			Datetime: '2024-09-30 01:15:00',
-			Temperature: 15.1384,
-			Discharge: 71.2591,
-		},
-		{
-			Datetime: '2024-09-30 01:30:00',
-			Temperature: 15.1835,
-			Discharge: 71.2939,
-		},
-		{
-			Datetime: '2024-09-30 01:45:00',
-			Temperature: 15.3169,
-			Discharge: 71.3287,
-		},
-		{
-			Datetime: '2024-09-30 02:00:00',
-			Temperature: 15.2846,
-			Discharge: 71.3636,
-		},
-		{
-			Datetime: '2024-09-30 02:15:00',
-			Temperature: 15.1983,
-			Discharge: 71.714,
-		},
-		{
-			Datetime: '2024-09-30 02:30:00',
-			Temperature: 15.0538,
-			Discharge: 72.0644,
-		},
-		{
-			Datetime: '2024-09-30 02:45:00',
-			Temperature: 15.2851,
-			Discharge: 72.4148,
-		},
-		{
-			Datetime: '2024-09-30 03:00:00',
-			Temperature: 15.2737,
-			Discharge: 72.7652,
-		},
-		{
-			Datetime: '2024-09-30 03:15:00',
-			Temperature: 15.3335,
-			Discharge: 73.2291,
-		},
-		{
-			Datetime: '2024-09-30 03:30:00',
-			Temperature: 15.2583,
-			Discharge: 73.6929,
-		},
-		{
-			Datetime: '2024-09-30 03:45:00',
-			Temperature: 15.3499,
-			Discharge: 74.1567,
-		},
-		{
 			Datetime: '2024-09-30 04:00:00',
 			Temperature: 15.2511,
 			Discharge: 74.6206,
@@ -9028,482 +8548,482 @@ obs = {
 		{
 			Datetime: '2024-10-17 23:15:00',
 			Temperature: 15.4278,
-			Discharge: NaN,
+			Discharge: 71.5968,
 		},
 		{
 			Datetime: '2024-10-17 23:30:00',
 			Temperature: 15.4172,
-			Discharge: NaN,
+			Discharge: 71.595,
 		},
 		{
 			Datetime: '2024-10-17 23:45:00',
 			Temperature: 15.2203,
-			Discharge: NaN,
+			Discharge: 71.5933,
 		},
 		{
 			Datetime: '2024-10-18 00:00:00',
 			Temperature: 15.1275,
-			Discharge: NaN,
+			Discharge: 71.5915,
 		},
 		{
 			Datetime: '2024-10-18 00:15:00',
 			Temperature: 15.0837,
-			Discharge: NaN,
+			Discharge: 71.5825,
 		},
 		{
 			Datetime: '2024-10-18 00:30:00',
 			Temperature: 15.0891,
-			Discharge: NaN,
+			Discharge: 71.5735,
 		},
 		{
 			Datetime: '2024-10-18 00:45:00',
 			Temperature: 15.0356,
-			Discharge: NaN,
+			Discharge: 71.5645,
 		},
 		{
 			Datetime: '2024-10-18 01:00:00',
 			Temperature: 15.0482,
-			Discharge: NaN,
+			Discharge: 71.5555,
 		},
 		{
 			Datetime: '2024-10-18 01:15:00',
 			Temperature: 15.0046,
-			Discharge: NaN,
+			Discharge: 71.5604,
 		},
 		{
 			Datetime: '2024-10-18 01:30:00',
 			Temperature: 15.0091,
-			Discharge: NaN,
+			Discharge: 71.5652,
 		},
 		{
 			Datetime: '2024-10-18 01:45:00',
 			Temperature: 14.9737,
-			Discharge: NaN,
+			Discharge: 71.57,
 		},
 		{
 			Datetime: '2024-10-18 02:00:00',
 			Temperature: 14.9972,
-			Discharge: NaN,
+			Discharge: 71.5748,
 		},
 		{
 			Datetime: '2024-10-18 02:15:00',
 			Temperature: 15.0999,
-			Discharge: NaN,
+			Discharge: 71.5609,
 		},
 		{
 			Datetime: '2024-10-18 02:30:00',
 			Temperature: 15.0646,
-			Discharge: NaN,
+			Discharge: 71.547,
 		},
 		{
 			Datetime: '2024-10-18 02:45:00',
 			Temperature: 14.9874,
-			Discharge: NaN,
+			Discharge: 71.5332,
 		},
 		{
 			Datetime: '2024-10-18 03:00:00',
 			Temperature: 14.9891,
-			Discharge: NaN,
+			Discharge: 71.5193,
 		},
 		{
 			Datetime: '2024-10-18 03:15:00',
 			Temperature: 14.8357,
-			Discharge: NaN,
+			Discharge: 71.5747,
 		},
 		{
 			Datetime: '2024-10-18 03:30:00',
 			Temperature: 14.8926,
-			Discharge: NaN,
+			Discharge: 71.63,
 		},
 		{
 			Datetime: '2024-10-18 03:45:00',
 			Temperature: 15.0271,
-			Discharge: NaN,
+			Discharge: 71.6854,
 		},
 		{
 			Datetime: '2024-10-18 04:00:00',
 			Temperature: 14.8857,
-			Discharge: NaN,
+			Discharge: 71.7407,
 		},
 		{
 			Datetime: '2024-10-18 04:15:00',
 			Temperature: 14.9971,
-			Discharge: NaN,
+			Discharge: 73.0631,
 		},
 		{
 			Datetime: '2024-10-18 04:30:00',
 			Temperature: 15.0282,
-			Discharge: NaN,
+			Discharge: 74.3854,
 		},
 		{
 			Datetime: '2024-10-18 04:45:00',
 			Temperature: 14.9301,
-			Discharge: NaN,
+			Discharge: 75.7077,
 		},
 		{
 			Datetime: '2024-10-18 05:00:00',
 			Temperature: 15.0927,
-			Discharge: NaN,
+			Discharge: 77.03,
 		},
 		{
 			Datetime: '2024-10-18 05:15:00',
 			Temperature: 15.0555,
-			Discharge: NaN,
+			Discharge: 80.8516,
 		},
 		{
 			Datetime: '2024-10-18 05:30:00',
 			Temperature: 15.2316,
-			Discharge: NaN,
+			Discharge: 84.6732,
 		},
 		{
 			Datetime: '2024-10-18 05:45:00',
 			Temperature: 15.1865,
-			Discharge: NaN,
+			Discharge: 88.4947,
 		},
 		{
 			Datetime: '2024-10-18 06:00:00',
 			Temperature: 15.3616,
-			Discharge: NaN,
+			Discharge: 92.3163,
 		},
 		{
 			Datetime: '2024-10-18 06:15:00',
 			Temperature: 15.734,
-			Discharge: NaN,
+			Discharge: 102.0605,
 		},
 		{
 			Datetime: '2024-10-18 06:30:00',
 			Temperature: 15.8245,
-			Discharge: NaN,
+			Discharge: 111.8047,
 		},
 		{
 			Datetime: '2024-10-18 06:45:00',
 			Temperature: 15.8573,
-			Discharge: NaN,
+			Discharge: 121.5489,
 		},
 		{
 			Datetime: '2024-10-18 07:00:00',
 			Temperature: 15.7692,
-			Discharge: NaN,
+			Discharge: 131.293,
 		},
 		{
 			Datetime: '2024-10-18 07:15:00',
 			Temperature: 15.9779,
-			Discharge: NaN,
+			Discharge: 131.8357,
 		},
 		{
 			Datetime: '2024-10-18 07:30:00',
 			Temperature: 15.9546,
-			Discharge: NaN,
+			Discharge: 132.3784,
 		},
 		{
 			Datetime: '2024-10-18 07:45:00',
 			Temperature: 16.0136,
-			Discharge: NaN,
+			Discharge: 132.9211,
 		},
 		{
 			Datetime: '2024-10-18 08:00:00',
 			Temperature: 15.9928,
-			Discharge: NaN,
+			Discharge: 133.4638,
 		},
 		{
 			Datetime: '2024-10-18 08:15:00',
 			Temperature: 15.9991,
-			Discharge: NaN,
+			Discharge: 133.553,
 		},
 		{
 			Datetime: '2024-10-18 08:30:00',
 			Temperature: 16.0454,
-			Discharge: NaN,
+			Discharge: 133.6422,
 		},
 		{
 			Datetime: '2024-10-18 08:45:00',
 			Temperature: 16.0046,
-			Discharge: NaN,
+			Discharge: 133.7314,
 		},
 		{
 			Datetime: '2024-10-18 09:00:00',
 			Temperature: 15.9727,
-			Discharge: NaN,
+			Discharge: 133.8206,
 		},
 		{
 			Datetime: '2024-10-18 09:15:00',
 			Temperature: 15.8792,
-			Discharge: NaN,
+			Discharge: 133.4731,
 		},
 		{
 			Datetime: '2024-10-18 09:30:00',
 			Temperature: 15.8609,
-			Discharge: NaN,
+			Discharge: 133.1256,
 		},
 		{
 			Datetime: '2024-10-18 09:45:00',
 			Temperature: 15.9599,
-			Discharge: NaN,
+			Discharge: 132.778,
 		},
 		{
 			Datetime: '2024-10-18 10:00:00',
 			Temperature: 16.0608,
-			Discharge: NaN,
+			Discharge: 132.4305,
 		},
 		{
 			Datetime: '2024-10-18 10:15:00',
 			Temperature: 16.0972,
-			Discharge: NaN,
+			Discharge: 132.5879,
 		},
 		{
 			Datetime: '2024-10-18 10:30:00',
 			Temperature: 16.1908,
-			Discharge: NaN,
+			Discharge: 132.7453,
 		},
 		{
 			Datetime: '2024-10-18 10:45:00',
 			Temperature: 16.2363,
-			Discharge: NaN,
+			Discharge: 132.9026,
 		},
 		{
 			Datetime: '2024-10-18 11:00:00',
 			Temperature: 16.2309,
-			Discharge: NaN,
+			Discharge: 133.06,
 		},
 		{
 			Datetime: '2024-10-18 11:15:00',
 			Temperature: 16.2391,
-			Discharge: NaN,
+			Discharge: 133.1662,
 		},
 		{
 			Datetime: '2024-10-18 11:30:00',
 			Temperature: 16.3852,
-			Discharge: NaN,
+			Discharge: 133.2724,
 		},
 		{
 			Datetime: '2024-10-18 11:45:00',
 			Temperature: 16.3728,
-			Discharge: NaN,
+			Discharge: 133.3786,
 		},
 		{
 			Datetime: '2024-10-18 12:00:00',
 			Temperature: 16.3246,
-			Discharge: NaN,
+			Discharge: 133.4848,
 		},
 		{
 			Datetime: '2024-10-18 12:15:00',
 			Temperature: 16.2383,
-			Discharge: NaN,
+			Discharge: 133.4565,
 		},
 		{
 			Datetime: '2024-10-18 12:30:00',
 			Temperature: 16.23,
-			Discharge: NaN,
+			Discharge: 133.4283,
 		},
 		{
 			Datetime: '2024-10-18 12:45:00',
 			Temperature: 16.1574,
-			Discharge: NaN,
+			Discharge: 133.4,
 		},
 		{
 			Datetime: '2024-10-18 13:00:00',
 			Temperature: 16.2045,
-			Discharge: NaN,
+			Discharge: 133.3718,
 		},
 		{
 			Datetime: '2024-10-18 13:15:00',
 			Temperature: 16.1555,
-			Discharge: NaN,
+			Discharge: 133.4188,
 		},
 		{
 			Datetime: '2024-10-18 13:30:00',
 			Temperature: 16.032,
-			Discharge: NaN,
+			Discharge: 133.4658,
 		},
 		{
 			Datetime: '2024-10-18 13:45:00',
 			Temperature: 16.0563,
-			Discharge: NaN,
+			Discharge: 133.5128,
 		},
 		{
 			Datetime: '2024-10-18 14:00:00',
 			Temperature: 15.9874,
-			Discharge: NaN,
+			Discharge: 133.5598,
 		},
 		{
 			Datetime: '2024-10-18 14:15:00',
 			Temperature: 15.9618,
-			Discharge: NaN,
+			Discharge: 134.4279,
 		},
 		{
 			Datetime: '2024-10-18 14:30:00',
 			Temperature: 15.8965,
-			Discharge: NaN,
+			Discharge: 135.2961,
 		},
 		{
 			Datetime: '2024-10-18 14:45:00',
 			Temperature: 15.7266,
-			Discharge: NaN,
+			Discharge: 136.1642,
 		},
 		{
 			Datetime: '2024-10-18 15:00:00',
 			Temperature: 15.8008,
-			Discharge: NaN,
+			Discharge: 137.0323,
 		},
 		{
 			Datetime: '2024-10-18 15:15:00',
 			Temperature: 15.7555,
-			Discharge: NaN,
+			Discharge: 158.3552,
 		},
 		{
 			Datetime: '2024-10-18 15:30:00',
 			Temperature: 15.9225,
-			Discharge: NaN,
+			Discharge: 179.678,
 		},
 		{
 			Datetime: '2024-10-18 15:45:00',
 			Temperature: 15.7857,
-			Discharge: NaN,
+			Discharge: 201.0009,
 		},
 		{
 			Datetime: '2024-10-18 16:00:00',
 			Temperature: 15.77,
-			Discharge: NaN,
+			Discharge: 222.3238,
 		},
 		{
 			Datetime: '2024-10-18 16:15:00',
 			Temperature: 15.9152,
-			Discharge: NaN,
+			Discharge: 223.4411,
 		},
 		{
 			Datetime: '2024-10-18 16:30:00',
 			Temperature: 16.0117,
-			Discharge: NaN,
+			Discharge: 224.5584,
 		},
 		{
 			Datetime: '2024-10-18 16:45:00',
 			Temperature: 16.0564,
-			Discharge: NaN,
+			Discharge: 225.6757,
 		},
 		{
 			Datetime: '2024-10-18 17:00:00',
 			Temperature: 16.1508,
-			Discharge: NaN,
+			Discharge: 226.793,
 		},
 		{
 			Datetime: '2024-10-18 17:15:00',
 			Temperature: 16.06,
-			Discharge: NaN,
+			Discharge: 226.8806,
 		},
 		{
 			Datetime: '2024-10-18 17:30:00',
 			Temperature: 16.0591,
-			Discharge: NaN,
+			Discharge: 226.9682,
 		},
 		{
 			Datetime: '2024-10-18 17:45:00',
 			Temperature: 16.1054,
-			Discharge: NaN,
+			Discharge: 227.0557,
 		},
 		{
 			Datetime: '2024-10-18 18:00:00',
 			Temperature: 16.2462,
-			Discharge: NaN,
+			Discharge: 227.1433,
 		},
 		{
 			Datetime: '2024-10-18 18:15:00',
 			Temperature: 16.2509,
-			Discharge: NaN,
+			Discharge: 227.0795,
 		},
 		{
 			Datetime: '2024-10-18 18:30:00',
 			Temperature: 16.35,
-			Discharge: NaN,
+			Discharge: 227.0157,
 		},
 		{
 			Datetime: '2024-10-18 18:45:00',
 			Temperature: 16.478,
-			Discharge: NaN,
+			Discharge: 226.952,
 		},
 		{
 			Datetime: '2024-10-18 19:00:00',
 			Temperature: 16.4446,
-			Discharge: NaN,
+			Discharge: 226.8882,
 		},
 		{
 			Datetime: '2024-10-18 19:15:00',
 			Temperature: 16.5308,
-			Discharge: NaN,
+			Discharge: 226.9279,
 		},
 		{
 			Datetime: '2024-10-18 19:30:00',
 			Temperature: 16.6852,
-			Discharge: NaN,
+			Discharge: 226.9676,
 		},
 		{
 			Datetime: '2024-10-18 19:45:00',
 			Temperature: 16.9454,
-			Discharge: NaN,
+			Discharge: 227.0073,
 		},
 		{
 			Datetime: '2024-10-18 20:00:00',
 			Temperature: 16.9609,
-			Discharge: NaN,
+			Discharge: 227.047,
 		},
 		{
 			Datetime: '2024-10-18 20:15:00',
 			Temperature: 16.8691,
-			Discharge: NaN,
+			Discharge: 224.7361,
 		},
 		{
 			Datetime: '2024-10-18 20:30:00',
 			Temperature: 16.6691,
-			Discharge: NaN,
+			Discharge: 222.4251,
 		},
 		{
 			Datetime: '2024-10-18 20:45:00',
 			Temperature: 16.9136,
-			Discharge: NaN,
+			Discharge: 220.1142,
 		},
 		{
 			Datetime: '2024-10-18 21:00:00',
 			Temperature: 16.6858,
-			Discharge: NaN,
+			Discharge: 217.8033,
 		},
 		{
 			Datetime: '2024-10-18 21:15:00',
 			Temperature: 16.6146,
-			Discharge: NaN,
+			Discharge: 183.2584,
 		},
 		{
 			Datetime: '2024-10-18 21:30:00',
 			Temperature: 16.4647,
-			Discharge: NaN,
+			Discharge: 148.7136,
 		},
 		{
 			Datetime: '2024-10-18 21:45:00',
 			Temperature: 16.3138,
-			Discharge: NaN,
+			Discharge: 114.1687,
 		},
 		{
 			Datetime: '2024-10-18 22:00:00',
 			Temperature: 16.3272,
-			Discharge: NaN,
+			Discharge: 79.6239,
 		},
 		{
 			Datetime: '2024-10-18 22:15:00',
 			Temperature: 17.1116,
-			Discharge: NaN,
+			Discharge: 77.8108,
 		},
 		{
 			Datetime: '2024-10-18 22:30:00',
 			Temperature: 16.7174,
-			Discharge: NaN,
+			Discharge: 75.9977,
 		},
 		{
 			Datetime: '2024-10-18 22:45:00',
 			Temperature: 16.2524,
-			Discharge: NaN,
+			Discharge: 74.1847,
 		},
 		{
 			Datetime: '2024-10-18 23:00:00',
 			Temperature: 15.8378,
-			Discharge: NaN,
+			Discharge: 72.3716,
 		},
 		{
 			Datetime: '2024-10-18 23:15:00',
@@ -9545,488 +9065,488 @@ obs = {
 			Temperature: 16.2,
 			Discharge: NaN,
 		},
+		{
+			Datetime: '2024-10-19 01:15:00',
+			Temperature: 16.3191,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 01:30:00',
+			Temperature: 16.4027,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 01:45:00',
+			Temperature: 16.3646,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 02:00:00',
+			Temperature: 16.4145,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 02:15:00',
+			Temperature: 16.5745,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 02:30:00',
+			Temperature: 16.6354,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 02:45:00',
+			Temperature: 16.6309,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 03:00:00',
+			Temperature: 16.5936,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 03:15:00',
+			Temperature: 16.4629,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 03:30:00',
+			Temperature: 16.6588,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 03:45:00',
+			Temperature: 16.6891,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 04:00:00',
+			Temperature: 16.7535,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 04:15:00',
+			Temperature: 16.7328,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 04:30:00',
+			Temperature: 16.8845,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 04:45:00',
+			Temperature: 16.9182,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 05:00:00',
+			Temperature: 16.82,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 05:15:00',
+			Temperature: 17.1281,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 05:30:00',
+			Temperature: 17.1964,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 05:45:00',
+			Temperature: 17.2818,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 06:00:00',
+			Temperature: 17.5718,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 06:15:00',
+			Temperature: 17.4273,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 06:30:00',
+			Temperature: 17.3464,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 06:45:00',
+			Temperature: 17.3582,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 07:00:00',
+			Temperature: 17.2964,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 07:15:00',
+			Temperature: 17.2536,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 07:30:00',
+			Temperature: 17.1864,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 07:45:00',
+			Temperature: 17.1073,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 08:00:00',
+			Temperature: 17.2,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 08:15:00',
+			Temperature: 17.1918,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 08:30:00',
+			Temperature: 17.1173,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 08:45:00',
+			Temperature: 17.1191,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 09:00:00',
+			Temperature: 17.1654,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 09:15:00',
+			Temperature: 17.0609,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 09:30:00',
+			Temperature: 16.9864,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 09:45:00',
+			Temperature: 17.0254,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 10:00:00',
+			Temperature: 17.1572,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 10:15:00',
+			Temperature: 17.3336,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 10:30:00',
+			Temperature: 17.4591,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 10:45:00',
+			Temperature: 17.5245,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 11:00:00',
+			Temperature: 17.5845,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 11:15:00',
+			Temperature: 17.6082,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 11:30:00',
+			Temperature: 17.5918,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 11:45:00',
+			Temperature: 17.6082,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 12:00:00',
+			Temperature: 17.5736,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 12:15:00',
+			Temperature: 17.5791,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 12:30:00',
+			Temperature: 17.5982,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 12:45:00',
+			Temperature: 17.6454,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 13:00:00',
+			Temperature: 17.65,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 13:15:00',
+			Temperature: 17.5137,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 13:30:00',
+			Temperature: 17.5545,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 13:45:00',
+			Temperature: 17.5418,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 14:00:00',
+			Temperature: 17.4946,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 14:15:00',
+			Temperature: 17.4446,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 14:30:00',
+			Temperature: 17.5218,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 14:45:00',
+			Temperature: 17.5209,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 15:00:00',
+			Temperature: 17.42,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 15:15:00',
+			Temperature: 17.3555,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 15:30:00',
+			Temperature: 17.3136,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 15:45:00',
+			Temperature: 17.3736,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 16:00:00',
+			Temperature: 17.2981,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 16:15:00',
+			Temperature: 17.3173,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 16:30:00',
+			Temperature: 17.3836,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 16:45:00',
+			Temperature: 17.3718,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 17:00:00',
+			Temperature: 17.3064,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 17:15:00',
+			Temperature: 17.2546,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 17:30:00',
+			Temperature: 17.3227,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 17:45:00',
+			Temperature: 17.3391,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 18:00:00',
+			Temperature: 17.3854,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 18:15:00',
+			Temperature: 17.3446,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 18:30:00',
+			Temperature: 17.458,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 18:45:00',
+			Temperature: 17.5517,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 19:00:00',
+			Temperature: 17.6327,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 19:15:00',
+			Temperature: 17.7127,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 19:30:00',
+			Temperature: 17.7564,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 19:45:00',
+			Temperature: 17.7782,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 20:00:00',
+			Temperature: 17.7255,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 20:15:00',
+			Temperature: 17.7291,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 20:30:00',
+			Temperature: 17.7936,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 20:45:00',
+			Temperature: 17.7909,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 21:00:00',
+			Temperature: 17.7809,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 21:15:00',
+			Temperature: 17.8345,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 21:30:00',
+			Temperature: 17.8854,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 21:45:00',
+			Temperature: 17.9082,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 22:00:00',
+			Temperature: 17.9464,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 22:15:00',
+			Temperature: 18.15,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 22:30:00',
+			Temperature: 18.0335,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 22:45:00',
+			Temperature: 17.8653,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 23:00:00',
+			Temperature: 17.7408,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 23:15:00',
+			Temperature: 17.7573,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 23:30:00',
+			Temperature: 17.5328,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-19 23:45:00',
+			Temperature: 17.5009,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-20 00:00:00',
+			Temperature: 17.4455,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-20 00:15:00',
+			Temperature: 17.1582,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-20 00:30:00',
+			Temperature: 16.8122,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-20 00:45:00',
+			Temperature: 16.7527,
+			Discharge: NaN,
+		},
+		{
+			Datetime: '2024-10-20 01:00:00',
+			Temperature: 16.6864,
+			Discharge: NaN,
+		},
 	],
 	RM0: [
-		{
-			Datetime: '2024-09-29 00:00:00',
-			Temperature: 13.4,
-			Discharge: 194.2536,
-		},
-		{
-			Datetime: '2024-09-29 00:15:00',
-			Temperature: 13.4,
-			Discharge: 195.1031,
-		},
-		{
-			Datetime: '2024-09-29 00:30:00',
-			Temperature: 13.4,
-			Discharge: 195.9526,
-		},
-		{
-			Datetime: '2024-09-29 00:45:00',
-			Temperature: 13.4,
-			Discharge: 198.7843,
-		},
-		{
-			Datetime: '2024-09-29 01:00:00',
-			Temperature: 13.4,
-			Discharge: 200.4833,
-		},
-		{
-			Datetime: '2024-09-29 01:15:00',
-			Temperature: 13.4,
-			Discharge: 202.1823,
-		},
-		{
-			Datetime: '2024-09-29 01:30:00',
-			Temperature: 13.3,
-			Discharge: 205.014,
-		},
-		{
-			Datetime: '2024-09-29 01:45:00',
-			Temperature: 13.3,
-			Discharge: 206.713,
-		},
-		{
-			Datetime: '2024-09-29 02:00:00',
-			Temperature: 13.3,
-			Discharge: 209.5447,
-		},
-		{
-			Datetime: '2024-09-29 02:15:00',
-			Temperature: 13.3,
-			Discharge: 210.3942,
-		},
-		{
-			Datetime: '2024-09-29 02:30:00',
-			Temperature: 13.3,
-			Discharge: 212.3763,
-		},
-		{
-			Datetime: '2024-09-29 02:45:00',
-			Temperature: 13.3,
-			Discharge: 213.2259,
-		},
-		{
-			Datetime: '2024-09-29 03:00:00',
-			Temperature: 13.3,
-			Discharge: 214.0754,
-		},
-		{
-			Datetime: '2024-09-29 03:15:00',
-			Temperature: 13.3,
-			Discharge: 214.9249,
-		},
-		{
-			Datetime: '2024-09-29 03:30:00',
-			Temperature: 13.3,
-			Discharge: 216.907,
-		},
-		{
-			Datetime: '2024-09-29 03:45:00',
-			Temperature: 13.4,
-			Discharge: 216.907,
-		},
-		{
-			Datetime: '2024-09-29 04:00:00',
-			Temperature: 13.4,
-			Discharge: 217.7566,
-		},
-		{
-			Datetime: '2024-09-29 04:15:00',
-			Temperature: 13.5,
-			Discharge: 217.7566,
-		},
-		{
-			Datetime: '2024-09-29 04:30:00',
-			Temperature: 13.6,
-			Discharge: 217.7566,
-		},
-		{
-			Datetime: '2024-09-29 04:45:00',
-			Temperature: 13.8,
-			Discharge: 217.7566,
-		},
-		{
-			Datetime: '2024-09-29 05:00:00',
-			Temperature: 13.9,
-			Discharge: 218.8892,
-		},
-		{
-			Datetime: '2024-09-29 05:15:00',
-			Temperature: 14.1,
-			Discharge: 218.8892,
-		},
-		{
-			Datetime: '2024-09-29 05:30:00',
-			Temperature: 14.4,
-			Discharge: 219.7387,
-		},
-		{
-			Datetime: '2024-09-29 05:45:00',
-			Temperature: 14.6,
-			Discharge: 219.7387,
-		},
-		{
-			Datetime: '2024-09-29 06:00:00',
-			Temperature: 14.8,
-			Discharge: 218.8892,
-		},
-		{
-			Datetime: '2024-09-29 06:15:00',
-			Temperature: 15,
-			Discharge: 220.5882,
-		},
-		{
-			Datetime: '2024-09-29 06:30:00',
-			Temperature: 15.2,
-			Discharge: 220.5882,
-		},
-		{
-			Datetime: '2024-09-29 06:45:00',
-			Temperature: 15.4,
-			Discharge: 220.5882,
-		},
-		{
-			Datetime: '2024-09-29 07:00:00',
-			Temperature: 15.6,
-			Discharge: 220.5882,
-		},
-		{
-			Datetime: '2024-09-29 07:15:00',
-			Temperature: 15.8,
-			Discharge: 221.7209,
-		},
-		{
-			Datetime: '2024-09-29 07:30:00',
-			Temperature: 15.9,
-			Discharge: 221.7209,
-		},
-		{
-			Datetime: '2024-09-29 07:45:00',
-			Temperature: 16,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 08:00:00',
-			Temperature: 16.2,
-			Discharge: 221.7209,
-		},
-		{
-			Datetime: '2024-09-29 08:15:00',
-			Temperature: 16.3,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 08:30:00',
-			Temperature: 16.4,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 08:45:00',
-			Temperature: 16.5,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 09:00:00',
-			Temperature: 16.6,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 09:15:00',
-			Temperature: 16.6,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 09:30:00',
-			Temperature: 16.7,
-			Discharge: 222.5704,
-		},
-		{
-			Datetime: '2024-09-29 09:45:00',
-			Temperature: 16.7,
-			Discharge: 223.4199,
-		},
-		{
-			Datetime: '2024-09-29 10:00:00',
-			Temperature: 16.6,
-			Discharge: 224.5526,
-		},
-		{
-			Datetime: '2024-09-29 10:15:00',
-			Temperature: 16.6,
-			Discharge: 225.4021,
-		},
-		{
-			Datetime: '2024-09-29 10:30:00',
-			Temperature: 16.6,
-			Discharge: 225.4021,
-		},
-		{
-			Datetime: '2024-09-29 10:45:00',
-			Temperature: 16.5,
-			Discharge: 225.4021,
-		},
-		{
-			Datetime: '2024-09-29 11:00:00',
-			Temperature: 16.3,
-			Discharge: 227.3843,
-		},
-		{
-			Datetime: '2024-09-29 11:15:00',
-			Temperature: 16.2,
-			Discharge: 229.3665,
-		},
-		{
-			Datetime: '2024-09-29 11:30:00',
-			Temperature: 16,
-			Discharge: 231.3486,
-		},
-		{
-			Datetime: '2024-09-29 11:45:00',
-			Temperature: 15.7,
-			Discharge: 231.3486,
-		},
-		{
-			Datetime: '2024-09-29 12:00:00',
-			Temperature: 15.4,
-			Discharge: 236.1625,
-		},
-		{
-			Datetime: '2024-09-29 12:15:00',
-			Temperature: 15.2,
-			Discharge: 237.012,
-		},
-		{
-			Datetime: '2024-09-29 12:30:00',
-			Temperature: 14.9,
-			Discharge: 237.012,
-		},
-		{
-			Datetime: '2024-09-29 12:45:00',
-			Temperature: 14.7,
-			Discharge: 250.0378,
-		},
-		{
-			Datetime: '2024-09-29 13:00:00',
-			Temperature: 14.4,
-			Discharge: 251.1704,
-		},
-		{
-			Datetime: '2024-09-29 13:15:00',
-			Temperature: 14.2,
-			Discharge: 260.515,
-		},
-		{
-			Datetime: '2024-09-29 13:30:00',
-			Temperature: 14,
-			Discharge: 268.7269,
-		},
-		{
-			Datetime: '2024-09-29 13:45:00',
-			Temperature: 13.8,
-			Discharge: 275.2397,
-		},
-		{
-			Datetime: '2024-09-29 14:00:00',
-			Temperature: 13.6,
-			Discharge: 279.4873,
-		},
-		{
-			Datetime: '2024-09-29 14:15:00',
-			Temperature: 13.5,
-			Discharge: 286.0002,
-		},
-		{
-			Datetime: '2024-09-29 14:30:00',
-			Temperature: 13.4,
-			Discharge: 294.4952,
-		},
-		{
-			Datetime: '2024-09-29 14:45:00',
-			Temperature: 13.3,
-			Discharge: 297.3269,
-		},
-		{
-			Datetime: '2024-09-29 15:00:00',
-			Temperature: 13.3,
-			Discharge: 300.1586,
-		},
-		{
-			Datetime: '2024-09-29 15:15:00',
-			Temperature: 13.2,
-			Discharge: 302.9903,
-		},
-		{
-			Datetime: '2024-09-29 15:30:00',
-			Temperature: 13.1,
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 15:45:00',
-			Temperature: 13,
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 16:00:00',
-			Temperature: 13,
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 16:15:00',
-			Temperature: 13,
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 16:30:00',
-			Temperature: 13,
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 16:45:00',
-			Temperature: 12.9,
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 17:00:00',
-			Temperature: 12.9,
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 17:15:00',
-			Temperature: 12.9,
-			Discharge: 302.9903,
-		},
-		{
-			Datetime: '2024-09-29 17:30:00',
-			Temperature: 12.9,
-			Discharge: 300.1586,
-		},
-		{
-			Datetime: '2024-09-29 17:45:00',
-			Temperature: 12.9,
-			Discharge: 297.3269,
-		},
-		{
-			Datetime: '2024-09-29 18:00:00',
-			Temperature: 13,
-			Discharge: 291.6635,
-		},
-		{
-			Datetime: '2024-09-29 18:15:00',
-			Temperature: 13,
-			Discharge: 288.8318,
-		},
-		{
-			Datetime: '2024-09-29 18:30:00',
-			Temperature: 13,
-			Discharge: 283.1685,
-		},
-		{
-			Datetime: '2024-09-29 18:45:00',
-			Temperature: 13,
-			Discharge: 278.3546,
-		},
-		{
-			Datetime: '2024-09-29 19:00:00',
-			Temperature: 13,
-			Discharge: 275.2397,
-		},
-		{
-			Datetime: '2024-09-29 19:15:00',
-			Temperature: 13.1,
-			Discharge: 270.9922,
-		},
-		{
-			Datetime: '2024-09-29 19:30:00',
-			Temperature: 13.1,
-			Discharge: 267.8774,
-		},
-		{
-			Datetime: '2024-09-29 19:45:00',
-			Temperature: 13.1,
-			Discharge: 263.6298,
-		},
-		{
-			Datetime: '2024-09-29 20:00:00',
-			Temperature: 13.1,
-			Discharge: 258.2496,
-		},
-		{
-			Datetime: '2024-09-29 20:15:00',
-			Temperature: 13.2,
-			Discharge: 254.2853,
-		},
-		{
-			Datetime: '2024-09-29 20:30:00',
-			Temperature: 13.2,
-			Discharge: 248.0556,
-		},
-		{
-			Datetime: '2024-09-29 20:45:00',
-			Temperature: 13.2,
-			Discharge: 242.109,
-		},
-		{
-			Datetime: '2024-09-29 21:00:00',
-			Temperature: 13.2,
-			Discharge: 237.012,
-		},
-		{
-			Datetime: '2024-09-29 21:15:00',
-			Temperature: 13.3,
-			Discharge: 231.0655,
-		},
-		{
-			Datetime: '2024-09-29 21:30:00',
-			Temperature: 13.3,
-			Discharge: 225.4021,
-		},
-		{
-			Datetime: '2024-09-29 21:45:00',
-			Temperature: 13.3,
-			Discharge: 220.5882,
-		},
-		{
-			Datetime: '2024-09-29 22:00:00',
-			Temperature: 13.3,
-			Discharge: 214.9249,
-		},
-		{
-			Datetime: '2024-09-29 22:15:00',
-			Temperature: 13.4,
-			Discharge: 210.3942,
-		},
-		{
-			Datetime: '2024-09-29 22:30:00',
-			Temperature: 13.4,
-			Discharge: 205.8635,
-		},
-		{
-			Datetime: '2024-09-29 22:45:00',
-			Temperature: 13.4,
-			Discharge: 202.1823,
-		},
-		{
-			Datetime: '2024-09-29 23:00:00',
-			Temperature: 13.4,
-			Discharge: 199.6338,
-		},
-		{
-			Datetime: '2024-09-29 23:15:00',
-			Temperature: 13.4,
-			Discharge: 195.1031,
-		},
-		{
-			Datetime: '2024-09-29 23:30:00',
-			Temperature: 13.4,
-			Discharge: 193.4041,
-		},
-		{
-			Datetime: '2024-09-29 23:45:00',
-			Temperature: 13.4,
-			Discharge: 192.5546,
-		},
 		{
 			Datetime: '2024-09-30 00:00:00',
 			Temperature: 13.4,
@@ -19172,392 +18692,488 @@ obs = {
 			Temperature: 13.3,
 			Discharge: 219.1724,
 		},
+		{
+			Datetime: '2024-10-19 01:15:00',
+			Temperature: 13.3,
+			Discharge: 218.0397,
+		},
+		{
+			Datetime: '2024-10-19 01:30:00',
+			Temperature: 13.3,
+			Discharge: 217.1902,
+		},
+		{
+			Datetime: '2024-10-19 01:45:00',
+			Temperature: 13.3,
+			Discharge: 216.3407,
+		},
+		{
+			Datetime: '2024-10-19 02:00:00',
+			Temperature: 13.3,
+			Discharge: 213.509,
+		},
+		{
+			Datetime: '2024-10-19 02:15:00',
+			Temperature: 13.3,
+			Discharge: 212.3763,
+		},
+		{
+			Datetime: '2024-10-19 02:30:00',
+			Temperature: 13.3,
+			Discharge: 209.8278,
+		},
+		{
+			Datetime: '2024-10-19 02:45:00',
+			Temperature: 13.3,
+			Discharge: 207.8457,
+		},
+		{
+			Datetime: '2024-10-19 03:00:00',
+			Temperature: 13.3,
+			Discharge: 206.1466,
+		},
+		{
+			Datetime: '2024-10-19 03:15:00',
+			Temperature: 13.3,
+			Discharge: 204.1645,
+		},
+		{
+			Datetime: '2024-10-19 03:30:00',
+			Temperature: 13.3,
+			Discharge: 202.4655,
+		},
+		{
+			Datetime: '2024-10-19 03:45:00',
+			Temperature: 13.3,
+			Discharge: 200.7664,
+		},
+		{
+			Datetime: '2024-10-19 04:00:00',
+			Temperature: 13.3,
+			Discharge: 198.7843,
+		},
+		{
+			Datetime: '2024-10-19 04:15:00',
+			Temperature: 13.3,
+			Discharge: 197.0853,
+		},
+		{
+			Datetime: '2024-10-19 04:30:00',
+			Temperature: 13.4,
+			Discharge: 195.3862,
+		},
+		{
+			Datetime: '2024-10-19 04:45:00',
+			Temperature: 13.4,
+			Discharge: 195.3862,
+		},
+		{
+			Datetime: '2024-10-19 05:00:00',
+			Temperature: 13.5,
+			Discharge: 193.6872,
+		},
+		{
+			Datetime: '2024-10-19 05:15:00',
+			Temperature: 13.6,
+			Discharge: 192.8377,
+		},
+		{
+			Datetime: '2024-10-19 05:30:00',
+			Temperature: 13.6,
+			Discharge: 191.9882,
+		},
+		{
+			Datetime: '2024-10-19 05:45:00',
+			Temperature: 13.7,
+			Discharge: 190.8555,
+		},
+		{
+			Datetime: '2024-10-19 06:00:00',
+			Temperature: 13.8,
+			Discharge: 190.006,
+		},
+		{
+			Datetime: '2024-10-19 06:15:00',
+			Temperature: 13.9,
+			Discharge: 189.1565,
+		},
+		{
+			Datetime: '2024-10-19 06:30:00',
+			Temperature: 14.1,
+			Discharge: 189.1565,
+		},
+		{
+			Datetime: '2024-10-19 06:45:00',
+			Temperature: 14.2,
+			Discharge: 188.307,
+		},
+		{
+			Datetime: '2024-10-19 07:00:00',
+			Temperature: 14.3,
+			Discharge: 188.307,
+		},
+		{
+			Datetime: '2024-10-19 07:15:00',
+			Temperature: 14.5,
+			Discharge: 187.4575,
+		},
+		{
+			Datetime: '2024-10-19 07:30:00',
+			Temperature: 14.6,
+			Discharge: 187.4575,
+		},
+		{
+			Datetime: '2024-10-19 07:45:00',
+			Temperature: 14.7,
+			Discharge: 187.4575,
+		},
+		{
+			Datetime: '2024-10-19 08:00:00',
+			Temperature: 14.8,
+			Discharge: 189.1565,
+		},
+		{
+			Datetime: '2024-10-19 08:15:00',
+			Temperature: 15,
+			Discharge: 189.1565,
+		},
+		{
+			Datetime: '2024-10-19 08:30:00',
+			Temperature: 15.1,
+			Discharge: 190.8555,
+		},
+		{
+			Datetime: '2024-10-19 08:45:00',
+			Temperature: 15.2,
+			Discharge: 192.8377,
+		},
+		{
+			Datetime: '2024-10-19 09:00:00',
+			Temperature: 15.4,
+			Discharge: 195.3862,
+		},
+		{
+			Datetime: '2024-10-19 09:15:00',
+			Temperature: 15.5,
+			Discharge: 197.0853,
+		},
+		{
+			Datetime: '2024-10-19 09:30:00',
+			Temperature: 15.6,
+			Discharge: 199.9169,
+		},
+		{
+			Datetime: '2024-10-19 09:45:00',
+			Temperature: 15.7,
+			Discharge: 202.4655,
+		},
+		{
+			Datetime: '2024-10-19 10:00:00',
+			Temperature: 15.8,
+			Discharge: 206.1466,
+		},
+		{
+			Datetime: '2024-10-19 10:15:00',
+			Temperature: 15.9,
+			Discharge: 206.9961,
+		},
+		{
+			Datetime: '2024-10-19 10:30:00',
+			Temperature: 16,
+			Discharge: 209.8278,
+		},
+		{
+			Datetime: '2024-10-19 10:45:00',
+			Temperature: 16,
+			Discharge: 211.5268,
+		},
+		{
+			Datetime: '2024-10-19 11:00:00',
+			Temperature: 16.1,
+			Discharge: 213.509,
+		},
+		{
+			Datetime: '2024-10-19 11:15:00',
+			Temperature: 16.1,
+			Discharge: 214.3585,
+		},
+		{
+			Datetime: '2024-10-19 11:30:00',
+			Temperature: 16.1,
+			Discharge: 216.3407,
+		},
+		{
+			Datetime: '2024-10-19 11:45:00',
+			Temperature: 16,
+			Discharge: 218.0397,
+		},
+		{
+			Datetime: '2024-10-19 12:00:00',
+			Temperature: 15.9,
+			Discharge: 218.0397,
+		},
+		{
+			Datetime: '2024-10-19 12:15:00',
+			Temperature: 15.8,
+			Discharge: 218.0397,
+		},
+		{
+			Datetime: '2024-10-19 12:30:00',
+			Temperature: 15.6,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-19 12:45:00',
+			Temperature: 15.4,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-19 13:00:00',
+			Temperature: 15.3,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-19 13:15:00',
+			Temperature: 15,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-19 13:30:00',
+			Temperature: 14.8,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 13:45:00',
+			Temperature: 14.6,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 14:00:00',
+			Temperature: 14.4,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-19 14:15:00',
+			Temperature: 14.3,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 14:30:00',
+			Temperature: 14.2,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 14:45:00',
+			Temperature: 14,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 15:00:00',
+			Temperature: 14,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 15:15:00',
+			Temperature: 13.9,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 15:30:00',
+			Temperature: 13.8,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 15:45:00',
+			Temperature: 13.8,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 16:00:00',
+			Temperature: 13.8,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 16:15:00',
+			Temperature: 13.7,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 16:30:00',
+			Temperature: 13.7,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 16:45:00',
+			Temperature: 13.7,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 17:00:00',
+			Temperature: 13.7,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 17:15:00',
+			Temperature: 13.7,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 17:30:00',
+			Temperature: 13.7,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 17:45:00',
+			Temperature: 13.7,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 18:00:00',
+			Temperature: 13.7,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 18:15:00',
+			Temperature: 13.7,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 18:30:00',
+			Temperature: 13.8,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 18:45:00',
+			Temperature: 13.8,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-19 19:00:00',
+			Temperature: 13.8,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-19 19:15:00',
+			Temperature: 13.9,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 19:30:00',
+			Temperature: 14,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 19:45:00',
+			Temperature: 14,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-19 20:00:00',
+			Temperature: 14.1,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 20:15:00',
+			Temperature: 14.1,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 20:30:00',
+			Temperature: 14.2,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 20:45:00',
+			Temperature: 14.2,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 21:00:00',
+			Temperature: 14.3,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 21:15:00',
+			Temperature: 14.3,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 21:30:00',
+			Temperature: 14.4,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 21:45:00',
+			Temperature: 14.4,
+			Discharge: 222.8536,
+		},
+		{
+			Datetime: '2024-10-19 22:00:00',
+			Temperature: 14.5,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 22:15:00',
+			Temperature: 14.5,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 22:30:00',
+			Temperature: 14.6,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 22:45:00',
+			Temperature: 14.6,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 23:00:00',
+			Temperature: 14.7,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 23:15:00',
+			Temperature: 14.8,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 23:30:00',
+			Temperature: 14.8,
+			Discharge: 222.0041,
+		},
+		{
+			Datetime: '2024-10-19 23:45:00',
+			Temperature: 14.9,
+			Discharge: 220.8714,
+		},
+		{
+			Datetime: '2024-10-20 00:00:00',
+			Temperature: 15,
+			Discharge: 220.0219,
+		},
+		{
+			Datetime: '2024-10-20 00:15:00',
+			Temperature: 15,
+			Discharge: 219.1724,
+		},
+		{
+			Datetime: '2024-10-20 00:30:00',
+			Temperature: 15,
+			Discharge: 218.0397,
+		},
+		{
+			Datetime: '2024-10-20 00:45:00',
+			Temperature: 15.1,
+			Discharge: 216.3407,
+		},
+		{
+			Datetime: '2024-10-20 01:00:00',
+			Temperature: 15.2,
+			Discharge: 213.509,
+		},
 	],
 	RM88: [
-		{
-			Datetime: '2024-09-29 00:00:00',
-			Discharge: 269.01,
-		},
-		{
-			Datetime: '2024-09-29 00:15:00',
-			Discharge: 268.1605,
-		},
-		{
-			Datetime: '2024-09-29 00:30:00',
-			Discharge: 265.8952,
-		},
-		{
-			Datetime: '2024-09-29 00:45:00',
-			Discharge: 264.7625,
-		},
-		{
-			Datetime: '2024-09-29 01:00:00',
-			Discharge: 262.4972,
-		},
-		{
-			Datetime: '2024-09-29 01:15:00',
-			Discharge: 260.515,
-		},
-		{
-			Datetime: '2024-09-29 01:30:00',
-			Discharge: 259.6655,
-		},
-		{
-			Datetime: '2024-09-29 01:45:00',
-			Discharge: 258.816,
-		},
-		{
-			Datetime: '2024-09-29 02:00:00',
-			Discharge: 257.4001,
-		},
-		{
-			Datetime: '2024-09-29 02:15:00',
-			Discharge: 256.2675,
-		},
-		{
-			Datetime: '2024-09-29 02:30:00',
-			Discharge: 254.8516,
-		},
-		{
-			Datetime: '2024-09-29 02:45:00',
-			Discharge: 254.0021,
-		},
-		{
-			Datetime: '2024-09-29 03:00:00',
-			Discharge: 253.7189,
-		},
-		{
-			Datetime: '2024-09-29 03:15:00',
-			Discharge: 253.7189,
-		},
-		{
-			Datetime: '2024-09-29 03:30:00',
-			Discharge: 253.1526,
-		},
-		{
-			Datetime: '2024-09-29 03:45:00',
-			Discharge: 252.5863,
-		},
-		{
-			Datetime: '2024-09-29 04:00:00',
-			Discharge: 252.5863,
-		},
-		{
-			Datetime: '2024-09-29 04:15:00',
-			Discharge: 252.5863,
-		},
-		{
-			Datetime: '2024-09-29 04:30:00',
-			Discharge: 253.7189,
-		},
-		{
-			Datetime: '2024-09-29 04:45:00',
-			Discharge: 253.1526,
-		},
-		{
-			Datetime: '2024-09-29 05:00:00',
-			Discharge: 254.8516,
-		},
-		{
-			Datetime: '2024-09-29 05:15:00',
-			Discharge: 255.9843,
-		},
-		{
-			Datetime: '2024-09-29 05:30:00',
-			Discharge: 256.2675,
-		},
-		{
-			Datetime: '2024-09-29 05:45:00',
-			Discharge: 258.816,
-		},
-		{
-			Datetime: '2024-09-29 06:00:00',
-			Discharge: 261.0813,
-		},
-		{
-			Datetime: '2024-09-29 06:15:00',
-			Discharge: 262.7803,
-		},
-		{
-			Datetime: '2024-09-29 06:30:00',
-			Discharge: 264.1962,
-		},
-		{
-			Datetime: '2024-09-29 06:45:00',
-			Discharge: 267.5942,
-		},
-		{
-			Datetime: '2024-09-29 07:00:00',
-			Discharge: 271.5586,
-		},
-		{
-			Datetime: '2024-09-29 07:15:00',
-			Discharge: 275.2397,
-		},
-		{
-			Datetime: '2024-09-29 07:30:00',
-			Discharge: 278.3546,
-		},
-		{
-			Datetime: '2024-09-29 07:45:00',
-			Discharge: 282.319,
-		},
-		{
-			Datetime: '2024-09-29 08:00:00',
-			Discharge: 286.0002,
-		},
-		{
-			Datetime: '2024-09-29 08:15:00',
-			Discharge: 288.8318,
-		},
-		{
-			Datetime: '2024-09-29 08:30:00',
-			Discharge: 291.6635,
-		},
-		{
-			Datetime: '2024-09-29 08:45:00',
-			Discharge: 294.4952,
-		},
-		{
-			Datetime: '2024-09-29 09:00:00',
-			Discharge: 300.1586,
-		},
-		{
-			Datetime: '2024-09-29 09:15:00',
-			Discharge: 302.9903,
-		},
-		{
-			Datetime: '2024-09-29 09:30:00',
-			Discharge: 305.8219,
-		},
-		{
-			Datetime: '2024-09-29 09:45:00',
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 10:00:00',
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 10:15:00',
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 10:30:00',
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 10:45:00',
-			Discharge: 314.317,
-		},
-		{
-			Datetime: '2024-09-29 11:00:00',
-			Discharge: 314.317,
-		},
-		{
-			Datetime: '2024-09-29 11:15:00',
-			Discharge: 314.317,
-		},
-		{
-			Datetime: '2024-09-29 11:30:00',
-			Discharge: 317.1487,
-		},
-		{
-			Datetime: '2024-09-29 11:45:00',
-			Discharge: 314.317,
-		},
-		{
-			Datetime: '2024-09-29 12:00:00',
-			Discharge: 314.317,
-		},
-		{
-			Datetime: '2024-09-29 12:15:00',
-			Discharge: 314.317,
-		},
-		{
-			Datetime: '2024-09-29 12:30:00',
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 12:45:00',
-			Discharge: 311.4853,
-		},
-		{
-			Datetime: '2024-09-29 13:00:00',
-			Discharge: 308.6536,
-		},
-		{
-			Datetime: '2024-09-29 13:15:00',
-			Discharge: 305.8219,
-		},
-		{
-			Datetime: '2024-09-29 13:30:00',
-			Discharge: 305.8219,
-		},
-		{
-			Datetime: '2024-09-29 13:45:00',
-			Discharge: 302.9903,
-		},
-		{
-			Datetime: '2024-09-29 14:00:00',
-			Discharge: 300.1586,
-		},
-		{
-			Datetime: '2024-09-29 14:15:00',
-			Discharge: 297.3269,
-		},
-		{
-			Datetime: '2024-09-29 14:30:00',
-			Discharge: 294.4952,
-		},
-		{
-			Datetime: '2024-09-29 14:45:00',
-			Discharge: 294.4952,
-		},
-		{
-			Datetime: '2024-09-29 15:00:00',
-			Discharge: 291.6635,
-		},
-		{
-			Datetime: '2024-09-29 15:15:00',
-			Discharge: 288.8318,
-		},
-		{
-			Datetime: '2024-09-29 15:30:00',
-			Discharge: 286.0002,
-		},
-		{
-			Datetime: '2024-09-29 15:45:00',
-			Discharge: 283.1685,
-		},
-		{
-			Datetime: '2024-09-29 16:00:00',
-			Discharge: 280.9031,
-		},
-		{
-			Datetime: '2024-09-29 16:15:00',
-			Discharge: 277.7883,
-		},
-		{
-			Datetime: '2024-09-29 16:30:00',
-			Discharge: 274.9566,
-		},
-		{
-			Datetime: '2024-09-29 16:45:00',
-			Discharge: 272.4081,
-		},
-		{
-			Datetime: '2024-09-29 17:00:00',
-			Discharge: 269.5764,
-		},
-		{
-			Datetime: '2024-09-29 17:15:00',
-			Discharge: 267.311,
-		},
-		{
-			Datetime: '2024-09-29 17:30:00',
-			Discharge: 265.3289,
-		},
-		{
-			Datetime: '2024-09-29 17:45:00',
-			Discharge: 261.9308,
-		},
-		{
-			Datetime: '2024-09-29 18:00:00',
-			Discharge: 260.2318,
-		},
-		{
-			Datetime: '2024-09-29 18:15:00',
-			Discharge: 257.4001,
-		},
-		{
-			Datetime: '2024-09-29 18:30:00',
-			Discharge: 254.8516,
-		},
-		{
-			Datetime: '2024-09-29 18:45:00',
-			Discharge: 252.0199,
-		},
-		{
-			Datetime: '2024-09-29 19:00:00',
-			Discharge: 249.4714,
-		},
-		{
-			Datetime: '2024-09-29 19:15:00',
-			Discharge: 247.7724,
-		},
-		{
-			Datetime: '2024-09-29 19:30:00',
-			Discharge: 244.6576,
-		},
-		{
-			Datetime: '2024-09-29 19:45:00',
-			Discharge: 242.9585,
-		},
-		{
-			Datetime: '2024-09-29 20:00:00',
-			Discharge: 240.9764,
-		},
-		{
-			Datetime: '2024-09-29 20:15:00',
-			Discharge: 239.8437,
-		},
-		{
-			Datetime: '2024-09-29 20:30:00',
-			Discharge: 238.4278,
-		},
-		{
-			Datetime: '2024-09-29 20:45:00',
-			Discharge: 236.7288,
-		},
-		{
-			Datetime: '2024-09-29 21:00:00',
-			Discharge: 235.8793,
-		},
-		{
-			Datetime: '2024-09-29 21:15:00',
-			Discharge: 234.1803,
-		},
-		{
-			Datetime: '2024-09-29 21:30:00',
-			Discharge: 233.8972,
-		},
-		{
-			Datetime: '2024-09-29 21:45:00',
-			Discharge: 233.3308,
-		},
-		{
-			Datetime: '2024-09-29 22:00:00',
-			Discharge: 233.3308,
-		},
-		{
-			Datetime: '2024-09-29 22:15:00',
-			Discharge: 232.7645,
-		},
-		{
-			Datetime: '2024-09-29 22:30:00',
-			Discharge: 231.915,
-		},
-		{
-			Datetime: '2024-09-29 22:45:00',
-			Discharge: 231.915,
-		},
-		{
-			Datetime: '2024-09-29 23:00:00',
-			Discharge: 231.915,
-		},
-		{
-			Datetime: '2024-09-29 23:15:00',
-			Discharge: 232.1981,
-		},
-		{
-			Datetime: '2024-09-29 23:30:00',
-			Discharge: 232.7645,
-		},
-		{
-			Datetime: '2024-09-29 23:45:00',
-			Discharge: 232.7645,
-		},
 		{
 			Datetime: '2024-09-30 00:00:00',
 			Discharge: 233.3308,
@@ -26878,392 +26494,392 @@ obs = {
 			Datetime: '2024-10-19 01:15:00',
 			Discharge: 235.313,
 		},
-	],
-	RM226: [
 		{
-			Datetime: '2024-09-29 00:00:00',
-			Discharge: 297.3269,
+			Datetime: '2024-10-19 01:30:00',
+			Discharge: 235.313,
 		},
 		{
-			Datetime: '2024-09-29 00:15:00',
-			Discharge: 294.4952,
+			Datetime: '2024-10-19 01:45:00',
+			Discharge: 234.7467,
 		},
 		{
-			Datetime: '2024-09-29 00:30:00',
-			Discharge: 291.6635,
+			Datetime: '2024-10-19 02:00:00',
+			Discharge: 234.1803,
 		},
 		{
-			Datetime: '2024-09-29 00:45:00',
-			Discharge: 288.8318,
+			Datetime: '2024-10-19 02:15:00',
+			Discharge: 234.1803,
 		},
 		{
-			Datetime: '2024-09-29 01:00:00',
-			Discharge: 286.0002,
+			Datetime: '2024-10-19 02:30:00',
+			Discharge: 233.8972,
 		},
 		{
-			Datetime: '2024-09-29 01:15:00',
-			Discharge: 283.1685,
+			Datetime: '2024-10-19 02:45:00',
+			Discharge: 233.3308,
 		},
 		{
-			Datetime: '2024-09-29 01:30:00',
-			Discharge: 280.9031,
+			Datetime: '2024-10-19 03:00:00',
+			Discharge: 232.7645,
 		},
 		{
-			Datetime: '2024-09-29 01:45:00',
-			Discharge: 278.9209,
+			Datetime: '2024-10-19 03:15:00',
+			Discharge: 233.3308,
 		},
 		{
-			Datetime: '2024-09-29 02:00:00',
-			Discharge: 278.3546,
+			Datetime: '2024-10-19 03:30:00',
+			Discharge: 233.8972,
 		},
 		{
-			Datetime: '2024-09-29 02:15:00',
-			Discharge: 276.0893,
+			Datetime: '2024-10-19 03:45:00',
+			Discharge: 233.3308,
 		},
 		{
-			Datetime: '2024-09-29 02:30:00',
-			Discharge: 272.9744,
+			Datetime: '2024-10-19 04:00:00',
+			Discharge: 234.1803,
 		},
 		{
-			Datetime: '2024-09-29 02:45:00',
-			Discharge: 270.4259,
+			Datetime: '2024-10-19 04:15:00',
+			Discharge: 234.1803,
 		},
 		{
-			Datetime: '2024-09-29 03:00:00',
-			Discharge: 269.2932,
+			Datetime: '2024-10-19 04:30:00',
+			Discharge: 235.313,
 		},
 		{
-			Datetime: '2024-09-29 03:15:00',
-			Discharge: 267.0279,
+			Datetime: '2024-10-19 04:45:00',
+			Discharge: 235.8793,
 		},
 		{
-			Datetime: '2024-09-29 03:30:00',
-			Discharge: 266.1784,
+			Datetime: '2024-10-19 05:00:00',
+			Discharge: 236.4457,
 		},
 		{
-			Datetime: '2024-09-29 03:45:00',
-			Discharge: 264.4793,
+			Datetime: '2024-10-19 05:15:00',
+			Discharge: 237.2952,
 		},
 		{
-			Datetime: '2024-09-29 04:00:00',
-			Discharge: 260.7982,
+			Datetime: '2024-10-19 05:30:00',
+			Discharge: 238.4278,
 		},
 		{
-			Datetime: '2024-09-29 04:15:00',
-			Discharge: 261.6477,
+			Datetime: '2024-10-19 05:45:00',
+			Discharge: 238.9942,
 		},
 		{
-			Datetime: '2024-09-29 04:30:00',
-			Discharge: 260.7982,
+			Datetime: '2024-10-19 06:00:00',
+			Discharge: 239.8437,
 		},
 		{
-			Datetime: '2024-09-29 04:45:00',
-			Discharge: 256.8338,
+			Datetime: '2024-10-19 06:15:00',
+			Discharge: 242.109,
 		},
 		{
-			Datetime: '2024-09-29 05:00:00',
-			Discharge: 254.8516,
+			Datetime: '2024-10-19 06:30:00',
+			Discharge: 242.6754,
 		},
 		{
-			Datetime: '2024-09-29 05:15:00',
+			Datetime: '2024-10-19 06:45:00',
+			Discharge: 242.9585,
+		},
+		{
+			Datetime: '2024-10-19 07:00:00',
+			Discharge: 244.6576,
+		},
+		{
+			Datetime: '2024-10-19 07:15:00',
+			Discharge: 245.7902,
+		},
+		{
+			Datetime: '2024-10-19 07:30:00',
+			Discharge: 247.2061,
+		},
+		{
+			Datetime: '2024-10-19 07:45:00',
+			Discharge: 248.9051,
+		},
+		{
+			Datetime: '2024-10-19 08:00:00',
+			Discharge: 250.0378,
+		},
+		{
+			Datetime: '2024-10-19 08:15:00',
+			Discharge: 250.8873,
+		},
+		{
+			Datetime: '2024-10-19 08:30:00',
+			Discharge: 252.5863,
+		},
+		{
+			Datetime: '2024-10-19 08:45:00',
 			Discharge: 253.7189,
 		},
 		{
-			Datetime: '2024-09-29 05:30:00',
-			Discharge: 253.1526,
+			Datetime: '2024-10-19 09:00:00',
+			Discharge: 254.5685,
 		},
 		{
-			Datetime: '2024-09-29 05:45:00',
-			Discharge: 250.8873,
+			Datetime: '2024-10-19 09:15:00',
+			Discharge: 255.418,
 		},
 		{
-			Datetime: '2024-09-29 06:00:00',
-			Discharge: 252.0199,
+			Datetime: '2024-10-19 09:30:00',
+			Discharge: 255.418,
 		},
 		{
-			Datetime: '2024-09-29 06:15:00',
-			Discharge: 249.1883,
-		},
-		{
-			Datetime: '2024-09-29 06:30:00',
-			Discharge: 249.1883,
-		},
-		{
-			Datetime: '2024-09-29 06:45:00',
-			Discharge: 248.6219,
-		},
-		{
-			Datetime: '2024-09-29 07:00:00',
-			Discharge: 249.1883,
-		},
-		{
-			Datetime: '2024-09-29 07:15:00',
-			Discharge: 248.6219,
-		},
-		{
-			Datetime: '2024-09-29 07:30:00',
-			Discharge: 248.0556,
-		},
-		{
-			Datetime: '2024-09-29 07:45:00',
-			Discharge: 249.1883,
-		},
-		{
-			Datetime: '2024-09-29 08:00:00',
-			Discharge: 248.6219,
-		},
-		{
-			Datetime: '2024-09-29 08:15:00',
-			Discharge: 250.3209,
-		},
-		{
-			Datetime: '2024-09-29 08:30:00',
-			Discharge: 253.1526,
-		},
-		{
-			Datetime: '2024-09-29 08:45:00',
-			Discharge: 250.8873,
-		},
-		{
-			Datetime: '2024-09-29 09:00:00',
-			Discharge: 253.1526,
-		},
-		{
-			Datetime: '2024-09-29 09:15:00',
+			Datetime: '2024-10-19 09:45:00',
 			Discharge: 256.8338,
 		},
 		{
-			Datetime: '2024-09-29 09:30:00',
-			Discharge: 257.9665,
+			Datetime: '2024-10-19 10:00:00',
+			Discharge: 257.6833,
 		},
 		{
-			Datetime: '2024-09-29 09:45:00',
-			Discharge: 265.0457,
+			Datetime: '2024-10-19 10:15:00',
+			Discharge: 257.6833,
 		},
 		{
-			Datetime: '2024-09-29 10:00:00',
-			Discharge: 268.1605,
+			Datetime: '2024-10-19 10:30:00',
+			Discharge: 258.2496,
 		},
 		{
-			Datetime: '2024-09-29 10:15:00',
-			Discharge: 273.5407,
+			Datetime: '2024-10-19 10:45:00',
+			Discharge: 258.816,
 		},
 		{
-			Datetime: '2024-09-29 10:30:00',
-			Discharge: 276.6556,
+			Datetime: '2024-10-19 11:00:00',
+			Discharge: 258.816,
 		},
 		{
-			Datetime: '2024-09-29 10:45:00',
-			Discharge: 280.3368,
+			Datetime: '2024-10-19 11:15:00',
+			Discharge: 259.0991,
 		},
 		{
-			Datetime: '2024-09-29 11:00:00',
-			Discharge: 286.0002,
+			Datetime: '2024-10-19 11:30:00',
+			Discharge: 260.2318,
 		},
 		{
-			Datetime: '2024-09-29 11:15:00',
-			Discharge: 291.6635,
+			Datetime: '2024-10-19 11:45:00',
+			Discharge: 260.515,
 		},
 		{
-			Datetime: '2024-09-29 11:30:00',
-			Discharge: 297.3269,
+			Datetime: '2024-10-19 12:00:00',
+			Discharge: 260.515,
 		},
 		{
-			Datetime: '2024-09-29 11:45:00',
-			Discharge: 300.1586,
+			Datetime: '2024-10-19 12:15:00',
+			Discharge: 259.0991,
 		},
 		{
-			Datetime: '2024-09-29 12:00:00',
-			Discharge: 305.8219,
+			Datetime: '2024-10-19 12:30:00',
+			Discharge: 259.6655,
 		},
 		{
-			Datetime: '2024-09-29 12:15:00',
-			Discharge: 311.4853,
+			Datetime: '2024-10-19 12:45:00',
+			Discharge: 259.0991,
 		},
 		{
-			Datetime: '2024-09-29 12:30:00',
-			Discharge: 311.4853,
+			Datetime: '2024-10-19 13:00:00',
+			Discharge: 259.6655,
 		},
 		{
-			Datetime: '2024-09-29 12:45:00',
-			Discharge: 317.1487,
+			Datetime: '2024-10-19 13:15:00',
+			Discharge: 259.6655,
 		},
 		{
-			Datetime: '2024-09-29 13:00:00',
-			Discharge: 319.9804,
+			Datetime: '2024-10-19 13:30:00',
+			Discharge: 259.6655,
 		},
 		{
-			Datetime: '2024-09-29 13:15:00',
-			Discharge: 328.4754,
+			Datetime: '2024-10-19 13:45:00',
+			Discharge: 258.816,
 		},
 		{
-			Datetime: '2024-09-29 13:30:00',
-			Discharge: 328.4754,
+			Datetime: '2024-10-19 14:00:00',
+			Discharge: 259.0991,
 		},
 		{
-			Datetime: '2024-09-29 13:45:00',
-			Discharge: 334.1388,
+			Datetime: '2024-10-19 14:15:00',
+			Discharge: 258.816,
 		},
 		{
-			Datetime: '2024-09-29 14:00:00',
-			Discharge: 334.1388,
+			Datetime: '2024-10-19 14:30:00',
+			Discharge: 258.816,
 		},
 		{
-			Datetime: '2024-09-29 14:15:00',
-			Discharge: 336.9705,
+			Datetime: '2024-10-19 14:45:00',
+			Discharge: 258.2496,
 		},
 		{
-			Datetime: '2024-09-29 14:30:00',
-			Discharge: 339.8022,
+			Datetime: '2024-10-19 15:00:00',
+			Discharge: 257.4001,
 		},
 		{
-			Datetime: '2024-09-29 14:45:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 15:15:00',
+			Discharge: 256.2675,
 		},
 		{
-			Datetime: '2024-09-29 15:00:00',
-			Discharge: 339.8022,
+			Datetime: '2024-10-19 15:30:00',
+			Discharge: 256.2675,
 		},
 		{
-			Datetime: '2024-09-29 15:15:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 15:45:00',
+			Discharge: 255.9843,
 		},
 		{
-			Datetime: '2024-09-29 15:30:00',
-			Discharge: 345.4655,
+			Datetime: '2024-10-19 16:00:00',
+			Discharge: 255.418,
 		},
 		{
-			Datetime: '2024-09-29 15:45:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 16:15:00',
+			Discharge: 254.8516,
 		},
 		{
-			Datetime: '2024-09-29 16:00:00',
-			Discharge: 345.4655,
+			Datetime: '2024-10-19 16:30:00',
+			Discharge: 255.9843,
 		},
 		{
-			Datetime: '2024-09-29 16:15:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 16:45:00',
+			Discharge: 254.8516,
 		},
 		{
-			Datetime: '2024-09-29 16:30:00',
-			Discharge: 345.4655,
+			Datetime: '2024-10-19 17:00:00',
+			Discharge: 254.5685,
 		},
 		{
-			Datetime: '2024-09-29 16:45:00',
-			Discharge: 345.4655,
+			Datetime: '2024-10-19 17:15:00',
+			Discharge: 254.0021,
 		},
 		{
-			Datetime: '2024-09-29 17:00:00',
-			Discharge: 345.4655,
+			Datetime: '2024-10-19 17:30:00',
+			Discharge: 253.1526,
 		},
 		{
-			Datetime: '2024-09-29 17:15:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 17:45:00',
+			Discharge: 252.5863,
 		},
 		{
-			Datetime: '2024-09-29 17:30:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 18:00:00',
+			Discharge: 252.5863,
 		},
 		{
-			Datetime: '2024-09-29 17:45:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 18:15:00',
+			Discharge: 252.0199,
 		},
 		{
-			Datetime: '2024-09-29 18:00:00',
-			Discharge: 342.6338,
+			Datetime: '2024-10-19 18:30:00',
+			Discharge: 252.0199,
 		},
 		{
-			Datetime: '2024-09-29 18:15:00',
-			Discharge: 339.8022,
+			Datetime: '2024-10-19 18:45:00',
+			Discharge: 250.8873,
 		},
 		{
-			Datetime: '2024-09-29 18:30:00',
-			Discharge: 339.8022,
+			Datetime: '2024-10-19 19:00:00',
+			Discharge: 250.6041,
 		},
 		{
-			Datetime: '2024-09-29 18:45:00',
-			Discharge: 336.9705,
+			Datetime: '2024-10-19 19:15:00',
+			Discharge: 250.6041,
 		},
 		{
-			Datetime: '2024-09-29 19:00:00',
-			Discharge: 334.1388,
+			Datetime: '2024-10-19 19:30:00',
+			Discharge: 249.4714,
 		},
 		{
-			Datetime: '2024-09-29 19:15:00',
-			Discharge: 334.1388,
+			Datetime: '2024-10-19 19:45:00',
+			Discharge: 249.4714,
 		},
 		{
-			Datetime: '2024-09-29 19:30:00',
-			Discharge: 334.1388,
+			Datetime: '2024-10-19 20:00:00',
+			Discharge: 248.3387,
 		},
 		{
-			Datetime: '2024-09-29 19:45:00',
-			Discharge: 331.3071,
+			Datetime: '2024-10-19 20:15:00',
+			Discharge: 247.2061,
 		},
 		{
-			Datetime: '2024-09-29 20:00:00',
-			Discharge: 328.4754,
+			Datetime: '2024-10-19 20:30:00',
+			Discharge: 245.2239,
 		},
 		{
-			Datetime: '2024-09-29 20:15:00',
-			Discharge: 325.6437,
+			Datetime: '2024-10-19 20:45:00',
+			Discharge: 244.6576,
 		},
 		{
-			Datetime: '2024-09-29 20:30:00',
-			Discharge: 325.6437,
+			Datetime: '2024-10-19 21:00:00',
+			Discharge: 243.5249,
 		},
 		{
-			Datetime: '2024-09-29 20:45:00',
-			Discharge: 325.6437,
+			Datetime: '2024-10-19 21:15:00',
+			Discharge: 242.109,
 		},
 		{
-			Datetime: '2024-09-29 21:00:00',
-			Discharge: 319.9804,
+			Datetime: '2024-10-19 21:30:00',
+			Discharge: 240.41,
 		},
 		{
-			Datetime: '2024-09-29 21:15:00',
-			Discharge: 322.8121,
+			Datetime: '2024-10-19 21:45:00',
+			Discharge: 239.8437,
 		},
 		{
-			Datetime: '2024-09-29 21:30:00',
-			Discharge: 317.1487,
+			Datetime: '2024-10-19 22:00:00',
+			Discharge: 239.8437,
 		},
 		{
-			Datetime: '2024-09-29 21:45:00',
-			Discharge: 317.1487,
+			Datetime: '2024-10-19 22:15:00',
+			Discharge: 237.8615,
 		},
 		{
-			Datetime: '2024-09-29 22:00:00',
-			Discharge: 314.317,
+			Datetime: '2024-10-19 22:30:00',
+			Discharge: 237.2952,
 		},
 		{
-			Datetime: '2024-09-29 22:15:00',
-			Discharge: 311.4853,
+			Datetime: '2024-10-19 22:45:00',
+			Discharge: 236.4457,
 		},
 		{
-			Datetime: '2024-09-29 22:30:00',
-			Discharge: 308.6536,
+			Datetime: '2024-10-19 23:00:00',
+			Discharge: 234.7467,
 		},
 		{
-			Datetime: '2024-09-29 22:45:00',
-			Discharge: 308.6536,
+			Datetime: '2024-10-19 23:15:00',
+			Discharge: 234.1803,
 		},
 		{
-			Datetime: '2024-09-29 23:00:00',
-			Discharge: 305.8219,
+			Datetime: '2024-10-19 23:30:00',
+			Discharge: 232.1981,
 		},
 		{
-			Datetime: '2024-09-29 23:15:00',
-			Discharge: 305.8219,
+			Datetime: '2024-10-19 23:45:00',
+			Discharge: 230.7823,
 		},
 		{
-			Datetime: '2024-09-29 23:30:00',
-			Discharge: 302.9903,
+			Datetime: '2024-10-20 00:00:00',
+			Discharge: 230.216,
 		},
 		{
-			Datetime: '2024-09-29 23:45:00',
-			Discharge: 300.1586,
+			Datetime: '2024-10-20 00:15:00',
+			Discharge: 228.2338,
 		},
+		{
+			Datetime: '2024-10-20 00:30:00',
+			Discharge: 227.3843,
+		},
+		{
+			Datetime: '2024-10-20 00:45:00',
+			Discharge: 226.8179,
+		},
+		{
+			Datetime: '2024-10-20 01:00:00',
+			Discharge: 225.6853,
+		},
+		{
+			Datetime: '2024-10-20 01:15:00',
+			Discharge: 224.8358,
+		},
+	],
+	RM226: [
 		{
 			Datetime: '2024-09-30 00:00:00',
 			Discharge: 300.1586,
@@ -34587,6 +34203,390 @@ obs = {
 		{
 			Datetime: '2024-10-19 01:30:00',
 			Discharge: 235.8793,
+		},
+		{
+			Datetime: '2024-10-19 01:45:00',
+			Discharge: 236.4457,
+		},
+		{
+			Datetime: '2024-10-19 02:00:00',
+			Discharge: 237.5783,
+		},
+		{
+			Datetime: '2024-10-19 02:15:00',
+			Discharge: 235.313,
+		},
+		{
+			Datetime: '2024-10-19 02:30:00',
+			Discharge: 238.711,
+		},
+		{
+			Datetime: '2024-10-19 02:45:00',
+			Discharge: 236.4457,
+		},
+		{
+			Datetime: '2024-10-19 03:00:00',
+			Discharge: 235.8793,
+		},
+		{
+			Datetime: '2024-10-19 03:15:00',
+			Discharge: 234.7467,
+		},
+		{
+			Datetime: '2024-10-19 03:30:00',
+			Discharge: 235.313,
+		},
+		{
+			Datetime: '2024-10-19 03:45:00',
+			Discharge: 234.7467,
+		},
+		{
+			Datetime: '2024-10-19 04:00:00',
+			Discharge: 234.7467,
+		},
+		{
+			Datetime: '2024-10-19 04:15:00',
+			Discharge: 231.915,
+		},
+		{
+			Datetime: '2024-10-19 04:30:00',
+			Discharge: 232.4813,
+		},
+		{
+			Datetime: '2024-10-19 04:45:00',
+			Discharge: 231.3486,
+		},
+		{
+			Datetime: '2024-10-19 05:00:00',
+			Discharge: 231.915,
+		},
+		{
+			Datetime: '2024-10-19 05:15:00',
+			Discharge: 231.915,
+		},
+		{
+			Datetime: '2024-10-19 05:30:00',
+			Discharge: 231.3486,
+		},
+		{
+			Datetime: '2024-10-19 05:45:00',
+			Discharge: 230.7823,
+		},
+		{
+			Datetime: '2024-10-19 06:00:00',
+			Discharge: 230.216,
+		},
+		{
+			Datetime: '2024-10-19 06:15:00',
+			Discharge: 229.6496,
+		},
+		{
+			Datetime: '2024-10-19 06:30:00',
+			Discharge: 229.6496,
+		},
+		{
+			Datetime: '2024-10-19 06:45:00',
+			Discharge: 229.6496,
+		},
+		{
+			Datetime: '2024-10-19 07:00:00',
+			Discharge: 228.517,
+		},
+		{
+			Datetime: '2024-10-19 07:15:00',
+			Discharge: 229.0833,
+		},
+		{
+			Datetime: '2024-10-19 07:30:00',
+			Discharge: 229.6496,
+		},
+		{
+			Datetime: '2024-10-19 07:45:00',
+			Discharge: 230.7823,
+		},
+		{
+			Datetime: '2024-10-19 08:00:00',
+			Discharge: 229.6496,
+		},
+		{
+			Datetime: '2024-10-19 08:15:00',
+			Discharge: 231.915,
+		},
+		{
+			Datetime: '2024-10-19 08:30:00',
+			Discharge: 231.915,
+		},
+		{
+			Datetime: '2024-10-19 08:45:00',
+			Discharge: 230.7823,
+		},
+		{
+			Datetime: '2024-10-19 09:00:00',
+			Discharge: 230.216,
+		},
+		{
+			Datetime: '2024-10-19 09:15:00',
+			Discharge: 232.4813,
+		},
+		{
+			Datetime: '2024-10-19 09:30:00',
+			Discharge: 232.4813,
+		},
+		{
+			Datetime: '2024-10-19 09:45:00',
+			Discharge: 232.4813,
+		},
+		{
+			Datetime: '2024-10-19 10:00:00',
+			Discharge: 234.1803,
+		},
+		{
+			Datetime: '2024-10-19 10:15:00',
+			Discharge: 236.4457,
+		},
+		{
+			Datetime: '2024-10-19 10:30:00',
+			Discharge: 234.7467,
+		},
+		{
+			Datetime: '2024-10-19 10:45:00',
+			Discharge: 237.012,
+		},
+		{
+			Datetime: '2024-10-19 11:00:00',
+			Discharge: 237.012,
+		},
+		{
+			Datetime: '2024-10-19 11:15:00',
+			Discharge: 239.8437,
+		},
+		{
+			Datetime: '2024-10-19 11:30:00',
+			Discharge: 239.8437,
+		},
+		{
+			Datetime: '2024-10-19 11:45:00',
+			Discharge: 241.5427,
+		},
+		{
+			Datetime: '2024-10-19 12:00:00',
+			Discharge: 242.109,
+		},
+		{
+			Datetime: '2024-10-19 12:15:00',
+			Discharge: 242.6754,
+		},
+		{
+			Datetime: '2024-10-19 12:30:00',
+			Discharge: 245.5071,
+		},
+		{
+			Datetime: '2024-10-19 12:45:00',
+			Discharge: 245.5071,
+		},
+		{
+			Datetime: '2024-10-19 13:00:00',
+			Discharge: 244.3744,
+		},
+		{
+			Datetime: '2024-10-19 13:15:00',
+			Discharge: 248.0556,
+		},
+		{
+			Datetime: '2024-10-19 13:30:00',
+			Discharge: 249.1883,
+		},
+		{
+			Datetime: '2024-10-19 13:45:00',
+			Discharge: 248.0556,
+		},
+		{
+			Datetime: '2024-10-19 14:00:00',
+			Discharge: 249.1883,
+		},
+		{
+			Datetime: '2024-10-19 14:15:00',
+			Discharge: 249.1883,
+		},
+		{
+			Datetime: '2024-10-19 14:30:00',
+			Discharge: 249.7546,
+		},
+		{
+			Datetime: '2024-10-19 14:45:00',
+			Discharge: 250.8873,
+		},
+		{
+			Datetime: '2024-10-19 15:00:00',
+			Discharge: 252.5863,
+		},
+		{
+			Datetime: '2024-10-19 15:15:00',
+			Discharge: 252.0199,
+		},
+		{
+			Datetime: '2024-10-19 15:30:00',
+			Discharge: 253.1526,
+		},
+		{
+			Datetime: '2024-10-19 15:45:00',
+			Discharge: 253.7189,
+		},
+		{
+			Datetime: '2024-10-19 16:00:00',
+			Discharge: 253.7189,
+		},
+		{
+			Datetime: '2024-10-19 16:15:00',
+			Discharge: 254.2853,
+		},
+		{
+			Datetime: '2024-10-19 16:30:00',
+			Discharge: 254.8516,
+		},
+		{
+			Datetime: '2024-10-19 16:45:00',
+			Discharge: 254.8516,
+		},
+		{
+			Datetime: '2024-10-19 17:00:00',
+			Discharge: 253.1526,
+		},
+		{
+			Datetime: '2024-10-19 17:15:00',
+			Discharge: 254.2853,
+		},
+		{
+			Datetime: '2024-10-19 17:30:00',
+			Discharge: 253.7189,
+		},
+		{
+			Datetime: '2024-10-19 17:45:00',
+			Discharge: 256.8338,
+		},
+		{
+			Datetime: '2024-10-19 18:00:00',
+			Discharge: 254.8516,
+		},
+		{
+			Datetime: '2024-10-19 18:15:00',
+			Discharge: 252.5863,
+		},
+		{
+			Datetime: '2024-10-19 18:30:00',
+			Discharge: 253.1526,
+		},
+		{
+			Datetime: '2024-10-19 18:45:00',
+			Discharge: 254.2853,
+		},
+		{
+			Datetime: '2024-10-19 19:00:00',
+			Discharge: 254.2853,
+		},
+		{
+			Datetime: '2024-10-19 19:15:00',
+			Discharge: 255.7011,
+		},
+		{
+			Datetime: '2024-10-19 19:30:00',
+			Discharge: 253.1526,
+		},
+		{
+			Datetime: '2024-10-19 19:45:00',
+			Discharge: 253.7189,
+		},
+		{
+			Datetime: '2024-10-19 20:00:00',
+			Discharge: 254.8516,
+		},
+		{
+			Datetime: '2024-10-19 20:15:00',
+			Discharge: 254.2853,
+		},
+		{
+			Datetime: '2024-10-19 20:30:00',
+			Discharge: 250.8873,
+		},
+		{
+			Datetime: '2024-10-19 20:45:00',
+			Discharge: 250.8873,
+		},
+		{
+			Datetime: '2024-10-19 21:00:00',
+			Discharge: 253.1526,
+		},
+		{
+			Datetime: '2024-10-19 21:15:00',
+			Discharge: 251.4536,
+		},
+		{
+			Datetime: '2024-10-19 21:30:00',
+			Discharge: 250.8873,
+		},
+		{
+			Datetime: '2024-10-19 21:45:00',
+			Discharge: 250.3209,
+		},
+		{
+			Datetime: '2024-10-19 22:00:00',
+			Discharge: 249.7546,
+		},
+		{
+			Datetime: '2024-10-19 22:15:00',
+			Discharge: 249.1883,
+		},
+		{
+			Datetime: '2024-10-19 22:30:00',
+			Discharge: 250.3209,
+		},
+		{
+			Datetime: '2024-10-19 22:45:00',
+			Discharge: 248.0556,
+		},
+		{
+			Datetime: '2024-10-19 23:00:00',
+			Discharge: 248.0556,
+		},
+		{
+			Datetime: '2024-10-19 23:15:00',
+			Discharge: 246.6397,
+		},
+		{
+			Datetime: '2024-10-19 23:30:00',
+			Discharge: 246.6397,
+		},
+		{
+			Datetime: '2024-10-19 23:45:00',
+			Discharge: 247.4892,
+		},
+		{
+			Datetime: '2024-10-20 00:00:00',
+			Discharge: 246.6397,
+		},
+		{
+			Datetime: '2024-10-20 00:15:00',
+			Discharge: 244.9407,
+		},
+		{
+			Datetime: '2024-10-20 00:30:00',
+			Discharge: 244.3744,
+		},
+		{
+			Datetime: '2024-10-20 00:45:00',
+			Discharge: 244.9407,
+		},
+		{
+			Datetime: '2024-10-20 01:00:00',
+			Discharge: 246.0734,
+		},
+		{
+			Datetime: '2024-10-20 01:15:00',
+			Discharge: 242.109,
+		},
+		{
+			Datetime: '2024-10-20 01:30:00',
+			Discharge: 242.109,
 		},
 	],
 }
